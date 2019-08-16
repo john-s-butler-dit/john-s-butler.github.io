@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Stuart T Smith on John S Butler</title>
+    <link>/authors/stuart-t-smith/</link>
+    <description>Recent content in Stuart T Smith on John S Butler</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 01 Jul 2011 00:00:00 +0000</lastBuildDate>
+    
+	    <atom:link href="/authors/stuart-t-smith/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>The Role of Stereo Vision in Visual–Vestibular Integration</title>
+      <link>/publication/2012_butleretal2012/</link>
+      <pubDate>Fri, 01 Jul 2011 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/2012_butleretal2012/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Bayesian integration of visual and vestibular signals for heading</title>
+      <link>/publication/2010_journalofvision/</link>
+      <pubDate>Wed, 01 Sep 2010 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/2010_journalofvision/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>VISUAL VESTIBULAR INTERACTIONS FOR SELF MOTION ESTIMATION</title>
+      <link>/publication/2006_butleretal_2006_dsc/</link>
+      <pubDate>Fri, 01 Sep 2006 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/2006_butleretal_2006_dsc/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

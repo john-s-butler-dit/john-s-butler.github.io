@@ -1,0 +1,1078 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>John S Butler</title>
+    <link>/authors/admin/</link>
+    <description>Recent content on John S Butler</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 01 Jul 2019 00:00:00 +0000</lastBuildDate>
+    
+	    <atom:link href="/authors/admin/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Current source density approaches improve spatial resolution in event related potential analysis in people with Parkinson&#39;s disease.</title>
+      <link>/publication/2019_fearon-letter/</link>
+      <pubDate>Mon, 01 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/2019_fearon-letter/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Probabilistic Decision Making</title>
+      <link>/post/jupyter/</link>
+      <pubDate>Tue, 05 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/post/jupyter/</guid>
+      <description>
+
+&lt;h1 id=&#34;probabilistic-decision-making-by-slow-reverberation-in-cortical-circuits&#34;&gt;Probabilistic Decision Making by Slow Reverberation in Cortical Circuits&lt;/h1&gt;
+
+&lt;p&gt;Wang
+Neuron, December 5, 2002, 36:955-968&lt;/p&gt;
+
+&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
+
+&lt;p&gt;This notebook will work through the seminal paper by Wong (2002) to simulate synaptic decision making. The note book will follow the flow of the original paper and reproduce each figure.&lt;/p&gt;
+
+&lt;h2 id=&#34;material-and-methods&#34;&gt;Material and Methods&lt;/h2&gt;
+
+&lt;h3 id=&#34;the-two-variable-network-model&#34;&gt;The two-variable network model&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src=&#34;Wang2002/Figure1.jpg&#34; alt=&#34;Neuronal Firing Type&#34; style=&#34;width: 400px;&#34;/&gt;
+&lt;em&gt; Figure 1: Model Architecture and Coherence-Dependent Stochastic inputs.&lt;/p&gt;
+
+&lt;p&gt;(A) Schematic depiction of the model. There are two pyramidal cell groups (A and B), each of which is selective to one of the two stimuli (mimicking motion to the right or left). Within each pyramidal neural group there is strong recurrrent excitatory connections that can sustain persistent activity triggered by a transient preferred stimulus. The two neural groups compete through feedback inhibition from interneurons.&lt;/p&gt;
+
+&lt;p&gt;(B) Top: the inputs are Poisson rates that vary in time and obey Gaussian distributions, with means μA and μB and with standard deviation σ. The means $μ_A$ and $μ_B$ depend on the coherence level linearly (insert). Bottom: an example of stochastic inputs to neural groups A and B with $μ_0$ = 40 and $σ$ = 10 in Hz, c′ = 6.4%. At every 50 ms, the two stimuli are independently resampled using their Gaussian distributions, so that the inputs vary stochastically in time. If $σ$ = 0, the two inputs would be constant in time.&lt;/em&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;the-cortical-network-model&#34;&gt;The Cortical Network Model&lt;/h2&gt;
+
+&lt;p&gt;The corical network consists of N=2000 neurons with excitaroty pyramidal cells ($N_E$=1600) and inhibitory $N_I$ interneurons ($N_I$=400).&lt;/p&gt;
+
+&lt;h3 id=&#34;neurons-the-integrate-and-fire-model&#34;&gt;Neurons The Integrate and Fire Model&lt;/h3&gt;
+
+&lt;p&gt;The nuerons are simulated unsing the integrate and fire model:
+\begin{equation}  C_m\frac{dV(t)}{dt} =-g_L(V(t)-V&lt;em&gt;L)-I&lt;/em&gt;{syn}(t), \end{equation}
+where $V(t)$ is the membrane potential, $C_m$ is the membrane capacity,  $g_L$ is the membrane leak conductance, $V&lt;em&gt;L$ is the resting potential and $I&lt;/em&gt;{syn}$ represents the total synaptic current flow.
+To simulate spiking a firing threshold $V&lt;em&gt;{th}$ and a refactory period $\tau&lt;/em&gt;{ref}$ are introduced such that
+\begin{equation}  if V(t) &amp;gt; V_{th}, \end{equation}
+\begin{equation}   V(t) =V_rest+RI&lt;em&gt;0\frac{\Delta}{\tau&lt;/em&gt;{ref}}, for \Delta &amp;lt;&amp;lt; \tau&lt;em&gt;{ref} \end{equation}
+with a reset potential $V&lt;/em&gt;{reset}$&lt;/p&gt;
+
+&lt;h3 id=&#34;parameters&#34;&gt;Parameters&lt;/h3&gt;
+
+&lt;p&gt;The parameters for the model are:&lt;/p&gt;
+
+&lt;p&gt;| Parameter | Excitatory (E)  | Inhibitory (I) | Units |
+|&amp;mdash;&amp;mdash;|&amp;mdash;&amp;mdash;|&amp;mdash;&amp;mdash;|
+|   $C_m$ | 0.5|0.2|  nF  |
+|   $g_L$ | 25|20| nS  |
+|   $V&lt;em&gt;L$ | -70|-70| mV  |
+|   $V&lt;/em&gt;{reset}$ |-55|-55| mV  |
+|   $V&lt;em&gt;{th}$ |-50|-50| mV  |
+|   $\tau&lt;/em&gt;{ref}$ |2|1| ms  |
+|   $\tau_{m}$ |20|10| ms  |&lt;/p&gt;
+
+&lt;h3 id=&#34;libraries&#34;&gt;Libraries&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;# LIBRARY
+
+import numpy as np # vector manipulation
+import math  # math functions
+import sys
+
+# THIS IS FOR PLOTTING
+%matplotlib inline
+import matplotlib.pyplot as plt # side-stepping mpl backend
+import warnings
+warnings.filterwarnings(&amp;quot;ignore&amp;quot;)
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;synapses&#34;&gt;Synapses&lt;/h3&gt;
+
+&lt;h3 id=&#34;neural-circuit&#34;&gt;Neural Circuit&lt;/h3&gt;
+
+&lt;p&gt;The total synpatic input current is given by
+$$ I&lt;em&gt;{syn}=I&lt;/em&gt;{ext,AMPA}(t)+I&lt;em&gt;{rec,AMPA}(t)+I&lt;/em&gt;{rec,NMDA}(t)+I_{rec,GABA}(t),$$&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;def I_syn_t(I_extAMPA,I_recAMPA,I_recNMDA,I_recGABA):
+    I_syn=I_extAMPA+I_recAMPA+I_recNMDA+I_recGABA
+    return I_syn
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;where the external AMPA input is given by
+$$ I&lt;em&gt;{ext,AMPA}=g&lt;/em&gt;{ext,AMPA}(V(t)-V_{E})s^{ext,AMPA}(t), $$&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;def I_extAMPA_t(g_extAMPA,V,s_extAMPA):
+    V_E=0
+    I_extAMPA=g_extAMPA*(V-V_E)*s_extAMPA
+    return I_extAMPA
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;the recurrent AMPA input is given by
+$$ I&lt;em&gt;{rec,AMPA}=g&lt;/em&gt;{rec,AMPA}(V(t)-V&lt;em&gt;{E})\Sigma&lt;/em&gt;{j=1}^{c_E}s^{ext,AMPA}(t), $$&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;def I_recAMPA_t(g_recAMPA,V,w,s_AMPA):
+    V_E=0
+    I_recAMPA=g_recAMPA*(V-V_E)*np.sum(np.dot(w,s_AMPA)
+    return I_recAMPA
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;  File &amp;quot;&amp;lt;ipython-input-4-de7012b96bf7&amp;gt;&amp;quot;, line 4
+    return I_recAMPA
+         ^
+SyntaxError: invalid syntax
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;the recurrent NMDA is given by
+$$ I&lt;em&gt;{rec,NMDA}=\frac{g&lt;/em&gt;{NMDA}(V(t)-V&lt;em&gt;E)}{(1+[Mg^{2+}]exp(-0.062V(t))/3.57)}\Sigma&lt;/em&gt;{j=1}^{c_E}s^{NMDA}(t), $$&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;def I_recNMDA_t(g_extNMDA,V,w,s_NMDA):
+    V_E=0
+    Mg=1
+    I_recNMDA=g_NMDA*(V-V_E)/(1+Mg*np.exp(-0.062*V)/3.57)*np.sum(np.dot(w,s_NMDA))
+    return I_recNMDA
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;the recurrent GABA is given by
+$$ I&lt;em&gt;{rec,GABA}=g&lt;/em&gt;{GABA}(V(t)-V&lt;em&gt;I)\Sigma&lt;/em&gt;{j=1}^{c&lt;em&gt;I}s^{GABA}(t), $$
+where $V&lt;/em&gt;{E}=0mV$, $V&lt;em&gt;I=-70 mV$, $w&lt;/em&gt;{j}$ are dimensionless weights&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;def I_recNMDA_t(g_extNMDA,V,w,s_NMDA):
+    V_I=-70
+    Mg=1
+    I_recNMDA=g_NMDA*(V-V_I)/(1+Mg*np.exp(-0.062*V)/3.57)*np.sum(np.dot(w,s_NMDA))
+    return I_recNMDA
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;parameters-1&#34;&gt;Parameters&lt;/h3&gt;
+
+&lt;p&gt;The parameters for the model are:&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Parameter&lt;/th&gt;
+&lt;th&gt;Exciatory&lt;/th&gt;
+&lt;th&gt;Inhibitory&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;$g_{ext,AMPA}$&lt;/td&gt;
+&lt;td&gt;2.1&lt;/td&gt;
+&lt;td&gt;1.62&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;$g_{rec,AMPA}$&lt;/td&gt;
+&lt;td&gt;0.05&lt;/td&gt;
+&lt;td&gt;0.04&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;$g_{NMDA}$&lt;/td&gt;
+&lt;td&gt;0.165&lt;/td&gt;
+&lt;td&gt;0.13&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;$g_{GABA}$&lt;/td&gt;
+&lt;td&gt;1.3&lt;/td&gt;
+&lt;td&gt;1.0&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h3 id=&#34;ampa-channels&#34;&gt;AMPA Channels&lt;/h3&gt;
+
+&lt;p&gt;$$ \frac{d s&lt;em&gt;{j}^{AMPA}(t)}{dt} =\frac{s&lt;/em&gt;{j}^{AMPA}(t)}{\tau_{AMPA}}+\Sigma_k \delta(t-t^k&lt;em&gt;j)$$
+where $\tau&lt;/em&gt;{AMPA}=2$ms adn the sum over $k$ represents a sum of spikes emitted by presynaptic neuron $j$.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;def s_AMPA(s_AMPA,SPIKES):
+    tau_AMPA=2
+    s_AMPA=-s_AMPA/tau_AMPA+np.sum(SPIKES)
+    return s_AMPA
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;nmda-channels&#34;&gt;NMDA Channels&lt;/h3&gt;
+
+&lt;p&gt;$$ \frac{d s&lt;em&gt;{j}^{NMDA}(t)}{dt} =-\frac{s&lt;/em&gt;{j}^{NMDA}(t)}{\tau&lt;em&gt;{NMDA,decay}}+\alpha(1- s&lt;/em&gt;{j}^{NMDA}(t) )$$
+$$ \frac{d x&lt;em&gt;{j}(t)}{dt} =-\frac{x&lt;/em&gt;{j}(t)}{\tau_{NMDA,rise}}+\Sigma_k \delta(t-t^k&lt;em&gt;j)$$
+where the decay time of NMDA currents $\tau&lt;/em&gt;{NMDA,decay}=100ms$, $\alpha=0.5 ms^{-1}$ and $\tau_{NMDA,rise}=2ms$&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;def s_AMPA(s_AMPA,SPIKES):
+    tau_AMPA=2
+    s_AMPA=-s_AMPA/tau_AMPA+np.sum(SPIKES)
+    return s_AMPA
+
+def s_AMPA(s_AMPA,SPIKES):
+    tau_AMPA=2
+    s_AMPA=-s_AMPA/tau_AMPA+np.sum(SPIKES)
+    return s_AMPA
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;gaba-channels&#34;&gt;GABA Channels&lt;/h3&gt;
+
+&lt;p&gt;$$ \frac{d s&lt;em&gt;{j}^{GABA}(t)}{dt} =-\frac{s&lt;/em&gt;{j}^{GABA}(t)}{\tau&lt;em&gt;{GABA}}+\alpha(1- s&lt;/em&gt;{j}^{NMDA}(t) )$$
+where the decay time of GABA currents $\tau_{GABA}=5ms$.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;def I_input_1(c_dash):
+    J_A_ext=0.00052 # nA/Hz
+    mu_0=30 # Hz
+    I_motion=J_A_ext*mu_0*(1+(c_dash)/100)
+    return I_motion
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;structure-of-recurrent-excitatory-connections-between-pyramidal-cells&#34;&gt;Structure of Recurrent Excitatory Connections between Pyramidal cells&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;def I_input_2(c_dash):
+    J_A_ext=0.00052 # nA/Hz
+    mu_0=30 # Hz
+    I_motion=J_A_ext*mu_0*(1-(c_dash)/100)
+    return I_motion
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;numerical-solution&#34;&gt;Numerical Solution&lt;/h2&gt;
+
+&lt;h3 id=&#34;second-order-runge-kutta&#34;&gt;Second Order Runge Kutta&lt;/h3&gt;
+
+&lt;p&gt;$$y_{i+1}=y_i+\frac{\Delta}{2}(k_1+k_2),$$
+$$k_1=f(x_i,y_i),$$
+$$k_2=f(x_i+\frac{\Delta}{2},y_i+\frac{\Delta}{2}k_1).$$&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;def RK2(y,x,f):
+    delta=0.05
+    k1=f(x,y)
+    k2=f(x+delta/2,y+delta/2*k1)
+    y=y+delta/2*(k1+k2)
+    return y
+
+def f(x,y):
+    return x+y
+
+RK2(1,2,f)
+
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;c_dash=0.0
+
+for i in range (0,len(time)-1):
+    if time[i] &amp;gt;=500 and time[i]&amp;lt;600:
+        c_dash=25.0
+    elif time[i] &amp;gt;=700 and time[i]&amp;lt;800:
+        c_dash=35.0
+    elif time[i] &amp;gt;=900 and time[i]&amp;lt;1000:
+        c_dash=45.0
+    elif time[i] &amp;gt;=1100 and time[i]&amp;lt;1200:
+        c_dash=25.0
+    else:
+        c_dash=0.0
+    
+    
+    Firing_target_1[i]=H(x_1[i])
+    Firing_target_2[i]=H(x_2[i])
+    
+    I_noise_1[i+1]=Background_Activity(I_noise_1[i])
+    I_noise_2[i+1]=Background_Activity(I_noise_2[i])
+    
+    I_1[i+1]=I_input_1(c_dash)
+    I_2[i+1]=I_input_2(c_dash)
+   
+    x_1[i+1],x_2[i+1]=total_synaptic_current(S_1[i],S_2[i],I_1[i+1],
+                                      I_2[i+1],I_noise_1[i+1],I_noise_2[i+1])
+    S_1[i+1]=Network_Dynamics(S_1[i],x_1[i+1])
+    S_2[i+1]=Network_Dynamics(S_2[i],x_2[i+1])
+   
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;plotting&#34;&gt;Plotting&lt;/h3&gt;
+
+&lt;h4 id=&#34;input&#34;&gt;Input&lt;/h4&gt;
+
+&lt;p&gt;&lt;img src=&#34;Wang2002/Figure2.gif&#34; alt=&#34;Neuronal Firing Type&#34; style=&#34;width: 400px;&#34;/&gt;
+&lt;em&gt; Figure 2. Model Reproduces Salient Characteristics of Decision-Correlated Neural Activity in LIP&lt;/em&gt;
+&lt;img src=&#34;Wang2002/Figure3.jpg&#34; alt=&#34;Neuronal Firing Type&#34; style=&#34;width: 400px;&#34;/&gt;
+&lt;em&gt; Figure 3. Decision Dynamics with Inputs of Zero Coherence&lt;/p&gt;
+
+&lt;p&gt;(A) Two trial simulations (red, neural group A; blue, neural group B). From top to bottom: raster, population firing rates rA and rB, stochastic inputs, and time integrals of inputs. In these two examples, decision choice (A or B) is correlated with the larger time integral of the input.&lt;/p&gt;
+
+&lt;p&gt;(B) Network dynamics in the decision space for the same two trials as in (A). Note the initial random walk along the diagonal line (when the population activity is similar for the two groups); afterwards the network converges to one of the two attractors (at [rA = 20 Hz, rB = 3 Hz] and [rA = 3 Hz, rB = 20 Hz].&lt;/p&gt;
+
+&lt;p&gt;&amp;copy; Histogram of the difference in the input time integral for trials in which the decision choice is A (red curve) or B (blue curve). For trials where attractor A wins, the average I standard deviation of ΔS is 0.8 ± 3, whereas for trials where attractor B wins, it is −0.7 ± 3 (n = 1000, σ = 10 Hz, and stimulus duration is 1 s).&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;Wang2002/Figure4.jpg&#34; alt=&#34;Neuronal Firing Type&#34; style=&#34;width: 400px;&#34;/&gt;
+&lt;em&gt; Figure 4. Performance and Population Activity Time Courses&lt;/p&gt;
+
+&lt;p&gt;(A) Neurometric functions (% correct). Data are fitted by Weibull functions. Filled circle: noisy stimuli (σ = 4 Hz) with symmetrical dependence of the mean values on input coherence (the ratio of the slopes is ρA/ρB = 1). Open circle: without noise in the stimulus (σ = 0), the network&amp;rsquo;s performance is virtually the same. Filled square: asymmetrical dependence of the mean stimuli on coherence (the ratio of the slopes is ρA/ρB = 4). The coherence threshold is slightly lower.&lt;/p&gt;
+
+&lt;p&gt;(B) Time course of population activity for four coherence levels. Black curves, the choice is the preferred stimulus; gray curves, the choice is the nonpreferred stimulus. Correct trials are indicated by solid curves, error trials by dashed curves.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;Wang2002/Figure5.gif&#34; alt=&#34;Neuronal Firing Type&#34; style=&#34;width: 400px;&#34;/&gt;
+&lt;em&gt; Figure 5. Reaction Time Simulations&lt;/p&gt;
+
+&lt;p&gt;Same parameters as in Figure 4.&lt;/p&gt;
+
+&lt;p&gt;(A) During a 2 s stimulation, at the moment when one of the two neural groups reaches a fixed threshold (15 Hz) of population firing activity, the decision is made and the deliberation or decision time is read out. The decision time is longer and more variable at low coherence (left) than at high coherence (right). This is further quantified by the decision time histogram (bottom), which has a larger mean and is broader at low coherence (left) than at high coherence (right).&lt;/p&gt;
+
+&lt;p&gt;(B) Left: Neurometric functions for the reaction time stimulation (circle) and with fixed stimulus duration of 1 s (square). The coherence threshold (defined by 82% correct) is αRT = 8.4% and αFD = 10.4%. Right: Average decision time is linear in the logarithm of the coherence level, ranging from 200 ms at high c′ to 800 ms at low c′. At very low coherence there is a saturation. Note the large standard deviation of decision time, especially at low coherence.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;Wang2002/Figure6.gif&#34; alt=&#34;Neuronal Firing Type&#34; style=&#34;width: 400px;&#34;/&gt;
+&lt;em&gt;Figure 6. Dependence of the Decision Performance on the Duration of Stimulus Presentation&lt;/p&gt;
+
+&lt;p&gt;The stimulus offset is followed by a fixed delay of 2 s, and the decision choice is based on which of the two attractors wins the competition.&lt;/p&gt;
+
+&lt;p&gt;(A) Neurometric function is shifted to the left with longer stimuli.&lt;/p&gt;
+
+&lt;p&gt;(B) Coherence threshold (α defined by 82% correct choices) decreases with the stimulus duration and plateaus for stimulus presentation longer than 1.5 s.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;Wang2002/Figure7.jpg&#34; alt=&#34;Neuronal Firing Type&#34; style=&#34;width: 400px;&#34;/&gt;
+&lt;em&gt; Figure 7. Optimal Decision-Making Performance Requires Sufficiently Strong and Slow Synaptic Reverberations&lt;/p&gt;
+
+&lt;p&gt;(A) When the strength of recurrent connections is weaker (w+ = 1.4 instead of w+ = 1.7), attractor dynamics can no longer be sustained by intrinsic network excitation. Neural activities of subpopulation A (left) and B (right) are shown at two coherence levels (1.6% and 51.2%). Same conventions as in Figure 2. In this case, there is a reduced time integration (ramping activity), categorical choice at low coherence is lost, and mnemonic persistent activity is absent during the delay period.&lt;/p&gt;
+
+&lt;p&gt;(B) Network behavior with an increased strength of recurrent connections (w+ = 1.8). Left: population activities in ten individual trials for the control (red, neural group A; blue, neural group B) and for enhanced recurrency (purple, neural group A; green, neural group B). With stronger excitatory reverberations, persistent activity level is doubled (from 20 Hz in control to 40 Hz), and the integration time of stimulus is shortened by a half. The performance is reduced from 72% to 60% correct at c′ = 6.4%. Right: the network&amp;rsquo;s performance is worse, with the neurometric function&amp;rsquo;s threshold increased from 8.4% (red) to 15.6% (purple).&lt;/em&gt;
+&lt;img src=&#34;Wang2002/Figure7.jpg&#34; alt=&#34;Neuronal Firing Type&#34; style=&#34;width: 400px;&#34;/&gt;
+&lt;em&gt; (A) The input signal is reversed during stimulation, where the signal strength is weak (6.4%) and the same before and after the reversal. Percentage choices for A and B as function of the onset time of reversal. The dependence is initially linear as a function of the time of reversal, consistent with an integration of the first and second inputs of the opposite signs. However, the behavioral performance is no longer affected if signal reversal occurs too late (e.g., the reversal time is larger than 700 ms after the stimulus onset), when the network becomes dominated by the intrinsic attractor dynamics.&lt;/p&gt;
+
+&lt;p&gt;(B) Even when the signal is reversed 1 s after the stimulus onset, the decision is still reversable by a more powerful input. Percentage choices for A and B as function of the coherence level of the reversed signal. When the new input is sufficiently large (coherence above 70%–80%), the decision is always reversed in favor of the “new evidence.”&lt;/p&gt;
+
+&lt;p&gt;&amp;copy; Examples for control (top) and signal reversal from c′ = 6.4% to −80% at 1 s after the stimulus onset (bottom). Note the slow ramp-down of population activity in group A (red), and ramp-up of population activity in group B (blue) during the second half of the stimulation when the decision is reversed.&lt;/em&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Cognitive load reduces the effects of optic flow on gait and electrocortical dynamics during treadmill walking</title>
+      <link>/publication/2018_malcolm-et-al/</link>
+      <pubDate>Mon, 01 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/2018_malcolm-et-al/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Visual–Vestibular Integration During Self-Motion Perception in Younger and Older Adults</title>
+      <link>/publication/2017_aging_heading/</link>
+      <pubDate>Sat, 01 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/2017_aging_heading/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Long-term test-retest reliability of event-related potential (ERP) recordings during treadmill walking using the mobile brain/body imaging (MoBI) approach</title>
+      <link>/publication/2017_malcolm-et-al/</link>
+      <pubDate>Mon, 01 May 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/2017_malcolm-et-al/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Measurement &amp; analysis of the temporal discrimination threshold applied to cervical dystonia</title>
+      <link>/publication/beck-2017-jove/</link>
+      <pubDate>Mon, 01 May 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/beck-2017-jove/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Motor Preparation Rather Than Decision-Making Differentiates Parkinson&#39;s Disease Patients With And Without Freezing of Gait</title>
+      <link>/publication/2017_butler-fearon-p3/</link>
+      <pubDate>Wed, 01 Mar 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/2017_butler-fearon-p3/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>An Examination of the Neural Unreliability Thesis of Autism</title>
+      <link>/publication/2016_butler-et-al-unreliability-thesis/</link>
+      <pubDate>Thu, 01 Dec 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/2016_butler-et-al-unreliability-thesis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Exploring the unknown: electrophysiological and behavioural measures of visuospatial learning</title>
+      <link>/publication/2015_quinlivanetal_ejn/</link>
+      <pubDate>Sun, 01 May 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/2015_quinlivanetal_ejn/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Academic: the website builder for Hugo</title>
+      <link>/post/getting-started/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/post/getting-started/</guid>
+      <description>
+
+&lt;p&gt;&lt;strong&gt;Create a free website with Academic using Markdown, Jupyter, or RStudio. Choose a beautiful color theme and build anything with the Page Builder - over 40 &lt;em&gt;widgets&lt;/em&gt;, &lt;em&gt;themes&lt;/em&gt;, and &lt;em&gt;language packs&lt;/em&gt; included!&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://academic-demo.netlify.com/&#34; target=&#34;_blank&#34;&gt;Check out the latest &lt;strong&gt;demo&lt;/strong&gt;&lt;/a&gt; of what you&amp;rsquo;ll get in less than 10 minutes, or &lt;a href=&#34;https://sourcethemes.com/academic/#expo&#34; target=&#34;_blank&#34;&gt;view the &lt;strong&gt;showcase&lt;/strong&gt;&lt;/a&gt; of personal, project, and business sites.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#install&#34;&gt;&lt;strong&gt;Setup Academic&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://sourcethemes.com/academic/docs/get-started/&#34; target=&#34;_blank&#34;&gt;&lt;strong&gt;Get Started&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://sourcethemes.com/academic/docs/&#34; target=&#34;_blank&#34;&gt;View the documentation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://discuss.gohugo.io/&#34; target=&#34;_blank&#34;&gt;Ask a question&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/gcushen/hugo-academic/issues&#34; target=&#34;_blank&#34;&gt;Request a feature or report a bug&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Updating? View the &lt;a href=&#34;https://sourcethemes.com/academic/docs/update/&#34; target=&#34;_blank&#34;&gt;Update Guide&lt;/a&gt; and &lt;a href=&#34;https://sourcethemes.com/academic/updates/&#34; target=&#34;_blank&#34;&gt;Release Notes&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Support development of Academic:
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://paypal.me/cushen&#34; target=&#34;_blank&#34;&gt;Donate a coffee&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.patreon.com/cushen&#34; target=&#34;_blank&#34;&gt;Become a backer on Patreon&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.redbubble.com/people/neutreno/works/34387919-academic&#34; target=&#34;_blank&#34;&gt;Decorate your laptop or journal with an Academic sticker&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://academic.threadless.com/&#34; target=&#34;_blank&#34;&gt;Wear the T-shirt&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/gcushen/hugo-academic/&#34; target=&#34;_blank&#34;&gt;&lt;img src=&#34;https://raw.githubusercontent.com/gcushen/hugo-academic/master/academic.png&#34; alt=&#34;Screenshot&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Key features:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Page builder&lt;/strong&gt; - Create &lt;em&gt;anything&lt;/em&gt; with &lt;a href=&#34;https://sourcethemes.com/academic/docs/page-builder/&#34; target=&#34;_blank&#34;&gt;&lt;strong&gt;widgets&lt;/strong&gt;&lt;/a&gt; and &lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34;&gt;&lt;strong&gt;elements&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Edit any type of content&lt;/strong&gt; - Blog posts, publications, talks, slides, projects, and more!&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Create content&lt;/strong&gt; in &lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34;&gt;&lt;strong&gt;Markdown&lt;/strong&gt;&lt;/a&gt;, &lt;a href=&#34;https://sourcethemes.com/academic/docs/jupyter/&#34; target=&#34;_blank&#34;&gt;&lt;strong&gt;Jupyter&lt;/strong&gt;&lt;/a&gt;, or &lt;a href=&#34;https://sourcethemes.com/academic/docs/install/#install-with-rstudio&#34; target=&#34;_blank&#34;&gt;&lt;strong&gt;RStudio&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Plugin System&lt;/strong&gt; - Fully customizable &lt;a href=&#34;https://sourcethemes.com/academic/themes/&#34; target=&#34;_blank&#34;&gt;&lt;strong&gt;color&lt;/strong&gt; and &lt;strong&gt;font themes&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Display Code and Math&lt;/strong&gt; - Code highlighting and &lt;a href=&#34;https://en.wikibooks.org/wiki/LaTeX/Mathematics&#34; target=&#34;_blank&#34;&gt;LaTeX math&lt;/a&gt; supported&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Integrations&lt;/strong&gt; - &lt;a href=&#34;https://analytics.google.com&#34; target=&#34;_blank&#34;&gt;Google Analytics&lt;/a&gt;, &lt;a href=&#34;https://disqus.com&#34; target=&#34;_blank&#34;&gt;Disqus commenting&lt;/a&gt;, Maps, Contact Forms, and more!&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Beautiful Site&lt;/strong&gt; - Simple and refreshing one page design&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Industry-Leading SEO&lt;/strong&gt; - Help get your website found on search engines and social media&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Media Galleries&lt;/strong&gt; - Display your images and videos with captions in a customizable gallery&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Mobile Friendly&lt;/strong&gt; - Look amazing on every screen with a mobile friendly version of your site&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Multi-language&lt;/strong&gt; - 15+ language packs including English, 中文, and Português&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Multi-user&lt;/strong&gt; - Each author gets their own profile page&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Privacy Pack&lt;/strong&gt; - Assists with GDPR&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Stand Out&lt;/strong&gt; - Bring your site to life with animation, parallax backgrounds, and scroll effects&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;One-Click Deployment&lt;/strong&gt; - No servers. No databases. Only files.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;color-themes&#34;&gt;Color Themes&lt;/h2&gt;
+
+&lt;p&gt;Academic comes with &lt;strong&gt;day (light) and night (dark) mode&lt;/strong&gt; built-in. Click the sun/moon icon in the top right of the &lt;a href=&#34;https://academic-demo.netlify.com/&#34; target=&#34;_blank&#34;&gt;Demo&lt;/a&gt; to see it in action!&lt;/p&gt;
+
+&lt;p&gt;Choose a stunning color and font theme for your site. Themes are fully customizable and include:&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+&lt;div class=&#34;gallery&#34;&gt;
+
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+    
+  &lt;a data-fancybox=&#34;gallery-gallery&#34; href=&#34;/post/getting-started/gallery/theme-1950s.png&#34; data-caption=&#34;1950s&#34;&gt;
+  &lt;img src=&#34;/post/getting-started/gallery/theme-1950s_huaf5482f8cea0c5a703a328640e3b7509_21614_0x190_resize_lanczos_2.png&#34; alt=&#34;&#34;&gt;
+  &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+    
+  &lt;a data-fancybox=&#34;gallery-gallery&#34; href=&#34;/post/getting-started/gallery/theme-apogee.png&#34; data-caption=&#34;Apogee&#34;&gt;
+  &lt;img src=&#34;/post/getting-started/gallery/theme-apogee_hu4b45d99db97150df01464c393bfd17d4_24119_0x190_resize_lanczos_2.png&#34; alt=&#34;&#34;&gt;
+  &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+    
+  &lt;a data-fancybox=&#34;gallery-gallery&#34; href=&#34;/post/getting-started/gallery/theme-coffee-playfair.png&#34; data-caption=&#34;Coffee theme with Playfair font&#34;&gt;
+  &lt;img src=&#34;/post/getting-started/gallery/theme-coffee-playfair_hu446a8f670cc5622adcc77b97ba95f6c5_22462_0x190_resize_lanczos_2.png&#34; alt=&#34;&#34;&gt;
+  &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+    
+  &lt;a data-fancybox=&#34;gallery-gallery&#34; href=&#34;/post/getting-started/gallery/theme-cupcake.png&#34; data-caption=&#34;Cupcake&#34;&gt;
+  &lt;img src=&#34;/post/getting-started/gallery/theme-cupcake_hueba8cfa8cfbc7543924fcbf387a99e92_23986_0x190_resize_lanczos_2.png&#34; alt=&#34;&#34;&gt;
+  &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+    
+  &lt;a data-fancybox=&#34;gallery-gallery&#34; href=&#34;/post/getting-started/gallery/theme-dark.png&#34; data-caption=&#34;Dark&#34;&gt;
+  &lt;img src=&#34;/post/getting-started/gallery/theme-dark_hu1e8601ecc47f58eada7743fdcd709d3d_21456_0x190_resize_lanczos_2.png&#34; alt=&#34;&#34;&gt;
+  &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+    
+  &lt;a data-fancybox=&#34;gallery-gallery&#34; href=&#34;/post/getting-started/gallery/theme-default.png&#34; data-caption=&#34;Default&#34;&gt;
+  &lt;img src=&#34;/post/getting-started/gallery/theme-default_huba6228b7bdf30e2f03f12ea91b2cba0d_21751_0x190_resize_lanczos_2.png&#34; alt=&#34;&#34;&gt;
+  &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+    
+  &lt;a data-fancybox=&#34;gallery-gallery&#34; href=&#34;/post/getting-started/gallery/theme-forest.png&#34; data-caption=&#34;Forest&#34;&gt;
+  &lt;img src=&#34;/post/getting-started/gallery/theme-forest_hu4f093a1c683134431456584193ea41ee_21797_0x190_resize_lanczos_2.png&#34; alt=&#34;&#34;&gt;
+  &lt;/a&gt;
+  
+    
+    
+    
+    
+    
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+    
+  &lt;a data-fancybox=&#34;gallery-gallery&#34; href=&#34;/post/getting-started/gallery/theme-ocean.png&#34; data-caption=&#34;Ocean&#34;&gt;
+  &lt;img src=&#34;/post/getting-started/gallery/theme-ocean_hu14831ccafc2219f30a7a096fa7617e01_21760_0x190_resize_lanczos_2.png&#34; alt=&#34;&#34;&gt;
+  &lt;/a&gt;
+  
+
+  
+&lt;/div&gt;
+
+&lt;h2 id=&#34;ecosystem&#34;&gt;Ecosystem&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://github.com/sourcethemes/academic-admin&#34; target=&#34;_blank&#34;&gt;Academic Admin&lt;/a&gt;:&lt;/strong&gt; An admin tool to import publications from BibTeX or import assets for an offline site&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://github.com/sourcethemes/academic-scripts&#34; target=&#34;_blank&#34;&gt;Academic Scripts&lt;/a&gt;:&lt;/strong&gt; Scripts to help migrate content to new versions of Academic&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;install&#34;&gt;Install&lt;/h2&gt;
+
+&lt;p&gt;You can choose from one of the following four methods to install:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://sourcethemes.com/academic/docs/install/#install-with-web-browser&#34; target=&#34;_blank&#34;&gt;&lt;strong&gt;one-click install using your web browser (recommended)&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://sourcethemes.com/academic/docs/install/#install-with-git&#34; target=&#34;_blank&#34;&gt;install on your computer using &lt;strong&gt;Git&lt;/strong&gt; with the Command Prompt/Terminal app&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://sourcethemes.com/academic/docs/install/#install-with-zip&#34; target=&#34;_blank&#34;&gt;install on your computer by downloading the &lt;strong&gt;ZIP files&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://sourcethemes.com/academic/docs/install/#install-with-rstudio&#34; target=&#34;_blank&#34;&gt;install on your computer with &lt;strong&gt;RStudio&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Then &lt;a href=&#34;https://sourcethemes.com/academic/docs/get-started/&#34; target=&#34;_blank&#34;&gt;personalize and deploy your new site&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;updating&#34;&gt;Updating&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://sourcethemes.com/academic/docs/update/&#34; target=&#34;_blank&#34;&gt;View the Update Guide&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Feel free to &lt;em&gt;star&lt;/em&gt; the project on &lt;a href=&#34;https://github.com/gcushen/hugo-academic/&#34; target=&#34;_blank&#34;&gt;Github&lt;/a&gt; to help keep track of &lt;a href=&#34;https://sourcethemes.com/academic/updates&#34; target=&#34;_blank&#34;&gt;updates&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;license&#34;&gt;License&lt;/h2&gt;
+
+&lt;p&gt;Copyright 2016-present &lt;a href=&#34;https://georgecushen.com&#34; target=&#34;_blank&#34;&gt;George Cushen&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Released under the &lt;a href=&#34;https://github.com/gcushen/hugo-academic/blob/master/LICENSE.md&#34; target=&#34;_blank&#34;&gt;MIT&lt;/a&gt; license.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Atypical visual and somatosensory adaptation in schizophrenia-spectrum disorders</title>
+      <link>/publication/2016_andrade-et-al-schz/</link>
+      <pubDate>Tue, 01 Mar 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/2016_andrade-et-al-schz/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The neural dynamics of somatosensory processing and adaptation across childhood: a high-density electrical mapping study</title>
+      <link>/publication/2015_neha-somagatingdevelopment/</link>
+      <pubDate>Tue, 01 Mar 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/2015_neha-somagatingdevelopment/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Age related sexual dimorphism in temporal discrimination and in adult onset dystonia suggests GABAergic mechanisms</title>
+      <link>/publication/2015_hutchinson-sexual-dimorphism-and-gaba/</link>
+      <pubDate>Tue, 01 Dec 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/2015_hutchinson-sexual-dimorphism-and-gaba/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Spatio-temporal dynamics of adaptation in the human visual system; a high-density electrical mapping study</title>
+      <link>/publication/2015_andrade-et-al-ejn/</link>
+      <pubDate>Tue, 01 Dec 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/2015_andrade-et-al-ejn/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Audiovisual Processing is Abnormal in Parkinson’s Disease and Correlates with Freezing of Gait and Disease Duration</title>
+      <link>/publication/2015_fearon_avsrt_pd/</link>
+      <pubDate>Tue, 01 Sep 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/2015_fearon_avsrt_pd/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Keeping in touch with the visual system: spatial alignment and multisensory integration of visual-somatosensory inputs</title>
+      <link>/publication/2015_mahoneyetal/</link>
+      <pubDate>Sat, 01 Aug 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/2015_mahoneyetal/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The aging brain shows less flexible reallocation of cognitive resources during dual-task walking: a mobile brain/body imaging (MoBI) study</title>
+      <link>/publication/2015_malcolm-et-al/</link>
+      <pubDate>Sat, 01 Aug 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/2015_malcolm-et-al/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The impact of dual tasking on cognitive performance in a Parkinson&#39;s disease cohort with and without freezing of gait: An EEG and behavioral based approach</title>
+      <link>/publication/2015_waechteretal-ieee_neuraleng/</link>
+      <pubDate>Wed, 01 Jul 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/2015_waechteretal-ieee_neuraleng/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Neuro-Oscillatory Phase Alignment Drives Speeded Multisensory Response Times: An Electro-Corticographic Investigation</title>
+      <link>/publication/2015_mercier-et-al_avsrt/</link>
+      <pubDate>Mon, 01 Jun 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/2015_mercier-et-al_avsrt/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Non-parametric bootstrapping method for measuring the temporal discrimination threshold for movement disorders</title>
+      <link>/publication/2015_butler-et-al-tdt/</link>
+      <pubDate>Mon, 01 Jun 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/2015_butler-et-al-tdt/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Congruent Visual Speech Enhances Cortical Entrainment to Continuous Auditory Speech in Noise-Free Conditions</title>
+      <link>/publication/2015_crossebutlerlalor/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/2015_crossebutlerlalor/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Optimal visual–vestibular integration under conditions of conflicting intersensory motion profiles</title>
+      <link>/publication/2014_butler_et_alcamposbulthoff2014_velocity-mismatch/</link>
+      <pubDate>Sat, 01 Nov 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/2014_butler_et_alcamposbulthoff2014_velocity-mismatch/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Atypical multisensory integration in Niemann-Pick type C disease – towards potential biomarkers</title>
+      <link>/publication/2014_andradeetal2014_npc_avsrt/</link>
+      <pubDate>Mon, 01 Sep 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/2014_andradeetal2014_npc_avsrt/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Neurophysiological Indices of Atypical Auditory Processing and Multisensory Integration are Associated with Symptom Severity in Autism</title>
+      <link>/publication/2015_brandwein_etal/</link>
+      <pubDate>Mon, 01 Sep 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/2015_brandwein_etal/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Recalibration of inhibitory control systems during walking-related dual-task interference: A Mobile Brain-Body Imaging (MOBI) Study</title>
+      <link>/publication/2014_desanctis-et-al/</link>
+      <pubDate>Tue, 01 Jul 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/2014_desanctis-et-al/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The effort to close the gap; Tracking the development of illusory contour processing from childhood to adulthood with high-density electrical mapping</title>
+      <link>/publication/2014_altschuler-et-al/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/2014_altschuler-et-al/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Auditory-driven phase reset in visual cortex: Human electrocorticography reveals mechanisms of early multisensory integration</title>
+      <link>/publication/2013_mercier-et-al.-avsrt/</link>
+      <pubDate>Tue, 01 Oct 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/2013_mercier-et-al.-avsrt/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Cortical cross-frequency coupling predicts perceptual outcomes</title>
+      <link>/publication/2013_fiebelkorn-et-al-cortical-cross-frequency/</link>
+      <pubDate>Mon, 01 Apr 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/2013_fiebelkorn-et-al-cortical-cross-frequency/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Multisensory Representation of Frequency across Audition and Touch; High Density Electrical Mapping Reveals Early Sensory-Perceptual Coupling</title>
+      <link>/publication/2012_butler-et-al-jon/</link>
+      <pubDate>Sat, 01 Sep 2012 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/2012_butler-et-al-jon/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Multisensory integration in the estimation of walked distances</title>
+      <link>/publication/2012_camposbutlerbulthoff_ebr_2012/</link>
+      <pubDate>Sat, 01 Sep 2012 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/2012_camposbutlerbulthoff_ebr_2012/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Mobile Brain/Body Imaging (MoBI): High-density electrical mapping of inhibitory processes during walking.</title>
+      <link>/publication/2012_desanctis-et-al-mobi-ieee-paper/</link>
+      <pubDate>Wed, 01 Aug 2012 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/2012_desanctis-et-al-mobi-ieee-paper/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Neural correlates of oddball detection in self-motion heading: a high-density event-related potential study of vestibular integration</title>
+      <link>/publication/2012_nolan-butler-et-al-ebr/</link>
+      <pubDate>Tue, 01 May 2012 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/2012_nolan-butler-et-al-ebr/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The Development of Multisensory Integration in High-Functioning Autism; High-Density Electrical Mapping and Psychophysical Measures Reveal Impairments in the Processing of Audiovisual Inputs</title>
+      <link>/publication/2012_brandwein_etal/</link>
+      <pubDate>Sun, 01 Jan 2012 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/2012_brandwein_etal/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ready, Set, Reset; Stimulus-Locked Periodicity in Behavioral Performance Demonstrates the Consequences of Cross-Sensory Phase Rese</title>
+      <link>/publication/2011_fiebelkornetal2012_jon/</link>
+      <pubDate>Fri, 01 Jul 2011 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/2011_fiebelkornetal2012_jon/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The Role of Stereo Vision in Visual–Vestibular Integration</title>
+      <link>/publication/2012_butleretal2012/</link>
+      <pubDate>Fri, 01 Jul 2011 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/2012_butleretal2012/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Electrophysiological source analysis of passive self-motion</title>
+      <link>/publication/2011_nolan-et-al-electrophysiological-source-analysis/</link>
+      <pubDate>Sun, 01 May 2011 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/2011_nolan-et-al-electrophysiological-source-analysis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Motion P3 demonstrates neural nature of motion ERPs</title>
+      <link>/publication/2011_nolan-et-al-motion-p3-demonstrates-neural/</link>
+      <pubDate>Sun, 01 May 2011 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/2011_nolan-et-al-motion-p3-demonstrates-neural/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Common or Redundant Neural Circuits for Duration Processing across Audition and Touch</title>
+      <link>/publication/2011_butler-et-al-jon/</link>
+      <pubDate>Fri, 01 Apr 2011 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/2011_butler-et-al-jon/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Auditory facilitation of visual-target detection persists regardless of retinal eccentricity and despite wide audiovisual misalignments</title>
+      <link>/publication/2011_fiebelkornetal2011_ebr/</link>
+      <pubDate>Tue, 01 Mar 2011 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/2011_fiebelkornetal2011_ebr/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Bayesian integration of visual and vestibular signals for heading</title>
+      <link>/publication/2010_journalofvision/</link>
+      <pubDate>Wed, 01 Sep 2010 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/2010_journalofvision/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Contributions of visual and proprioceptive information to travelled distance estimation during changing sensory congruencies</title>
+      <link>/publication/2014_camposetal2014/</link>
+      <pubDate>Wed, 01 Sep 2010 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/2014_camposetal2014/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Does jerk have to be considered in linear motion simulation?</title>
+      <link>/publication/2009_soykaetal2009_jerk/</link>
+      <pubDate>Tue, 01 Sep 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/2009_soykaetal2009_jerk/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Acquisition of human EEG data during linear self-motion on a Stewart platform</title>
+      <link>/publication/2009_nolan-et-al/</link>
+      <pubDate>Fri, 01 May 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/2009_nolan-et-al/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Control of a Lateral Helicopter Side-step Maneuver on an Anthropomorphic Robot</title>
+      <link>/publication/2007_beykirchetal2007/</link>
+      <pubDate>Mon, 01 Jan 2007 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/2007_beykirchetal2007/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>VISUAL VESTIBULAR INTERACTIONS FOR SELF MOTION ESTIMATION</title>
+      <link>/publication/2006_butleretal_2006_dsc/</link>
+      <pubDate>Fri, 01 Sep 2006 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/2006_butleretal_2006_dsc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/authors/admin/</link>
+      <pubDate>Mon, 01 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/authors/admin/</guid>
+      <description>&lt;p&gt;Since 2015, I have been at the School of Mathematical Sciences in Technological University Dublin. I teach &lt;a href=&#34;courses/&#34;&gt;Statistics, Numerical Analysis and Mathematics&lt;/a&gt; to undergraduate and graduate students. &lt;a href=&#34;projects
+/&#34;&gt;My research&lt;/a&gt; applies statistical and numerical methods to basic and clinical research in Neuroscience, Neurology and Optometry. I&amp;rsquo;m also involved in &lt;a href=&#34;talk/&#34;&gt; Science Communication&lt;/a&gt; and have presented at a number of events like a Pint of Science, Bright Club, Maths Week, Science Week and I give talks at primary and secondary schools on the role of Mathematics in Neuroscience.&lt;/p&gt;
+
+&lt;p&gt;My undergraduate in Mathematics, MSc and PhD in Numerical Analysis supervised by John J Miller at Trinity College Dublin gave me a strong theoretical, statistical and computational grounding but I wished for more tangible applications. For this reason, I took a side step in postdoctoral positions to basic and translation experimental research.&lt;/p&gt;
+
+&lt;p&gt;My first postdoctoral fellowship with Heinrich Bülthoff (Max Planck Institute for Biological Cybernetics) applying Virtual Reality, Psychophysics and Bayesian Methods to investigate &lt;a href=&#34;project/VisualVestibular&#34;&gt;visual-vestibular integration&lt;/a&gt; for self-motion perception.&lt;/p&gt;
+
+&lt;p&gt;From 2009-2013, I was a postdoctoral fellowship and an instructor with John Foxe and Sophie Molholm (Albert Einstein College of Medicine), I investigated sensory and multisensory integration and development in neurotypicals and people with &lt;a href=&#34;project/MultiSensoryDevelopment&#34;&gt;Autism &lt;/a&gt;using behaviroual and neuroimaging  methods (EEG, ECoG, fMRI). I also setup a &lt;a href=&#34;project/MobileBrainImaging&#34;&gt;Mobile Brain Imaging (MoBI)&lt;/a&gt; virtual reality room and was involved in some of the first studies to acquire EEG while walking in young and older participants.&lt;/p&gt;
+
+&lt;p&gt;From 2013-2015 I was a postdoctoral fellow and a lectuer in Neural Engineering at the Trinity Centre for Bioengineering with Richard Reilly. I applied my methods to investigate Movement Disorders  such as &lt;a href=&#34;project/ParkinsonsDisease&#34;&gt;Parkinson&amp;rsquo;s Disease &lt;/a&gt; and &lt;a href=&#34;project/Dystonia&#34;&gt;Dystonia&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

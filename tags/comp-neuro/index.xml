@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Comp Neuro on John S Butler</title>
+    <link>/tags/comp-neuro/</link>
+    <description>Recent content in Comp Neuro on John S Butler</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 27 Apr 2016 00:00:00 +0000</lastBuildDate>
+    
+	    <atom:link href="/tags/comp-neuro/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Computational Neuroscience</title>
+      <link>/project/comp-neuro/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/project/comp-neuro/</guid>
+      <description>&lt;p&gt;This is an ongoing, possibly sisyphus, project in which I am writing iPython notebooks of mathematical models in Neuroscience. These notebooks will be interactive webpages to illustrate and hopefully demystify the different mathematical models &lt;a href=&#34;../post/&#34;&gt;notebooks&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

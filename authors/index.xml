@@ -1,0 +1,781 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Authors on John S Butler</title>
+    <link>/authors/</link>
+    <description>Recent content in Authors on John S Butler</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 01 Jul 2019 00:00:00 +0000</lastBuildDate>
+    
+	    <atom:link href="/authors/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>/authors/admin/</link>
+      <pubDate>Mon, 01 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/authors/admin/</guid>
+      <description>&lt;p&gt;Since 2015, I have been at the School of Mathematical Sciences in Technological University Dublin. I teach &lt;a href=&#34;courses/&#34;&gt;Statistics, Numerical Analysis and Mathematics&lt;/a&gt; to undergraduate and graduate students. &lt;a href=&#34;projects
+/&#34;&gt;My research&lt;/a&gt; applies statistical and numerical methods to basic and clinical research in Neuroscience, Neurology and Optometry. I&amp;rsquo;m also involved in &lt;a href=&#34;talk/&#34;&gt; Science Communication&lt;/a&gt; and have presented at a number of events like a Pint of Science, Bright Club, Maths Week, Science Week and I give talks at primary and secondary schools on the role of Mathematics in Neuroscience.&lt;/p&gt;
+
+&lt;p&gt;My undergraduate in Mathematics, MSc and PhD in Numerical Analysis supervised by John J Miller at Trinity College Dublin gave me a strong theoretical, statistical and computational grounding but I wished for more tangible applications. For this reason, I took a side step in postdoctoral positions to basic and translation experimental research.&lt;/p&gt;
+
+&lt;p&gt;My first postdoctoral fellowship with Heinrich Bülthoff (Max Planck Institute for Biological Cybernetics) applying Virtual Reality, Psychophysics and Bayesian Methods to investigate &lt;a href=&#34;project/VisualVestibular&#34;&gt;visual-vestibular integration&lt;/a&gt; for self-motion perception.&lt;/p&gt;
+
+&lt;p&gt;From 2009-2013, I was a postdoctoral fellowship and an instructor with John Foxe and Sophie Molholm (Albert Einstein College of Medicine), I investigated sensory and multisensory integration and development in neurotypicals and people with &lt;a href=&#34;project/MultiSensoryDevelopment&#34;&gt;Autism &lt;/a&gt;using behaviroual and neuroimaging  methods (EEG, ECoG, fMRI). I also setup a &lt;a href=&#34;project/MobileBrainImaging&#34;&gt;Mobile Brain Imaging (MoBI)&lt;/a&gt; virtual reality room and was involved in some of the first studies to acquire EEG while walking in young and older participants.&lt;/p&gt;
+
+&lt;p&gt;From 2013-2015 I was a postdoctoral fellow and a lectuer in Neural Engineering at the Trinity Centre for Bioengineering with Richard Reilly. I applied my methods to investigate Movement Disorders  such as &lt;a href=&#34;project/ParkinsonsDisease&#34;&gt;Parkinson&amp;rsquo;s Disease &lt;/a&gt; and &lt;a href=&#34;project/Dystonia&#34;&gt;Dystonia&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Conor Fearon</title>
+      <link>/authors/conor-fearon/</link>
+      <pubDate>Mon, 01 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/authors/conor-fearon/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Isabelle Killane</title>
+      <link>/authors/isabelle-killane/</link>
+      <pubDate>Mon, 01 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/authors/isabelle-killane/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Richard B. Reilly</title>
+      <link>/authors/richard-b.-reilly/</link>
+      <pubDate>Mon, 01 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/authors/richard-b.-reilly/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Saskia M. Waechter</title>
+      <link>/authors/saskia-m.-waechter/</link>
+      <pubDate>Mon, 01 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/authors/saskia-m.-waechter/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Timothy Lynch</title>
+      <link>/authors/timothy-lynch/</link>
+      <pubDate>Mon, 01 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/authors/timothy-lynch/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Brenda R Malcolm</title>
+      <link>/authors/brenda-r-malcolm/</link>
+      <pubDate>Mon, 01 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/authors/brenda-r-malcolm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>John J Foxe</title>
+      <link>/authors/john-j-foxe/</link>
+      <pubDate>Mon, 01 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/authors/john-j-foxe/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Pierfilippo De Sanctis</title>
+      <link>/authors/pierfilippo-de-sanctis/</link>
+      <pubDate>Mon, 01 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/authors/pierfilippo-de-sanctis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sophie Molholm</title>
+      <link>/authors/sophie-molholm/</link>
+      <pubDate>Mon, 01 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/authors/sophie-molholm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Jennifer L Campos</title>
+      <link>/authors/jennifer-l-campos/</link>
+      <pubDate>Sat, 01 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/authors/jennifer-l-campos/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Robert Ramkhalawansingh</title>
+      <link>/authors/robert-ramkhalawansingh/</link>
+      <pubDate>Sat, 01 Sep 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/authors/robert-ramkhalawansingh/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Brendan Quinlivan</title>
+      <link>/authors/brendan-quinlivan/</link>
+      <pubDate>Mon, 01 May 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/authors/brendan-quinlivan/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Dorina Birsanu</title>
+      <link>/authors/dorina-birsanu/</link>
+      <pubDate>Mon, 01 May 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/authors/dorina-birsanu/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Eavan M McGovern</title>
+      <link>/authors/eavan-m-mcgovern/</link>
+      <pubDate>Mon, 01 May 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/authors/eavan-m-mcgovern/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ines Beiser</title>
+      <link>/authors/ines-beiser/</link>
+      <pubDate>Mon, 01 May 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/authors/ines-beiser/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Michael Hutchinson</title>
+      <link>/authors/michael-hutchinson/</link>
+      <pubDate>Mon, 01 May 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/authors/michael-hutchinson/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Rebecca B Beck</title>
+      <link>/authors/rebecca-b-beck/</link>
+      <pubDate>Mon, 01 May 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/authors/rebecca-b-beck/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Richard B Reilly</title>
+      <link>/authors/richard-b-reilly/</link>
+      <pubDate>Mon, 01 May 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/authors/richard-b-reilly/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sean O&#39;Riordan</title>
+      <link>/authors/sean-oriordan/</link>
+      <pubDate>Mon, 01 May 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/authors/sean-oriordan/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Shruti Narasimham</title>
+      <link>/authors/shruti-narasimham/</link>
+      <pubDate>Mon, 01 May 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/authors/shruti-narasimham/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Wenzhu B. Mowrey</title>
+      <link>/authors/wenzhu-b.-mowrey/</link>
+      <pubDate>Mon, 01 May 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/authors/wenzhu-b.-mowrey/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Gizely N Andrade</title>
+      <link>/authors/gizely-n-andrade/</link>
+      <pubDate>Thu, 01 Dec 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/authors/gizely-n-andrade/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Abdur Raquib Ridwan</title>
+      <link>/authors/abdur-raquib-ridwan/</link>
+      <pubDate>Sun, 01 May 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/authors/abdur-raquib-ridwan/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Eavan McGovern</title>
+      <link>/authors/eavan-mcgovern/</link>
+      <pubDate>Sun, 01 May 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/authors/eavan-mcgovern/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Laura Williams</title>
+      <link>/authors/laura-williams/</link>
+      <pubDate>Sun, 01 May 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/authors/laura-williams/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Frantzy Acluche</title>
+      <link>/authors/frantzy-acluche/</link>
+      <pubDate>Tue, 01 Mar 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/authors/frantzy-acluche/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Gregory A Peters</title>
+      <link>/authors/gregory-a-peters/</link>
+      <pubDate>Tue, 01 Mar 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/authors/gregory-a-peters/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Neha Uppal</title>
+      <link>/authors/neha-uppal/</link>
+      <pubDate>Tue, 01 Mar 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/authors/neha-uppal/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Cathal Walsh</title>
+      <link>/authors/cathal-walsh/</link>
+      <pubDate>Tue, 01 Dec 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/authors/cathal-walsh/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Dan G Healy</title>
+      <link>/authors/dan-g-healy/</link>
+      <pubDate>Tue, 01 Dec 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/authors/dan-g-healy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Fiona Molloy</title>
+      <link>/authors/fiona-molloy/</link>
+      <pubDate>Tue, 01 Dec 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/authors/fiona-molloy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Gizely N. Andrade</title>
+      <link>/authors/gizely-n.-andrade/</link>
+      <pubDate>Tue, 01 Dec 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/authors/gizely-n.-andrade/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Helena Moore</title>
+      <link>/authors/helena-moore/</link>
+      <pubDate>Tue, 01 Dec 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/authors/helena-moore/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ines M Beiser</title>
+      <link>/authors/ines-m-beiser/</link>
+      <pubDate>Tue, 01 Dec 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/authors/ines-m-beiser/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>John J. Foxe</title>
+      <link>/authors/john-j.-foxe/</link>
+      <pubDate>Tue, 01 Dec 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/authors/john-j.-foxe/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Manuel R. Mercier</title>
+      <link>/authors/manuel-r.-mercier/</link>
+      <pubDate>Tue, 01 Dec 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/authors/manuel-r.-mercier/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Richard Walsh</title>
+      <link>/authors/richard-walsh/</link>
+      <pubDate>Tue, 01 Dec 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/authors/richard-walsh/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sean O Riordan</title>
+      <link>/authors/sean-o-riordan/</link>
+      <pubDate>Tue, 01 Dec 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/authors/sean-o-riordan/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tim Lynch</title>
+      <link>/authors/tim-lynch/</link>
+      <pubDate>Tue, 01 Dec 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/authors/tim-lynch/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Louis Newman</title>
+      <link>/authors/louis-newman/</link>
+      <pubDate>Tue, 01 Sep 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/authors/louis-newman/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Brenda Malcolm</title>
+      <link>/authors/brenda-malcolm/</link>
+      <pubDate>Sat, 01 Aug 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/authors/brenda-malcolm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Jeannette R. Mahoney</title>
+      <link>/authors/jeannette-r.-mahoney/</link>
+      <pubDate>Sat, 01 Aug 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/authors/jeannette-r.-mahoney/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Manuel Gomez-Ramirez</title>
+      <link>/authors/manuel-gomez-ramirez/</link>
+      <pubDate>Sat, 01 Aug 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/authors/manuel-gomez-ramirez/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Pejman Sehatpour</title>
+      <link>/authors/pejman-sehatpour/</link>
+      <pubDate>Sat, 01 Aug 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/authors/pejman-sehatpour/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Walter Ritter</title>
+      <link>/authors/walter-ritter/</link>
+      <pubDate>Sat, 01 Aug 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/authors/walter-ritter/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Conor McDonnell</title>
+      <link>/authors/conor-mcdonnell/</link>
+      <pubDate>Wed, 01 Jul 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/authors/conor-mcdonnell/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>J Gallego</title>
+      <link>/authors/j-gallego/</link>
+      <pubDate>Wed, 01 Jul 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/authors/j-gallego/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Saskia M Waechter</title>
+      <link>/authors/saskia-m-waechter/</link>
+      <pubDate>Wed, 01 Jul 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/authors/saskia-m-waechter/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Anna Molloy</title>
+      <link>/authors/anna-molloy/</link>
+      <pubDate>Mon, 01 Jun 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/authors/anna-molloy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ian C Fiebelkorn</title>
+      <link>/authors/ian-c-fiebelkorn/</link>
+      <pubDate>Mon, 01 Jun 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/authors/ian-c-fiebelkorn/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Manuel R Mercier</title>
+      <link>/authors/manuel-r-mercier/</link>
+      <pubDate>Mon, 01 Jun 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/authors/manuel-r-mercier/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Okka Kimmich</title>
+      <link>/authors/okka-kimmich/</link>
+      <pubDate>Mon, 01 Jun 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/authors/okka-kimmich/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Theodore H Schwartz</title>
+      <link>/authors/theodore-h-schwartz/</link>
+      <pubDate>Mon, 01 Jun 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/authors/theodore-h-schwartz/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Edmund C Lalor</title>
+      <link>/authors/edmund-c-lalor/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/authors/edmund-c-lalor/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Michael J. Crosse</title>
+      <link>/authors/michael-j.-crosse/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/authors/michael-j.-crosse/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Heinrich H Bülthoff</title>
+      <link>/authors/heinrich-h-b%C3%BClthoff/</link>
+      <pubDate>Sat, 01 Nov 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/authors/heinrich-h-b%C3%BClthoff/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Alice B Brandwien</title>
+      <link>/authors/alice-b-brandwien/</link>
+      <pubDate>Mon, 01 Sep 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/authors/alice-b-brandwien/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Alice B. Brandwein</title>
+      <link>/authors/alice-b.-brandwein/</link>
+      <pubDate>Mon, 01 Sep 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/authors/alice-b.-brandwein/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hans-Peter Frey</title>
+      <link>/authors/hans-peter-frey/</link>
+      <pubDate>Mon, 01 Sep 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/authors/hans-peter-frey/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Juliana C. Bates</title>
+      <link>/authors/juliana-c.-bates/</link>
+      <pubDate>Mon, 01 Sep 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/authors/juliana-c.-bates/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Lisa H. Shulman</title>
+      <link>/authors/lisa-h.-shulman/</link>
+      <pubDate>Mon, 01 Sep 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/authors/lisa-h.-shulman/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Steve U Walkley</title>
+      <link>/authors/steve-u-walkley/</link>
+      <pubDate>Mon, 01 Sep 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/authors/steve-u-walkley/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Alice B Brandwein</title>
+      <link>/authors/alice-b-brandwein/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/authors/alice-b-brandwein/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ted S Altschuler</title>
+      <link>/authors/ted-s-altschuler/</link>
+      <pubDate>Wed, 01 Jan 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/authors/ted-s-altschuler/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Adam C Snyder</title>
+      <link>/authors/adam-c-snyder/</link>
+      <pubDate>Mon, 01 Apr 2013 00:00:00 +0000</pubDate>
+      
+      <guid>/authors/adam-c-snyder/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ian C. Fiebelkorn</title>
+      <link>/authors/ian-c.-fiebelkorn/</link>
+      <pubDate>Sat, 01 Sep 2012 00:00:00 +0000</pubDate>
+      
+      <guid>/authors/ian-c.-fiebelkorn/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Adam C. Snyder</title>
+      <link>/authors/adam-c.-snyder/</link>
+      <pubDate>Wed, 01 Aug 2012 00:00:00 +0000</pubDate>
+      
+      <guid>/authors/adam-c.-snyder/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Jason M. Green</title>
+      <link>/authors/jason-m.-green/</link>
+      <pubDate>Wed, 01 Aug 2012 00:00:00 +0000</pubDate>
+      
+      <guid>/authors/jason-m.-green/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Heinrich H Bulthoff</title>
+      <link>/authors/heinrich-h-bulthoff/</link>
+      <pubDate>Tue, 01 May 2012 00:00:00 +0000</pubDate>
+      
+      <guid>/authors/heinrich-h-bulthoff/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hugh Nolan</title>
+      <link>/authors/hugh-nolan/</link>
+      <pubDate>Tue, 01 May 2012 00:00:00 +0000</pubDate>
+      
+      <guid>/authors/hugh-nolan/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Robert Whelan</title>
+      <link>/authors/robert-whelan/</link>
+      <pubDate>Tue, 01 May 2012 00:00:00 +0000</pubDate>
+      
+      <guid>/authors/robert-whelan/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hilary Gomes</title>
+      <link>/authors/hilary-gomes/</link>
+      <pubDate>Sun, 01 Jan 2012 00:00:00 +0000</pubDate>
+      
+      <guid>/authors/hilary-gomes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Natalie N. Russo</title>
+      <link>/authors/natalie-n.-russo/</link>
+      <pubDate>Sun, 01 Jan 2012 00:00:00 +0000</pubDate>
+      
+      <guid>/authors/natalie-n.-russo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ted S. Altschuler</title>
+      <link>/authors/ted-s.-altschuler/</link>
+      <pubDate>Sun, 01 Jan 2012 00:00:00 +0000</pubDate>
+      
+      <guid>/authors/ted-s.-altschuler/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Stuart T Smith</title>
+      <link>/authors/stuart-t-smith/</link>
+      <pubDate>Fri, 01 Jul 2011 00:00:00 +0000</pubDate>
+      
+      <guid>/authors/stuart-t-smith/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Heinrich H. Bulthoff</title>
+      <link>/authors/heinrich-h.-bulthoff/</link>
+      <pubDate>Sun, 01 May 2011 00:00:00 +0000</pubDate>
+      
+      <guid>/authors/heinrich-h.-bulthoff/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Theodore H. Schwartz</title>
+      <link>/authors/theodore-h.-schwartz/</link>
+      <pubDate>Fri, 01 Apr 2011 00:00:00 +0000</pubDate>
+      
+      <guid>/authors/theodore-h.-schwartz/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Florian Soyka</title>
+      <link>/authors/florian-soyka/</link>
+      <pubDate>Tue, 01 Sep 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/authors/florian-soyka/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Frank M Nieuwenhuizen</title>
+      <link>/authors/frank-m-nieuwenhuizen/</link>
+      <pubDate>Tue, 01 Sep 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/authors/frank-m-nieuwenhuizen/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Harold Teufel</title>
+      <link>/authors/harold-teufel/</link>
+      <pubDate>Tue, 01 Sep 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/authors/harold-teufel/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Karl Beykirch</title>
+      <link>/authors/karl-beykirch/</link>
+      <pubDate>Tue, 01 Sep 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/authors/karl-beykirch/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Paolo Robuffo-Giordano</title>
+      <link>/authors/paolo-robuffo-giordano/</link>
+      <pubDate>Tue, 01 Sep 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/authors/paolo-robuffo-giordano/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hans-Gunter Nusseck</title>
+      <link>/authors/hans-gunter-nusseck/</link>
+      <pubDate>Mon, 01 Jan 2007 00:00:00 +0000</pubDate>
+      
+      <guid>/authors/hans-gunter-nusseck/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

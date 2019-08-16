@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Walking on John S Butler</title>
+    <link>/tags/walking/</link>
+    <description>Recent content in Walking on John S Butler</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 01 Oct 2018 00:00:00 +0000</lastBuildDate>
+    
+	    <atom:link href="/tags/walking/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Cognitive load reduces the effects of optic flow on gait and electrocortical dynamics during treadmill walking</title>
+      <link>/publication/2018_malcolm-et-al/</link>
+      <pubDate>Mon, 01 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/2018_malcolm-et-al/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Long-term test-retest reliability of event-related potential (ERP) recordings during treadmill walking using the mobile brain/body imaging (MoBI) approach</title>
+      <link>/publication/2017_malcolm-et-al/</link>
+      <pubDate>Mon, 01 May 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/2017_malcolm-et-al/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The aging brain shows less flexible reallocation of cognitive resources during dual-task walking: a mobile brain/body imaging (MoBI) study</title>
+      <link>/publication/2015_malcolm-et-al/</link>
+      <pubDate>Sat, 01 Aug 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/2015_malcolm-et-al/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The impact of dual tasking on cognitive performance in a Parkinson&#39;s disease cohort with and without freezing of gait: An EEG and behavioral based approach</title>
+      <link>/publication/2015_waechteretal-ieee_neuraleng/</link>
+      <pubDate>Wed, 01 Jul 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/2015_waechteretal-ieee_neuraleng/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Recalibration of inhibitory control systems during walking-related dual-task interference: A Mobile Brain-Body Imaging (MOBI) Study</title>
+      <link>/publication/2014_desanctis-et-al/</link>
+      <pubDate>Tue, 01 Jul 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/2014_desanctis-et-al/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Multisensory integration in the estimation of walked distances</title>
+      <link>/publication/2012_camposbutlerbulthoff_ebr_2012/</link>
+      <pubDate>Sat, 01 Sep 2012 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/2012_camposbutlerbulthoff_ebr_2012/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Mobile Brain/Body Imaging (MoBI): High-density electrical mapping of inhibitory processes during walking.</title>
+      <link>/publication/2012_desanctis-et-al-mobi-ieee-paper/</link>
+      <pubDate>Wed, 01 Aug 2012 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/2012_desanctis-et-al-mobi-ieee-paper/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

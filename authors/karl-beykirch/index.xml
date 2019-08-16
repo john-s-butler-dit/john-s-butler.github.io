@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Karl Beykirch on John S Butler</title>
+    <link>/authors/karl-beykirch/</link>
+    <description>Recent content in Karl Beykirch on John S Butler</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 01 Sep 2009 00:00:00 +0000</lastBuildDate>
+    
+	    <atom:link href="/authors/karl-beykirch/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Does jerk have to be considered in linear motion simulation?</title>
+      <link>/publication/2009_soykaetal2009_jerk/</link>
+      <pubDate>Tue, 01 Sep 2009 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/2009_soykaetal2009_jerk/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Control of a Lateral Helicopter Side-step Maneuver on an Anthropomorphic Robot</title>
+      <link>/publication/2007_beykirchetal2007/</link>
+      <pubDate>Mon, 01 Jan 2007 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/2007_beykirchetal2007/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>VISUAL VESTIBULAR INTERACTIONS FOR SELF MOTION ESTIMATION</title>
+      <link>/publication/2006_butleretal_2006_dsc/</link>
+      <pubDate>Fri, 01 Sep 2006 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/2006_butleretal_2006_dsc/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

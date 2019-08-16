@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Outreach on John S Butler</title>
+    <link>/tags/outreach/</link>
+    <description>Recent content in Outreach on John S Butler</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 29 May 2019 00:00:00 +0000</lastBuildDate>
+    
+	    <atom:link href="/tags/outreach/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>A Mathematicians Adventures in Neuroscience</title>
+      <link>/talk/brightclub/</link>
+      <pubDate>Wed, 29 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/talk/brightclub/</guid>
+      <description>&lt;p&gt;#&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/duUBoF4LGd0&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Pint of Science 2019</title>
+      <link>/talk/pos2019/</link>
+      <pubDate>Wed, 22 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/talk/pos2019/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Secondary School Talk</title>
+      <link>/talk/schooltalk2019/</link>
+      <pubDate>Fri, 10 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/talk/schooltalk2019/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Pint of Science 2018</title>
+      <link>/talk/pos2018/</link>
+      <pubDate>Tue, 22 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/talk/pos2018/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

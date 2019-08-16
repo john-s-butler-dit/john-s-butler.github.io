@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sean O&#39;Riordan on John S Butler</title>
+    <link>/authors/sean-oriordan/</link>
+    <description>Recent content in Sean O&#39;Riordan on John S Butler</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 01 May 2017 00:00:00 +0000</lastBuildDate>
+    
+	    <atom:link href="/authors/sean-oriordan/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Measurement &amp; analysis of the temporal discrimination threshold applied to cervical dystonia</title>
+      <link>/publication/beck-2017-jove/</link>
+      <pubDate>Mon, 01 May 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/beck-2017-jove/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Exploring the unknown: electrophysiological and behavioural measures of visuospatial learning</title>
+      <link>/publication/2015_quinlivanetal_ejn/</link>
+      <pubDate>Sun, 01 May 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/2015_quinlivanetal_ejn/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Non-parametric bootstrapping method for measuring the temporal discrimination threshold for movement disorders</title>
+      <link>/publication/2015_butler-et-al-tdt/</link>
+      <pubDate>Mon, 01 Jun 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/2015_butler-et-al-tdt/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

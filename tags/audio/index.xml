@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Audio on John S Butler</title>
+    <link>/tags/audio/</link>
+    <description>Recent content in Audio on John S Butler</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 01 Sep 2015 00:00:00 +0000</lastBuildDate>
+    
+	    <atom:link href="/tags/audio/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Audiovisual Processing is Abnormal in Parkinson’s Disease and Correlates with Freezing of Gait and Disease Duration</title>
+      <link>/publication/2015_fearon_avsrt_pd/</link>
+      <pubDate>Tue, 01 Sep 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/2015_fearon_avsrt_pd/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Atypical multisensory integration in Niemann-Pick type C disease – towards potential biomarkers</title>
+      <link>/publication/2014_andradeetal2014_npc_avsrt/</link>
+      <pubDate>Mon, 01 Sep 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/2014_andradeetal2014_npc_avsrt/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ready, Set, Reset; Stimulus-Locked Periodicity in Behavioral Performance Demonstrates the Consequences of Cross-Sensory Phase Rese</title>
+      <link>/publication/2011_fiebelkornetal2012_jon/</link>
+      <pubDate>Fri, 01 Jul 2011 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/2011_fiebelkornetal2012_jon/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Auditory facilitation of visual-target detection persists regardless of retinal eccentricity and despite wide audiovisual misalignments</title>
+      <link>/publication/2011_fiebelkornetal2011_ebr/</link>
+      <pubDate>Tue, 01 Mar 2011 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/2011_fiebelkornetal2011_ebr/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
