@@ -300,7 +300,90 @@
   
   <url>
     <loc>/authors/brendan-quinlivan/</loc>
-    <lastmod>2017-05-01T00:00:00+00:00</lastmod>
+    <lastmod>2017-12-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/publication/2017_mcgovern_fmri/</loc>
+    <lastmod>2017-12-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/dystonia/</loc>
+    <lastmod>2017-12-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/authors/eavan-m-mcgovern/</loc>
+    <lastmod>2017-12-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/authors/ines-beiser/</loc>
+    <lastmod>2017-12-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/authors/laura-williams/</loc>
+    <lastmod>2017-12-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/authors/michael-farrell/</loc>
+    <lastmod>2017-12-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/authors/michael-hutchinson/</loc>
+    <lastmod>2017-12-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/authors/owen-killian/</loc>
+    <lastmod>2017-12-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/authors/rebecca-beck/</loc>
+    <lastmod>2017-12-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/authors/richard-b-reilly/</loc>
+    <lastmod>2017-12-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/authors/ronan-p-killeen/</loc>
+    <lastmod>2017-12-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/authors/sean-oriordan/</loc>
+    <lastmod>2017-12-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/authors/shruti-narasiham/</loc>
+    <lastmod>2017-12-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/temporal-discrimination-threshold/</loc>
+    <lastmod>2017-12-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -311,37 +394,13 @@
   </url>
   
   <url>
-    <loc>/tags/dystonia/</loc>
-    <lastmod>2017-05-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/authors/eavan-m-mcgovern/</loc>
-    <lastmod>2017-05-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/authors/ines-beiser/</loc>
-    <lastmod>2017-05-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>/publication/2017_malcolm-et-al/</loc>
     <lastmod>2017-05-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/publication/beck-2017-jove/</loc>
+    <loc>/publication/2017_beck-jove/</loc>
     <lastmod>2017-05-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/authors/michael-hutchinson/</loc>
-    <lastmod>2017-05-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -351,25 +410,7 @@
   </url>
   
   <url>
-    <loc>/authors/richard-b-reilly/</loc>
-    <lastmod>2017-05-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/authors/sean-oriordan/</loc>
-    <lastmod>2017-05-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>/authors/shruti-narasimham/</loc>
-    <lastmod>2017-05-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/temporal-discrimination-threshold/</loc>
     <lastmod>2017-05-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -383,6 +424,93 @@
   <url>
     <loc>/publication/2017_butler-fearon-p3/</loc>
     <lastmod>2017-03-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publication/2016_mcgovern/</loc>
+    <lastmod>2017-01-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/authors/anna-molloy/</loc>
+    <lastmod>2017-01-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/authors/cathal-walsh/</loc>
+    <lastmod>2017-01-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/authors/daniel-g-healy/</loc>
+    <lastmod>2017-01-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/authors/eavan-mcgovern/</loc>
+    <lastmod>2017-01-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/authors/emer-oconnor/</loc>
+    <lastmod>2017-01-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/publication/2015_williams-epidemilogy/</loc>
+    <lastmod>2017-01-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/authors/fiona-molloy/</loc>
+    <lastmod>2017-01-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/authors/helena-moore/</loc>
+    <lastmod>2017-01-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/authors/mark-j-edwards/</loc>
+    <lastmod>2017-01-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/publication/2016_mcgovern-menstral/</loc>
+    <lastmod>2017-01-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/authors/niall-byrne/</loc>
+    <lastmod>2017-01-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/authors/okka-kimmich/</loc>
+    <lastmod>2017-01-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/authors/paul-lonogan/</loc>
+    <lastmod>2017-01-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/authors/tim-lynch/</loc>
+    <lastmod>2017-01-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -409,6 +537,23 @@
   </url>
   
   <url>
+    <loc>/publication/2016_quinlivan-headturn/</loc>
+    <lastmod>2016-08-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/head-turn/</loc>
+    <lastmod>2016-08-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/virtual-reality/</loc>
+    <lastmod>2016-08-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/authors/abdur-raquib-ridwan/</loc>
     <lastmod>2016-05-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -421,20 +566,8 @@
   </url>
   
   <url>
-    <loc>/authors/eavan-mcgovern/</loc>
-    <lastmod>2016-05-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>/publication/2015_quinlivanetal_ejn/</loc>
     <lastmod>2016-05-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/authors/laura-williams/</loc>
-    <lastmod>2016-05-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -541,6 +674,11 @@
   </url>
   
   <url>
+    <loc>/publication/2014_molloy-latitude/</loc>
+    <lastmod>2016-03-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/publication/2015_neha-somagatingdevelopment/</loc>
     <lastmod>2016-03-01T00:00:00+00:00</lastmod>
   </url>
@@ -551,31 +689,13 @@
   </url>
   
   <url>
-    <loc>/authors/cathal-walsh/</loc>
-    <lastmod>2015-12-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>/authors/dan-g-healy/</loc>
     <lastmod>2015-12-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/authors/fiona-molloy/</loc>
-    <lastmod>2015-12-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>/authors/gizely-n.-andrade/</loc>
-    <lastmod>2015-12-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/authors/helena-moore/</loc>
     <lastmod>2015-12-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -613,12 +733,6 @@
   <url>
     <loc>/publication/2015_andrade-et-al-ejn/</loc>
     <lastmod>2015-12-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/authors/tim-lynch/</loc>
-    <lastmod>2015-12-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -749,12 +863,6 @@
   </url>
   
   <url>
-    <loc>/authors/anna-molloy/</loc>
-    <lastmod>2015-06-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>/tags/auditory/</loc>
     <lastmod>2015-06-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -789,12 +897,6 @@
   </url>
   
   <url>
-    <loc>/authors/okka-kimmich/</loc>
-    <lastmod>2015-06-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>/authors/theodore-h-schwartz/</loc>
     <lastmod>2015-06-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -804,6 +906,11 @@
     <loc>/tags/oscillations/</loc>
     <lastmod>2015-06-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/publication/2014_molloy-enviromental/</loc>
+    <lastmod>2015-03-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -821,6 +928,11 @@
     <loc>/authors/michael-j.-crosse/</loc>
     <lastmod>2015-01-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/publication/2015_williams-gender-dimorphism/</loc>
+    <lastmod>2015-01-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -901,6 +1013,22 @@
   <url>
     <loc>/publication/2014_desanctis-et-al/</loc>
     <lastmod>2014-07-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publication/2014-hutchinson-concept-2014/</loc>
+    <lastmod>2014-04-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/authors/tadashi-isa/</loc>
+    <lastmod>2014-04-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/publication/2014_molloy-headset-tabletop/</loc>
+    <lastmod>2014-03-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -1197,11 +1325,6 @@
   
   <url>
     <loc>/post/probabilisticdecision/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/talk/page/1/</loc>
     <priority>0</priority>
   </url>
   

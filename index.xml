@@ -21,12 +21,12 @@
     </item>
     
     <item>
-      <title>A Mathematicians Adventures in Neuroscience</title>
+      <title>A Mathematicians Adventures in Neuroscience (Part 1)</title>
       <link>/talk/brightclub/</link>
       <pubDate>Wed, 29 May 2019 00:00:00 +0000</pubDate>
       
       <guid>/talk/brightclub/</guid>
-      <description>&lt;p&gt;#&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/duUBoF4LGd0&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;&lt;/p&gt;
+      <description>&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/duUBoF4LGd0&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;
 </description>
     </item>
     
@@ -674,6 +674,15 @@ $$&lt;/p&gt;
     </item>
     
     <item>
+      <title>Disrupted superior collicular activity may reveal cervical dystonia disease pathomechanisms</title>
+      <link>/publication/2017_mcgovern_fmri/</link>
+      <pubDate>Fri, 01 Dec 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/2017_mcgovern_fmri/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Long-term test-retest reliability of event-related potential (ERP) recordings during treadmill walking using the mobile brain/body imaging (MoBI) approach</title>
       <link>/publication/2017_malcolm-et-al/</link>
       <pubDate>Mon, 01 May 2017 00:00:00 +0000</pubDate>
@@ -684,10 +693,10 @@ $$&lt;/p&gt;
     
     <item>
       <title>Measurement &amp; analysis of the temporal discrimination threshold applied to cervical dystonia</title>
-      <link>/publication/beck-2017-jove/</link>
+      <link>/publication/2017_beck-jove/</link>
       <pubDate>Mon, 01 May 2017 00:00:00 +0000</pubDate>
       
-      <guid>/publication/beck-2017-jove/</guid>
+      <guid>/publication/2017_beck-jove/</guid>
       <description></description>
     </item>
     
@@ -701,11 +710,47 @@ $$&lt;/p&gt;
     </item>
     
     <item>
+      <title>A comparison of stimulus presentation methods in temporal discrimination testing</title>
+      <link>/publication/2016_mcgovern/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/2016_mcgovern/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Epidemiological, clinical and genetic aspects of adult onset isolated focal dystonia in Ireland</title>
+      <link>/publication/2015_williams-epidemilogy/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/2015_williams-epidemilogy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Menstrual cycle and the temporal discrimination threshold</title>
+      <link>/publication/2016_mcgovern-menstral/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/2016_mcgovern-menstral/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>An Examination of the Neural Unreliability Thesis of Autism</title>
       <link>/publication/2016_butler-et-al-unreliability-thesis/</link>
       <pubDate>Thu, 01 Dec 2016 00:00:00 +0000</pubDate>
       
       <guid>/publication/2016_butler-et-al-unreliability-thesis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Application of virtual reality head mounted display for investigation of movement: a novel effect of orientation of attention</title>
+      <link>/publication/2016_quinlivan-headturn/</link>
+      <pubDate>Mon, 01 Aug 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/2016_quinlivan-headturn/</guid>
       <description></description>
     </item>
     
@@ -1143,6 +1188,15 @@ Featured in international popular press such as        &lt;a href=&#34;http://ww
     </item>
     
     <item>
+      <title>Sun exposure is an environmental factor for the development of blepharospasm</title>
+      <link>/publication/2014_molloy-latitude/</link>
+      <pubDate>Tue, 01 Mar 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/2014_molloy-latitude/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>The neural dynamics of somatosensory processing and adaptation across childhood: a high-density electrical mapping study</title>
       <link>/publication/2015_neha-somagatingdevelopment/</link>
       <pubDate>Tue, 01 Mar 2016 00:00:00 +0000</pubDate>
@@ -1275,11 +1329,29 @@ Figure 1: A fancy pie chart.
     </item>
     
     <item>
+      <title>An evaluation of the role of environmental factors in the disease penetrance of cervical dystonia</title>
+      <link>/publication/2014_molloy-enviromental/</link>
+      <pubDate>Sun, 01 Mar 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/2014_molloy-enviromental/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Congruent Visual Speech Enhances Cortical Entrainment to Continuous Auditory Speech in Noise-Free Conditions</title>
       <link>/publication/2015_crossebutlerlalor/</link>
       <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
       
       <guid>/publication/2015_crossebutlerlalor/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sexual dimorphism in temporal discrimination</title>
+      <link>/publication/2015_williams-gender-dimorphism/</link>
+      <pubDate>Thu, 01 Jan 2015 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/2015_williams-gender-dimorphism/</guid>
       <description></description>
     </item>
     
@@ -1316,6 +1388,24 @@ Figure 1: A fancy pie chart.
       <pubDate>Tue, 01 Jul 2014 00:00:00 +0000</pubDate>
       
       <guid>/publication/2014_desanctis-et-al/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A comparison of stimulus presentation methods in temporal discrimination testing</title>
+      <link>/publication/2014-hutchinson-concept-2014/</link>
+      <pubDate>Tue, 01 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/2014-hutchinson-concept-2014/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A headset method for measuring the visual temporal discrimination threshold in cervical dystonia</title>
+      <link>/publication/2014_molloy-headset-tabletop/</link>
+      <pubDate>Sat, 01 Mar 2014 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/2014_molloy-headset-tabletop/</guid>
       <description></description>
     </item>
     
@@ -13866,15 +13956,6 @@ $$k_2=f(x_i+\frac{\Delta}{2},y_i+\frac{\Delta}{2}k_1).$$&lt;/p&gt;
 
 &lt;/html&gt;
 </description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>/talk/page/1/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/talk/page/1/</guid>
-      <description>&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt;&lt;title&gt;/~johnbutler/public/outreach/&lt;/title&gt;&lt;link rel=&#34;canonical&#34; href=&#34;/~johnbutler/public/outreach/&#34;/&gt;&lt;meta name=&#34;robots&#34; content=&#34;noindex&#34;&gt;&lt;meta charset=&#34;utf-8&#34; /&gt;&lt;meta http-equiv=&#34;refresh&#34; content=&#34;0; url=/~johnbutler/public/outreach/&#34; /&gt;&lt;/head&gt;&lt;/html&gt;</description>
     </item>
     
     <item>

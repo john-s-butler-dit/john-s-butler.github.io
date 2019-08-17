@@ -12,12 +12,12 @@
     
     
     <item>
-      <title>A Mathematicians Adventures in Neuroscience</title>
+      <title>A Mathematicians Adventures in Neuroscience (Part 1)</title>
       <link>/talk/brightclub/</link>
       <pubDate>Wed, 29 May 2019 00:00:00 +0000</pubDate>
       
       <guid>/talk/brightclub/</guid>
-      <description>&lt;p&gt;#&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/duUBoF4LGd0&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;&lt;/p&gt;
+      <description>&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/duUBoF4LGd0&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;
 </description>
     </item>
     
@@ -55,15 +55,6 @@
       
       <guid>/talk/pos2018/</guid>
       <description></description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>/talk/page/1/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/talk/page/1/</guid>
-      <description>&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;head&gt;&lt;title&gt;/~johnbutler/public/outreach/&lt;/title&gt;&lt;link rel=&#34;canonical&#34; href=&#34;/~johnbutler/public/outreach/&#34;/&gt;&lt;meta name=&#34;robots&#34; content=&#34;noindex&#34;&gt;&lt;meta charset=&#34;utf-8&#34; /&gt;&lt;meta http-equiv=&#34;refresh&#34; content=&#34;0; url=/~johnbutler/public/outreach/&#34; /&gt;&lt;/head&gt;&lt;/html&gt;</description>
     </item>
     
   </channel>
