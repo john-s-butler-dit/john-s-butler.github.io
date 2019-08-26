@@ -49,20 +49,11 @@
     </item>
     
     <item>
-      <title>Pint of Science 2018</title>
+      <title>An intrduction to Visual Vestibular Integration for self-motion.</title>
       <link>/outreach/pos2018/</link>
       <pubDate>Wed, 22 May 2019 00:00:00 +0000</pubDate>
       
       <guid>/outreach/pos2018/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Pint of Science 2019</title>
-      <link>/outreach/pos2019/</link>
-      <pubDate>Wed, 22 May 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/outreach/pos2019/</guid>
       <description></description>
     </item>
     
@@ -91,15 +82,6 @@
     </item>
     
     <item>
-      <title>Pint of Science 2019</title>
-      <link>/talk/pos2019/</link>
-      <pubDate>Wed, 22 May 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/talk/pos2019/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>School Talk</title>
       <link>/outreach/schooltalk2019/</link>
       <pubDate>Wed, 22 May 2019 00:00:00 +0000</pubDate>
@@ -109,7 +91,25 @@
     </item>
     
     <item>
-      <title>Secondary School Talk</title>
+      <title>The Brain in Motion</title>
+      <link>/outreach/pos2019/</link>
+      <pubDate>Wed, 22 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/outreach/pos2019/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The Brain in Motion</title>
+      <link>/talk/pos2019/</link>
+      <pubDate>Wed, 22 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/talk/pos2019/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The Frequency of the Brain</title>
       <link>/talk/schooltalk2019/</link>
       <pubDate>Fri, 10 May 2019 00:00:00 +0000</pubDate>
       
@@ -655,7 +655,7 @@ $$&lt;/p&gt;
     </item>
     
     <item>
-      <title>Science Week 2018</title>
+      <title>Mathematics and the Brain</title>
       <link>/talk/scienceweek2018/</link>
       <pubDate>Mon, 01 Oct 2018 00:00:00 +0000</pubDate>
       
@@ -683,20 +683,20 @@ $$&lt;/p&gt;
     </item>
     
     <item>
-      <title>Pint of Science 2018</title>
-      <link>/talk/pos2018/</link>
-      <pubDate>Tue, 22 May 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/talk/pos2018/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Science Week 2018</title>
       <link>/outreach/scienceweek2018/</link>
       <pubDate>Tue, 22 May 2018 00:00:00 +0000</pubDate>
       
       <guid>/outreach/scienceweek2018/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Visual Vestibular Integration</title>
+      <link>/talk/pos2018/</link>
+      <pubDate>Tue, 22 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/talk/pos2018/</guid>
       <description></description>
     </item>
     

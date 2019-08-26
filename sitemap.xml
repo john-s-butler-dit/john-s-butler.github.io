@@ -204,22 +204,22 @@
   </url>
   
   <url>
-    <loc>/outreach/pos2019/</loc>
-    <lastmod>2019-05-22T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/outreach/example/</loc>
     <lastmod>2019-05-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/talk/pos2019/</loc>
+    <loc>/outreach/schooltalk2019/</loc>
     <lastmod>2019-05-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/outreach/schooltalk2019/</loc>
+    <loc>/outreach/pos2019/</loc>
+    <lastmod>2019-05-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/talk/pos2019/</loc>
     <lastmod>2019-05-22T00:00:00+00:00</lastmod>
   </url>
   
@@ -337,6 +337,11 @@
   </url>
   
   <url>
+    <loc>/talk/scienceweek2018/</loc>
+    <lastmod>2018-10-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/tags/mobi/</loc>
     <lastmod>2018-10-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -352,11 +357,6 @@
     <loc>/tags/power-spectral-density/</loc>
     <lastmod>2018-10-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/talk/scienceweek2018/</loc>
-    <lastmod>2018-10-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -418,12 +418,12 @@
   </url>
   
   <url>
-    <loc>/talk/pos2018/</loc>
+    <loc>/outreach/scienceweek2018/</loc>
     <lastmod>2018-05-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/outreach/scienceweek2018/</loc>
+    <loc>/talk/pos2018/</loc>
     <lastmod>2018-05-22T00:00:00+00:00</lastmod>
   </url>
   
