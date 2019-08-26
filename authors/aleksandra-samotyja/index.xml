@@ -1,61 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Science Communication on John S Butler</title>
-    <link>/talk/</link>
-    <description>Recent content in Science Communication on John S Butler</description>
+    <title>Aleksandra Samotyja on John S Butler</title>
+    <link>/authors/aleksandra-samotyja/</link>
+    <description>Recent content in Aleksandra Samotyja on John S Butler</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 29 May 2019 00:00:00 +0000</lastBuildDate>
     
-	    <atom:link href="/talk/index.xml" rel="self" type="application/rss+xml" />
+	    <atom:link href="/authors/aleksandra-samotyja/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>A Mathematicians Adventures in Neuroscience (Part 1)</title>
-      <link>/talk/brightclub/</link>
-      <pubDate>Wed, 29 May 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/talk/brightclub/</guid>
-      <description>&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/duUBoF4LGd0&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>The Brain in Motion</title>
-      <link>/talk/pos2019/</link>
-      <pubDate>Wed, 22 May 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/talk/pos2019/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>The Frequency of the Brain</title>
-      <link>/talk/schooltalk2019/</link>
-      <pubDate>Fri, 10 May 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/talk/schooltalk2019/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Mathematics and the Brain</title>
-      <link>/talk/scienceweek2018/</link>
-      <pubDate>Mon, 01 Oct 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/talk/scienceweek2018/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Visual Vestibular Integration</title>
-      <link>/talk/pos2018/</link>
-      <pubDate>Tue, 22 May 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/talk/pos2018/</guid>
-      <description></description>
-    </item>
     
     <item>
       <title>Microplastic as Prey</title>
