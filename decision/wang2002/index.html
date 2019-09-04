@@ -1,0 +1,1323 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 4.3.1">
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="John S Butler">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="Jupyter Notebook of the Neuron paper by Wang (2002) titled Probabilistic Decision Making by Slow Reverberation in Cortical Circuits">
+
+  
+  <link rel="alternate" hreflang="en-us" href="/decision/wang2002/">
+
+  
+
+
+  
+
+  
+  
+  
+  <meta name="theme-color" content="#2962ff">
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.0/css/all.css" integrity="sha384-aOkxzJ5uQz7WBObEZcHvV5JvRW3TUc2rNPA7pe3AwnsUohiw1Vj2Rgx2KSOkF5+h" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/github.min.css" crossorigin="anonymous" title="hl-light">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" disabled>
+        
+      
+    
+
+    
+
+    
+
+  
+
+  
+  
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:400,400italic,700|Roboto+Mono">
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="/css/academic.min.a9a796b4dba28c78fc94d2550173437e.css">
+
+  
+
+  
+  
+  
+
+  
+
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="icon" type="image/png" href="/img/icon.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
+
+  <link rel="canonical" href="/decision/wang2002/">
+
+  
+  
+  
+  
+    
+  
+  <meta property="twitter:card" content="summary_large_image">
+  
+  <meta property="twitter:site" content="@@jslbutler">
+  <meta property="twitter:creator" content="@@jslbutler">
+  
+  <meta property="og:site_name" content="John S Butler">
+  <meta property="og:url" content="/decision/wang2002/">
+  <meta property="og:title" content="Probabilistic Decision Making by Slow Reverberation in Cortical Circuits | John S Butler">
+  <meta property="og:description" content="Jupyter Notebook of the Neuron paper by Wang (2002) titled Probabilistic Decision Making by Slow Reverberation in Cortical Circuits"><meta property="og:image" content="/decision/wang2002/featured.jpg">
+  <meta property="og:locale" content="en-us">
+  
+  <meta property="article:published_time" content="2019-02-05T00:00:00&#43;00:00">
+  
+  <meta property="article:modified_time" content="2019-02-05T00:00:00&#43;00:00">
+  
+
+  
+
+
+  
+
+
+
+
+
+  <title>Probabilistic Decision Making by Slow Reverberation in Cortical Circuits | John S Butler</title>
+
+</head>
+
+
+<body id="top" data-spy="scroll" data-target="#TableOfContents" data-offset="71" >
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" role="textbox" spellcheck="false" type="search">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  
+<nav class="navbar navbar-light fixed-top navbar-expand-lg py-0" id="navbar-main">
+  <div class="container">
+
+    
+      <a class="navbar-brand" href="/">John S Butler</a>
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+    
+    <div class="collapse navbar-collapse" id="navbar">
+
+      
+      
+      <ul class="navbar-nav mr-auto">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#about"><span>Home</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#projects"><span>Research</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#publications"><span>Publications</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/courses/"><span>Courses</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/talk"><span>Science Communication</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#contact"><span>Contact</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+            
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="http://www.maths.dit.ie/" target="_blank" rel="noopener"><span>TU Dublin</span></a>
+        </li>
+
+        
+        
+
+      
+      </ul>
+      <ul class="navbar-nav ml-auto">
+      
+
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
+
+        
+
+        
+        <li class="nav-item">
+          <a class="nav-link js-dark-toggle" href="#"><i class="fas fa-moon" aria-hidden="true"></i></a>
+        </li>
+        
+
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+  <article class="article" itemscope itemtype="http://schema.org/Article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="article-header d-xl-none">
+  <div class="featured-image" style="background-image: url('/decision/wang2002/featured_hu51a6774188d91396de00220183cfede4_38144_800x0_resize_q90_lanczos.jpg');"></div>
+  
+</div>
+
+
+<div class="container-fluid split-header d-none d-xl-block">
+  <div class="row">
+    <div class="col-6">
+      <div class="split-header-content">
+        <h1 itemprop="name">Probabilistic Decision Making by Slow Reverberation in Cortical Circuits</h1>
+
+        
+        <p class="page-subtitle">Wang Neuron, December 5, 2002, 36:955-968</p>
+        
+
+        
+
+
+
+<meta content="2019-02-05 00:00:00 &#43;0000 UTC" itemprop="datePublished">
+<meta content="2019-02-05 00:00:00 &#43;0000 UTC" itemprop="dateModified">
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+
+
+  <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/admin/">John S Butler</a></span>
+
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    <time>Feb 5, 2019</time>
+  </span>
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+
+  
+
+</div>
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=/decision/wang2002/&amp;text=Probabilistic%20Decision%20Making%20by%20Slow%20Reverberation%20in%20Cortical%20Circuits" target="_blank" rel="noopener" class="share-btn-twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=Probabilistic%20Decision%20Making%20by%20Slow%20Reverberation%20in%20Cortical%20Circuits&amp;body=/decision/wang2002/" target="_blank" rel="noopener" class="share-btn-email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=/decision/wang2002/&amp;title=Probabilistic%20Decision%20Making%20by%20Slow%20Reverberation%20in%20Cortical%20Circuits" target="_blank" rel="noopener" class="share-btn-linkedin">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://web.whatsapp.com/send?text=Probabilistic%20Decision%20Making%20by%20Slow%20Reverberation%20in%20Cortical%20Circuits%20/decision/wang2002/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+      </div>
+    </div>
+    <div class="col-6">
+      <div class="split-header-image">
+        <img src="/decision/wang2002/featured_hu51a6774188d91396de00220183cfede4_38144_680x500_fill_q90_lanczos_smart1.jpg" itemprop="image" alt="">
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="article-container d-xl-none">
+  <h1 itemprop="name">Probabilistic Decision Making by Slow Reverberation in Cortical Circuits</h1>
+
+  
+  <p class="page-subtitle">Wang Neuron, December 5, 2002, 36:955-968</p>
+  
+
+  
+
+
+
+<meta content="2019-02-05 00:00:00 &#43;0000 UTC" itemprop="datePublished">
+<meta content="2019-02-05 00:00:00 &#43;0000 UTC" itemprop="dateModified">
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+
+
+  <span itemprop="author name" itemtype="http://schema.org/Person"><a href="/authors/admin/">John S Butler</a></span>
+
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    <time>Feb 5, 2019</time>
+  </span>
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+
+  
+    
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=/decision/wang2002/&amp;text=Probabilistic%20Decision%20Making%20by%20Slow%20Reverberation%20in%20Cortical%20Circuits" target="_blank" rel="noopener" class="share-btn-twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=Probabilistic%20Decision%20Making%20by%20Slow%20Reverberation%20in%20Cortical%20Circuits&amp;body=/decision/wang2002/" target="_blank" rel="noopener" class="share-btn-email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=/decision/wang2002/&amp;title=Probabilistic%20Decision%20Making%20by%20Slow%20Reverberation%20in%20Cortical%20Circuits" target="_blank" rel="noopener" class="share-btn-linkedin">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://web.whatsapp.com/send?text=Probabilistic%20Decision%20Making%20by%20Slow%20Reverberation%20in%20Cortical%20Circuits%20/decision/wang2002/" target="_blank" rel="noopener" class="share-btn-whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+  
+
+</div>
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style" itemprop="articleBody">
+      
+
+<h1 id="probabilistic-decision-making-by-slow-reverberation-in-cortical-circuits">Probabilistic Decision Making by Slow Reverberation in Cortical Circuits</h1>
+
+<p>Wang Neuron, December 5, 2002, 36:955-968</p>
+
+<h2 id="introduction">Introduction</h2>
+
+<p>This notebook will work through the seminal paper by Wang (2002) to simulate synaptic decision making. The note book will follow the flow of the original paper and reproduce each figure.</p>
+
+<h2 id="material-and-methods">Material and Methods</h2>
+
+<h3 id="the-two-variable-network-model">The two-variable network model</h3>
+
+<p><img src="Wang2002/Figure1.jpg" alt="Neuronal Firing Type" style="width: 400px;"/>
+<em> Figure 1: Model Architecture and Coherence-Dependent Stochastic inputs.</p>
+
+<p>(A) Schematic depiction of the model. There are two pyramidal cell groups (A and B), each of which is selective to one of the two stimuli (mimicking motion to the right or left). Within each pyramidal neural group there is strong recurrrent excitatory connections that can sustain persistent activity triggered by a transient preferred stimulus. The two neural groups compete through feedback inhibition from interneurons.</p>
+
+<p>(B) Top: the inputs are Poisson rates that vary in time and obey Gaussian distributions, with means μA and μB and with standard deviation σ. The means $μ_A$ and $μ_B$ depend on the coherence level linearly (insert). Bottom: an example of stochastic inputs to neural groups A and B with $μ_0$ = 40 and $σ$ = 10 in Hz, c′ = 6.4%. At every 50 ms, the two stimuli are independently resampled using their Gaussian distributions, so that the inputs vary stochastically in time. If $σ$ = 0, the two inputs would be constant in time.</em></p>
+
+<h2 id="the-cortical-network-model">The Cortical Network Model</h2>
+
+<p>The corical network consists of N=2000 neurons with excitaroty pyramidal cells ($N_E$=1600) and inhibitory $N_I$ interneurons ($N_I$=400).</p>
+
+<h3 id="neurons-the-integrate-and-fire-model">Neurons The Integrate and Fire Model</h3>
+
+<p>The nuerons are simulated unsing the integrate and fire model:
+\begin{equation}  C_m\frac{dV(t)}{dt} =-g_L(V(t)-V<em>L)-I</em>{syn}(t), \end{equation}
+where $V(t)$ is the membrane potential, $C_m$ is the membrane capacity,  $g_L$ is the membrane leak conductance, $V<em>L$ is the resting potential and $I</em>{syn}$ represents the total synaptic current flow.
+To simulate spiking a firing threshold $V<em>{th}$ and a refactory period $\tau</em>{ref}$ are introduced such that
+\begin{equation}  if V(t) &gt; V_{th}, \end{equation}
+\begin{equation}   V(t) =V_rest+RI<em>0\frac{\Delta}{\tau</em>{ref}}, for \Delta &lt;&lt; \tau<em>{ref} \end{equation}
+with a reset potential $V</em>{reset}$</p>
+
+<h3 id="parameters">Parameters</h3>
+
+<p>The parameters for the model are:</p>
+
+<p>| Parameter | Excitatory (E)  | Inhibitory (I) | Units |
+|&mdash;&mdash;|&mdash;&mdash;|&mdash;&mdash;|
+|   $C_m$ | 0.5|0.2|  nF  |
+|   $g_L$ | 25|20| nS  |
+|   $V<em>L$ | -70|-70| mV  |
+|   $V</em>{reset}$ |-55|-55| mV  |
+|   $V<em>{th}$ |-50|-50| mV  |
+|   $\tau</em>{ref}$ |2|1| ms  |
+|   $\tau_{m}$ |20|10| ms  |</p>
+
+<h3 id="libraries">Libraries</h3>
+
+<pre><code class="language-python"># LIBRARY
+
+import numpy as np # vector manipulation
+import math  # math functions
+import sys
+
+# THIS IS FOR PLOTTING
+%matplotlib inline
+import matplotlib.pyplot as plt # side-stepping mpl backend
+import warnings
+warnings.filterwarnings(&quot;ignore&quot;)
+
+</code></pre>
+
+<h3 id="synapses">Synapses</h3>
+
+<h3 id="neural-circuit">Neural Circuit</h3>
+
+<p>The total synpatic input current is given by
+$$ I<em>{syn}=I</em>{ext,AMPA}(t)+I<em>{rec,AMPA}(t)+I</em>{rec,NMDA}(t)+I_{rec,GABA}(t),$$</p>
+
+<pre><code class="language-python">def I_syn_t(I_extAMPA,I_recAMPA,I_recNMDA,I_recGABA):
+    I_syn=I_extAMPA+I_recAMPA+I_recNMDA+I_recGABA
+    return I_syn
+</code></pre>
+
+<p>where the external AMPA input is given by
+$$ I<em>{ext,AMPA}=g</em>{ext,AMPA}(V(t)-V_{E})s^{ext,AMPA}(t), $$</p>
+
+<pre><code class="language-python">def I_extAMPA_t(g_extAMPA,V,s_extAMPA):
+    V_E=0
+    I_extAMPA=g_extAMPA*(V-V_E)*s_extAMPA
+    return I_extAMPA
+</code></pre>
+
+<p>the recurrent AMPA input is given by
+$$ I<em>{rec,AMPA}=g</em>{rec,AMPA}(V(t)-V<em>{E})\Sigma</em>{j=1}^{c_E}s^{ext,AMPA}(t), $$</p>
+
+<pre><code class="language-python">def I_recAMPA_t(g_recAMPA,V,w,s_AMPA):
+    V_E=0
+    I_recAMPA=g_recAMPA*(V-V_E)*np.sum(np.dot(w,s_AMPA)
+    return I_recAMPA
+</code></pre>
+
+<pre><code>  File &quot;&lt;ipython-input-4-de7012b96bf7&gt;&quot;, line 4
+    return I_recAMPA
+         ^
+SyntaxError: invalid syntax
+</code></pre>
+
+<p>the recurrent NMDA is given by
+$$ I<em>{rec,NMDA}=\frac{g</em>{NMDA}(V(t)-V<em>E)}{(1+[Mg^{2+}]exp(-0.062V(t))/3.57)}\Sigma</em>{j=1}^{c_E}s^{NMDA}(t), $$</p>
+
+<pre><code class="language-python">def I_recNMDA_t(g_extNMDA,V,w,s_NMDA):
+    V_E=0
+    Mg=1
+    I_recNMDA=g_NMDA*(V-V_E)/(1+Mg*np.exp(-0.062*V)/3.57)*np.sum(np.dot(w,s_NMDA))
+    return I_recNMDA
+</code></pre>
+
+<p>the recurrent GABA is given by
+$$ I<em>{rec,GABA}=g</em>{GABA}(V(t)-V<em>I)\Sigma</em>{j=1}^{c<em>I}s^{GABA}(t), $$
+where $V</em>{E}=0mV$, $V<em>I=-70 mV$, $w</em>{j}$ are dimensionless weights</p>
+
+<pre><code class="language-python">def I_recNMDA_t(g_extNMDA,V,w,s_NMDA):
+    V_I=-70
+    Mg=1
+    I_recNMDA=g_NMDA*(V-V_I)/(1+Mg*np.exp(-0.062*V)/3.57)*np.sum(np.dot(w,s_NMDA))
+    return I_recNMDA
+</code></pre>
+
+<h3 id="parameters-1">Parameters</h3>
+
+<p>The parameters for the model are:</p>
+
+<table>
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Exciatory</th>
+<th>Inhibitory</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>$g_{ext,AMPA}$</td>
+<td>2.1</td>
+<td>1.62</td>
+</tr>
+
+<tr>
+<td>$g_{rec,AMPA}$</td>
+<td>0.05</td>
+<td>0.04</td>
+</tr>
+
+<tr>
+<td>$g_{NMDA}$</td>
+<td>0.165</td>
+<td>0.13</td>
+</tr>
+
+<tr>
+<td>$g_{GABA}$</td>
+<td>1.3</td>
+<td>1.0</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="ampa-channels">AMPA Channels</h3>
+
+<p>$$ \frac{d s<em>{j}^{AMPA}(t)}{dt} =\frac{s</em>{j}^{AMPA}(t)}{\tau_{AMPA}}+\Sigma_k \delta(t-t^k<em>j)$$
+where $\tau</em>{AMPA}=2$ms adn the sum over $k$ represents a sum of spikes emitted by presynaptic neuron $j$.</p>
+
+<pre><code class="language-python">def s_AMPA(s_AMPA,SPIKES):
+    tau_AMPA=2
+    s_AMPA=-s_AMPA/tau_AMPA+np.sum(SPIKES)
+    return s_AMPA
+</code></pre>
+
+<h3 id="nmda-channels">NMDA Channels</h3>
+
+<p>$$ \frac{d s<em>{j}^{NMDA}(t)}{dt} =-\frac{s</em>{j}^{NMDA}(t)}{\tau<em>{NMDA,decay}}+\alpha(1- s</em>{j}^{NMDA}(t) )$$
+$$ \frac{d x<em>{j}(t)}{dt} =-\frac{x</em>{j}(t)}{\tau_{NMDA,rise}}+\Sigma_k \delta(t-t^k<em>j)$$
+where the decay time of NMDA currents $\tau</em>{NMDA,decay}=100ms$, $\alpha=0.5 ms^{-1}$ and $\tau_{NMDA,rise}=2ms$</p>
+
+<pre><code class="language-python">def s_AMPA(s_AMPA,SPIKES):
+    tau_AMPA=2
+    s_AMPA=-s_AMPA/tau_AMPA+np.sum(SPIKES)
+    return s_AMPA
+
+def s_AMPA(s_AMPA,SPIKES):
+    tau_AMPA=2
+    s_AMPA=-s_AMPA/tau_AMPA+np.sum(SPIKES)
+    return s_AMPA
+</code></pre>
+
+<h3 id="gaba-channels">GABA Channels</h3>
+
+<p>$$ \frac{d s<em>{j}^{GABA}(t)}{dt} =-\frac{s</em>{j}^{GABA}(t)}{\tau<em>{GABA}}+\alpha(1- s</em>{j}^{NMDA}(t) )$$
+where the decay time of GABA currents $\tau_{GABA}=5ms$.</p>
+
+<pre><code class="language-python">def I_input_1(c_dash):
+    J_A_ext=0.00052 # nA/Hz
+    mu_0=30 # Hz
+    I_motion=J_A_ext*mu_0*(1+(c_dash)/100)
+    return I_motion
+</code></pre>
+
+<h2 id="structure-of-recurrent-excitatory-connections-between-pyramidal-cells">Structure of Recurrent Excitatory Connections between Pyramidal cells</h2>
+
+<pre><code class="language-python">def I_input_2(c_dash):
+    J_A_ext=0.00052 # nA/Hz
+    mu_0=30 # Hz
+    I_motion=J_A_ext*mu_0*(1-(c_dash)/100)
+    return I_motion
+</code></pre>
+
+<h2 id="numerical-solution">Numerical Solution</h2>
+
+<h3 id="second-order-runge-kutta">Second Order Runge Kutta</h3>
+
+<p>$$y_{i+1}=y_i+\frac{\Delta}{2}(k_1+k_2),$$
+$$k_1=f(x_i,y_i),$$
+$$k_2=f(x_i+\frac{\Delta}{2},y_i+\frac{\Delta}{2}k_1).$$</p>
+
+<pre><code class="language-python">def RK2(y,x,f):
+    delta=0.05
+    k1=f(x,y)
+    k2=f(x+delta/2,y+delta/2*k1)
+    y=y+delta/2*(k1+k2)
+    return y
+
+def f(x,y):
+    return x+y
+
+RK2(1,2,f)
+
+
+</code></pre>
+
+<pre><code class="language-python">c_dash=0.0
+
+for i in range (0,len(time)-1):
+    if time[i] &gt;=500 and time[i]&lt;600:
+        c_dash=25.0
+    elif time[i] &gt;=700 and time[i]&lt;800:
+        c_dash=35.0
+    elif time[i] &gt;=900 and time[i]&lt;1000:
+        c_dash=45.0
+    elif time[i] &gt;=1100 and time[i]&lt;1200:
+        c_dash=25.0
+    else:
+        c_dash=0.0
+    
+    
+    Firing_target_1[i]=H(x_1[i])
+    Firing_target_2[i]=H(x_2[i])
+    
+    I_noise_1[i+1]=Background_Activity(I_noise_1[i])
+    I_noise_2[i+1]=Background_Activity(I_noise_2[i])
+    
+    I_1[i+1]=I_input_1(c_dash)
+    I_2[i+1]=I_input_2(c_dash)
+   
+    x_1[i+1],x_2[i+1]=total_synaptic_current(S_1[i],S_2[i],I_1[i+1],
+                                      I_2[i+1],I_noise_1[i+1],I_noise_2[i+1])
+    S_1[i+1]=Network_Dynamics(S_1[i],x_1[i+1])
+    S_2[i+1]=Network_Dynamics(S_2[i],x_2[i+1])
+   
+
+</code></pre>
+
+<h3 id="plotting">Plotting</h3>
+
+<h4 id="input">Input</h4>
+
+<p><img src="Wang2002/Figure2.gif" alt="Neuronal Firing Type" style="width: 400px;"/>
+<em> Figure 2. Model Reproduces Salient Characteristics of Decision-Correlated Neural Activity in LIP</em>
+<img src="Wang2002/Figure3.jpg" alt="Neuronal Firing Type" style="width: 400px;"/>
+<em> Figure 3. Decision Dynamics with Inputs of Zero Coherence</p>
+
+<p>(A) Two trial simulations (red, neural group A; blue, neural group B). From top to bottom: raster, population firing rates rA and rB, stochastic inputs, and time integrals of inputs. In these two examples, decision choice (A or B) is correlated with the larger time integral of the input.</p>
+
+<p>(B) Network dynamics in the decision space for the same two trials as in (A). Note the initial random walk along the diagonal line (when the population activity is similar for the two groups); afterwards the network converges to one of the two attractors (at [rA = 20 Hz, rB = 3 Hz] and [rA = 3 Hz, rB = 20 Hz].</p>
+
+<p>&copy; Histogram of the difference in the input time integral for trials in which the decision choice is A (red curve) or B (blue curve). For trials where attractor A wins, the average I standard deviation of ΔS is 0.8 ± 3, whereas for trials where attractor B wins, it is −0.7 ± 3 (n = 1000, σ = 10 Hz, and stimulus duration is 1 s).</em></p>
+
+<p><img src="Wang2002/Figure4.jpg" alt="Neuronal Firing Type" style="width: 400px;"/>
+<em> Figure 4. Performance and Population Activity Time Courses</p>
+
+<p>(A) Neurometric functions (% correct). Data are fitted by Weibull functions. Filled circle: noisy stimuli (σ = 4 Hz) with symmetrical dependence of the mean values on input coherence (the ratio of the slopes is ρA/ρB = 1). Open circle: without noise in the stimulus (σ = 0), the network&rsquo;s performance is virtually the same. Filled square: asymmetrical dependence of the mean stimuli on coherence (the ratio of the slopes is ρA/ρB = 4). The coherence threshold is slightly lower.</p>
+
+<p>(B) Time course of population activity for four coherence levels. Black curves, the choice is the preferred stimulus; gray curves, the choice is the nonpreferred stimulus. Correct trials are indicated by solid curves, error trials by dashed curves.</em></p>
+
+<p><img src="Wang2002/Figure5.gif" alt="Neuronal Firing Type" style="width: 400px;"/>
+<em> Figure 5. Reaction Time Simulations</p>
+
+<p>Same parameters as in Figure 4.</p>
+
+<p>(A) During a 2 s stimulation, at the moment when one of the two neural groups reaches a fixed threshold (15 Hz) of population firing activity, the decision is made and the deliberation or decision time is read out. The decision time is longer and more variable at low coherence (left) than at high coherence (right). This is further quantified by the decision time histogram (bottom), which has a larger mean and is broader at low coherence (left) than at high coherence (right).</p>
+
+<p>(B) Left: Neurometric functions for the reaction time stimulation (circle) and with fixed stimulus duration of 1 s (square). The coherence threshold (defined by 82% correct) is αRT = 8.4% and αFD = 10.4%. Right: Average decision time is linear in the logarithm of the coherence level, ranging from 200 ms at high c′ to 800 ms at low c′. At very low coherence there is a saturation. Note the large standard deviation of decision time, especially at low coherence.</em></p>
+
+<p><img src="Wang2002/Figure6.gif" alt="Neuronal Firing Type" style="width: 400px;"/>
+<em>Figure 6. Dependence of the Decision Performance on the Duration of Stimulus Presentation</p>
+
+<p>The stimulus offset is followed by a fixed delay of 2 s, and the decision choice is based on which of the two attractors wins the competition.</p>
+
+<p>(A) Neurometric function is shifted to the left with longer stimuli.</p>
+
+<p>(B) Coherence threshold (α defined by 82% correct choices) decreases with the stimulus duration and plateaus for stimulus presentation longer than 1.5 s.</em></p>
+
+<p><img src="Wang2002/Figure7.jpg" alt="Neuronal Firing Type" style="width: 400px;"/>
+<em> Figure 7. Optimal Decision-Making Performance Requires Sufficiently Strong and Slow Synaptic Reverberations</p>
+
+<p>(A) When the strength of recurrent connections is weaker (w+ = 1.4 instead of w+ = 1.7), attractor dynamics can no longer be sustained by intrinsic network excitation. Neural activities of subpopulation A (left) and B (right) are shown at two coherence levels (1.6% and 51.2%). Same conventions as in Figure 2. In this case, there is a reduced time integration (ramping activity), categorical choice at low coherence is lost, and mnemonic persistent activity is absent during the delay period.</p>
+
+<p>(B) Network behavior with an increased strength of recurrent connections (w+ = 1.8). Left: population activities in ten individual trials for the control (red, neural group A; blue, neural group B) and for enhanced recurrency (purple, neural group A; green, neural group B). With stronger excitatory reverberations, persistent activity level is doubled (from 20 Hz in control to 40 Hz), and the integration time of stimulus is shortened by a half. The performance is reduced from 72% to 60% correct at c′ = 6.4%. Right: the network&rsquo;s performance is worse, with the neurometric function&rsquo;s threshold increased from 8.4% (red) to 15.6% (purple).</em>
+<img src="Wang2002/Figure7.jpg" alt="Neuronal Firing Type" style="width: 400px;"/>
+<em> (A) The input signal is reversed during stimulation, where the signal strength is weak (6.4%) and the same before and after the reversal. Percentage choices for A and B as function of the onset time of reversal. The dependence is initially linear as a function of the time of reversal, consistent with an integration of the first and second inputs of the opposite signs. However, the behavioral performance is no longer affected if signal reversal occurs too late (e.g., the reversal time is larger than 700 ms after the stimulus onset), when the network becomes dominated by the intrinsic attractor dynamics.</p>
+
+<p>(B) Even when the signal is reversed 1 s after the stimulus onset, the decision is still reversable by a more powerful input. Percentage choices for A and B as function of the coherence level of the reversed signal. When the new input is sufficiently large (coherence above 70%–80%), the decision is always reversed in favor of the “new evidence.”</p>
+
+<p>&copy; Examples for control (top) and signal reversal from c′ = 6.4% to −80% at 1 s after the stimulus onset (bottom). Note the slow ramp-down of population activity in group A (red), and ramp-up of population activity in group B (blue) during the second half of the stimulation when the decision is reversed.</em></p>
+
+    </div>
+
+    
+
+
+
+    
+      
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+  
+
+
+
+
+
+  
+  
+  
+    
+  
+  
+  <div class="media author-card" itemscope itemtype="http://schema.org/Person">
+    
+      
+      <img class="portrait mr-3" src="/authors/admin/avatar_hu554e1b7fd376a2eff2110ae0da3c3609_309212_250x250_fill_lanczos_center_2.png" itemprop="image" alt="Avatar">
+    
+
+    <div class="media-body">
+      <h5 class="card-title" itemprop="name"><a href="/">John S Butler</a></h5>
+      <h6 class="card-subtitle">Lecturer in Mathematical Sciences</h6>
+      <p class="card-text" itemprop="description">My research interests are the application of computatinal, statistical and numerical methods for basic and translational research in Neuroscience, Neurology and Optometry.</p>
+      <ul class="network-icon" aria-hidden="true">
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="/#contact" >
+              <i class="fas fa-envelope"></i>
+            </a>
+          </li>
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://twitter.com/jslbutler" target="_blank" rel="noopener">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </li>
+        
+          
+          
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://scholar.google.com/citations?user=XxHqFtcAAAAJ&amp;hl=en" target="_blank" rel="noopener">
+              <i class="ai ai-google-scholar"></i>
+            </a>
+          </li>
+        
+          
+          
+          
+            
+          
+          
+          
+          
+          
+            
+          
+          <li>
+            <a itemprop="sameAs" href="https://github.com/john-s-butler-dit" target="_blank" rel="noopener">
+              <i class="fab fa-github"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+
+
+      
+      
+    
+
+    
+
+    
+
+
+  </div>
+</article>
+
+      
+
+    
+    
+    
+    <script src="/js/mathjax-config.js"></script>
+    
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js" integrity="sha256-aYTdUrn6Ow1DDgh5JTc3aDGnnju48y/1c8s1dgkYPQ8=" crossorigin="anonymous"></script>
+        
+      
+
+      
+      
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_CHTML-full" integrity="sha256-GhM+5JHb6QUzOQPXSJLEWP7R73CbkisjzK5Eyij4U9w=" crossorigin="anonymous" async></script>
+      
+    
+
+    
+    
+
+    
+    
+    
+
+    
+    
+    <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    
+    
+    <script>
+      const search_index_filename = "/index.json";
+      const i18n = {
+        'placeholder': "Search...",
+        'results': "results found",
+        'no_results': "No results found"
+      };
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'talk' : "Talks"
+        };
+    </script>
+    
+
+    
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    <script src="/js/academic.min.3394a224b26ce58ff36f44c54743e0ab.js"></script>
+
+    
+
+
+
+
+
+
+  
+  <div class="container">
+    <footer class="site-footer">
+  
+  <p class="powered-by">
+    <a href="/privacy/">Privacy Policy</a>
+  </p>
+  
+
+  <p class="powered-by">
+    
+
+    Powered by the
+    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+
+    
+    <span class="float-right" aria-hidden="true">
+      <a href="#" id="back_to_top">
+        <span class="button_icon">
+          <i class="fas fa-chevron-up fa-2x"></i>
+        </span>
+      </a>
+    </span>
+    
+  </p>
+</footer>
+
+  </div>
+  
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

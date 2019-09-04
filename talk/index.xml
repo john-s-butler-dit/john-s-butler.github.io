@@ -49,14 +49,22 @@
 
 &lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
 
-&lt;p&gt;This webpage will describe a mathematical model that simulates impact of the introduction of microplastics on fish and salmon population using Python.
-The webpage is divided into six parts:
-* The first section outlines the normal predator prey interaction first observed in hare and lynx;
-* The second section  will mathematically model the predator-prey relationship of salmon and small fish;
-* The third section describes and models the growth of the human population and increase in the production of microplastics;
-* The fourth section describes the impact of microplastics on the small fish, salmon and human population;
-* The fifth section shows the results of the simulations of the ecosystem  for different levels of plastic production rates;
-* The final section presents some questions that arise from this problem.&lt;/p&gt;
+&lt;p&gt;This webpage describes a mathematical model that simulates impact of the introduction of microplastics on fish and salmon population using Python.
+The webpage is divided into six parts:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;The first section outlines the normal predator prey interaction first observed in hare and lynx;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;The second section  will mathematically model the predator-prey relationship of salmon and small fish;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;The third section describes and models the growth of the human population and increase in the production of microplastics;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;The fourth section describes the impact of microplastics on the small fish, salmon and human population;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;The fifth section shows the results of the simulations of the ecosystem  for different levels of plastic production rates;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;The final section presents some questions that arise from this problem.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;p&gt;The webpage is written such that it can be read by some one with no programming experience but if you want to read the code you can click on the button below.&lt;/p&gt;
 
