@@ -359,7 +359,7 @@ for i in range (1,N):
 \end{equation}&lt;/p&gt;
 
 &lt;p&gt;\begin{equation}
-\frac{d D}{dt}=0.001D+0.001 PD-0.001DW,
+\frac{d D}{dt}=0.001D+0.001(P-40)D-0.001DW,
 \end{equation}&lt;/p&gt;
 
 &lt;p&gt;\begin{equation}
