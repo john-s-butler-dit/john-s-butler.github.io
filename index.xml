@@ -6,10 +6,457 @@
     <description>Recent content on John S Butler</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 01 Jul 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 19 Oct 2019 00:00:00 +0000</lastBuildDate>
     
 	    <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Using maths to model the impact of the re-introduction of wolves</title>
+      <link>/talk/primaryschooltalk2019/</link>
+      <pubDate>Sat, 19 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/talk/primaryschooltalk2019/</guid>
+      <description>
+
+&lt;h1 id=&#34;modelling-the-re-introduction-of-wolves&#34;&gt;Modelling the Re-introduction of Wolves&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&#34;johnsbutler.netlify.com&#34; target=&#34;_blank&#34;&gt;John S Butler&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;School of Mathematical Sciences&lt;/p&gt;
+
+&lt;p&gt;TU Dublin&lt;/p&gt;
+
+&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
+
+&lt;p&gt;This webpage will describe a mathematical model that simulates impact of the introduction of wolves on deer and plants population using Python.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;import numpy as np
+import math 
+
+%matplotlib inline
+import matplotlib.pyplot as plt # side-stepping mpl backend
+import matplotlib.gridspec as gridspec # subplots
+import warnings
+font = {&#39;family&#39; : &#39;normal&#39;,
+        &#39;weight&#39; : &#39;bold&#39;,
+        &#39;size&#39;   : 14}
+
+plt.rc(&#39;font&#39;, **font)
+from IPython.display import HTML
+
+HTML(&#39;&#39;&#39;&amp;lt;script&amp;gt;
+code_show=true; 
+function code_toggle() {
+ if (code_show){
+ $(&#39;div.input&#39;).hide();
+ } else {
+ $(&#39;div.input&#39;).show();
+ }
+ code_show = !code_show
+} 
+$( document ).ready(code_toggle);
+&amp;lt;/script&amp;gt;
+&amp;lt;form action=&amp;quot;javascript:code_toggle()&amp;quot;&amp;gt;&amp;lt;input type=&amp;quot;submit&amp;quot; value=&amp;quot;Click here to toggle on/off the raw code.&amp;quot;&amp;gt;&amp;lt;/form&amp;gt;&#39;&#39;&#39;)
+
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;script&gt;
+code_show=true;
+function code_toggle() {
+ if (code_show){
+ $(&amp;lsquo;div.input&amp;rsquo;).hide();
+ } else {
+ $(&amp;lsquo;div.input&amp;rsquo;).show();
+ }
+ code_show = !code_show
+}
+$( document ).ready(code_toggle);
+&lt;/script&gt;
+&lt;form action=&#34;javascript:code_toggle()&#34;&gt;&lt;input type=&#34;submit&#34; value=&#34;Click here to toggle on/off the raw code.&#34;&gt;&lt;/form&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;what-is-mathematics-used-for&#34;&gt;What is mathematics used for?&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Neuroscience&lt;/li&gt;
+&lt;li&gt;Engineering&lt;/li&gt;
+&lt;li&gt;Physics&lt;/li&gt;
+&lt;li&gt;Biology&lt;/li&gt;
+&lt;li&gt;Football&lt;/li&gt;
+&lt;li&gt;Computer Games&lt;/li&gt;
+&lt;li&gt;Animation&lt;/li&gt;
+&lt;li&gt;Nature&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&#34;predator-prey&#34;&gt;Predator Prey&lt;/h1&gt;
+
+&lt;h2 id=&#34;predators-and-prey&#34;&gt;Predators and prey&lt;/h2&gt;
+
+&lt;p&gt;The cyclical relationship of Predators and Prey in the wild  means that when there is an abundance of prey, the predators will eat more and the prey population will increase. On the other hand, if there is a shortage in the number of prey, the number of predators will decrease due to the scarcity of food sources [1-4].&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;# INITIAL CONDITIONS
+N=1000000
+h=0.01
+time = np.arange(1950, 2100, h )              # time
+N=len(time)
+plant=80*np.ones(N) # 60 billions small plant
+deer=45*np.ones(N) # 30 billion deer
+SMALLplant = np.array( [0.9,-0.02,0.03])
+deer_constant= np.array([0.005,0.002,-0.001])
+for i in range (1,N):
+    plant[i]=plant[i-1]+h*plant[i-1]*(SMALLplant[0]+SMALLplant[1]*deer[i-1])
+    deer[i]=deer[i-1]+h*deer[i-1]*(deer_constant[0]+deer_constant[1]*(plant[i-1]-40))
+    
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;deers&#34;&gt;Deers&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&#34;deer.jpg&#34; height=&#34;400&#34; width=&#34;400&#34;&gt;&lt;/p&gt;
+
+&lt;p&gt;The plot below shows the deer (blue) population as a function of time over 150 years.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;with plt.xkcd():
+## PLOTTING
+    fig = plt.figure(figsize=(8,4))
+    plt.plot(time, deer, &#39;b-&#39;, label=&#39;deer&#39;,linewidth=3)
+    plt.grid()
+    plt.xlabel(&#39;time (years)&#39;)
+    plt.ylabel(&#39;Population (hundreds)&#39;)
+    plt.legend(loc=&#39;best&#39;)
+    plt.tight_layout()
+    plt.ylim([0,120])
+  #  plt.savefig(&#39;deer_Hand.png&#39;, bbox_inches=&#39;tight&#39;,dpi=300)
+    plt.show()
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;img src=&#34;output_7_0.png&#34; alt=&#34;png&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The deer population goes up and down on a year by year basis.&lt;/p&gt;
+
+&lt;h2 id=&#34;what-do-deers-eat&#34;&gt;What do deers eat?&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&#34;deer-eating.jpg&#34; height=&#34;400&#34; width=&#34;400&#34;&gt;&lt;/p&gt;
+
+&lt;p&gt;Deers eat plants, and if the deer each too plants one year there are less the next.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;with plt.xkcd():
+## PLOTTING
+    fig = plt.figure(figsize=(8,4))
+    plt.plot(time, plant, &#39;g-&#39;, label=&#39;plants&#39;,linewidth=3)
+    plt.grid()
+    plt.xlabel(&#39;time (years)&#39;)
+    plt.ylabel(&#39;Population (hundreds)&#39;)
+    plt.legend(loc=&#39;best&#39;)
+    plt.tight_layout()
+    plt.ylim([0,120])
+#  plt.savefig(&#39;deer_.png&#39;, bbox_inches=&#39;tight&#39;,dpi=300)
+    plt.show()
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;img src=&#34;output_9_0.png&#34; alt=&#34;png&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;the-maths-model-deer-and-plants&#34;&gt;The Maths model Deer and Plants&lt;/h2&gt;
+
+&lt;p&gt;In a balanced eco system the relationship between plants (prey) and deer (predator) can be described mathematically using a Loketta-Volterra model [2-4]
+\begin{equation}
+\begin{array}{cl}
+\frac{d P}{dt}=0.9P-0.02PD,&lt;br /&gt;
+\frac{d D}{dt}=0.001D+0.001 (P-40)D,&lt;br /&gt;
+\end{array}
+\end{equation}
+this set of equations models the interaction between plants (P) and deer (D).&lt;/p&gt;
+
+&lt;p&gt;The equations can be written in words as:&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;The rate of change of population&lt;/th&gt;
+&lt;th&gt;is equal to&lt;/th&gt;
+&lt;th&gt;the current population with a control factor&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;The increase in plant population  $\frac{d P}{dt}$&lt;/td&gt;
+&lt;td&gt;is equal to&lt;/td&gt;
+&lt;td&gt;the current plant population $0.9P$ minus the amount of plants the deer eat $-0.02DP$&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;The increase in deer population $\frac{d D}{dt}$&lt;/td&gt;
+&lt;td&gt;is equal to&lt;/td&gt;
+&lt;td&gt;the current Deer population $0.005D$ plus the amount of fish salmon eat $+0.0001DP$&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;Or they can be summed up as the deer are the predators who eat the plants to survive.&lt;/p&gt;
+
+&lt;h2 id=&#34;deer-and-plants&#34;&gt;Deer and Plants&lt;/h2&gt;
+
+&lt;h3 id=&#34;how-does-maths-predict-the-future&#34;&gt;How does maths predict the future?&lt;/h3&gt;
+
+&lt;p&gt;These differential equations can be re-written as &lt;strong&gt;Adding and Subtraction&lt;/strong&gt; using the Euler method [5-6]
+\begin{equation}
+\begin{array}{cl}
+P&lt;em&gt;{Future}=P&lt;/em&gt;{Current}+0.9P&lt;em&gt;{Current}-0.002P&lt;/em&gt;{Current}\times D&lt;em&gt;{Current},&lt;br /&gt;
+D&lt;/em&gt;{Future}=D&lt;em&gt;{Current}+0.005D&lt;/em&gt;{Current}+0.0001(P&lt;em&gt;{Current}-40) \times D&lt;/em&gt;{Current}
+\end{array}
+\end{equation}
+this set of equations models the interaction between plants (P) and deer (D).&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;with plt.xkcd():
+    fig = plt.figure(figsize=(8,4))
+    plt.plot(time, plant, &#39;g-&#39;, label=&#39;plants&#39;,linewidth=3)
+    plt.plot(time, deer, &#39;b-&#39;, label=&#39;deer&#39;,linewidth=3)
+    plt.grid()
+    plt.xlabel(&#39;time (years)&#39;)
+    plt.ylabel(&#39;Population (hundreds)&#39;)
+    plt.legend(loc=&#39;best&#39;)
+    plt.tight_layout()
+    plt.ylim([0,120])
+  #  plt.savefig(&#39;plant_deer.png&#39;, bbox_inches=&#39;tight&#39;,dpi=300)
+    plt.show()
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;img src=&#34;output_12_0.png&#34; alt=&#34;png&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;what-does-a-balanced-ecosystem-look-like&#34;&gt;What does a balanced ecosystem look like?&lt;/h2&gt;
+
+&lt;p&gt;Below is a plot of balanced ecosystem, in the x-axis is the number of plants and the y is number of deer. The plot shows how the two interact and maintain an orbit around a equilibrium point (balance point).&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;with plt.xkcd():
+    fig = plt.figure(figsize=(6,6))
+    plt.plot(plant, deer, &#39;k-&#39;, linewidth=3)
+    plt.grid()
+    plt.xlabel(&#39;plants&#39;)
+    plt.ylabel(&#39;deer&#39;)
+    plt.tight_layout()
+    #plt.savefig(&#39;plant_vs_deer.png&#39;, bbox_inches=&#39;tight&#39;,dpi=300)
+    plt.show()
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;img src=&#34;output_14_0.png&#34; alt=&#34;png&#34; /&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;wolves&#34;&gt;Wolves&lt;/h1&gt;
+
+&lt;p&gt;Now the question is what would happen if we re-introduced wolves in for example 2020 [7]
+&lt;a href=&#34;https://www.irishtimes.com/news/politics/greens-call-for-wolves-to-be-reintroduced-to-ireland-1.4036692&#34; target=&#34;_blank&#34;&gt;https://www.irishtimes.com/news/politics/greens-call-for-wolves-to-be-reintroduced-to-ireland-1.4036692&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;Wolf.jpg&#34; height=&#34;400&#34; width=&#34;400&#34;&gt;
+Some of the concerns with this are:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Can the wolves maintain?&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Will the wolves eat all the deer.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;How will it impact other things in the eco system.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&#34;results&#34;&gt;Results&lt;/h2&gt;
+
+&lt;p&gt;The plot below shows the population change of the wolves (red) which does maintain and grow after the re-introduction of 500 wolves.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;# INITIAL CONDITIONS
+N=1000000
+h=0.01
+time = np.arange(1950, 2100, h )              # time
+N=len(time)
+plant=80*np.ones(N) # 60 billions small plant
+deer=45*np.ones(N) # 30 billion deer
+wolves=5*np.ones(N) # 30 billion deer
+#wolves[time&amp;lt;2020]=0
+SMALLplant = np.array( [0.9,-0.02,0.03])
+deer_constant= np.array([0.005,0.002,-0.001])
+wolves_constant= np.array([-0.05,0.001,0.0])
+
+for i in range (1,N):
+     if time[i-1]&amp;lt;2020:
+        wolves[i-1]=0
+     else:
+         wolves[i]=wolves[i-1]+h*wolves[i-1]*(wolves_constant[0]+wolves_constant[1]*(deer[i-1]))
+    
+     plant[i]=plant[i-1]+h*plant[i-1]*(SMALLplant[0]+SMALLplant[1]*deer[i-1]+SMALLplant[2]*wolves[i-1])
+     deer[i]=deer[i-1]+h*deer[i-1]*(deer_constant[0]+deer_constant[1]*(plant[i-1]-60)+deer_constant[2]*wolves[i-1])
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;with plt.xkcd():
+    fig = plt.figure(figsize=(8,4))
+    plt.plot(time, wolves, &#39;r-&#39;, label=&#39;wolves&#39;,linewidth=3)
+    plt.grid()
+    plt.xlabel(&#39;time (years)&#39;)
+    plt.ylabel(&#39;Population (hundreds)&#39;)
+    plt.legend(loc=&#39;best&#39;)
+    plt.tight_layout()
+ #   plt.savefig(&#39;Wolves_Hand.png&#39;, bbox_inches=&#39;tight&#39;,dpi=300)
+    plt.show()
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;img src=&#34;output_17_0.png&#34; alt=&#34;png&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;how-does-the-introduction-of-wolves-impact-deer&#34;&gt;How does the introduction of Wolves impact Deer?&lt;/h2&gt;
+
+&lt;p&gt;The plot below shows that surprisingly the introduction of wolves (red) results in an increase in population in deer (blue).&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;with plt.xkcd():
+    ## PLOTTING
+    fig = plt.figure(figsize=(8,4))
+    plt.plot(time, deer, &#39;b-&#39;, label=&#39;deer&#39;,linewidth=3)
+    plt.plot(time, wolves, &#39;r-&#39;, label=&#39;wolves&#39;,linewidth=3)
+    plt.grid()
+    plt.xlabel(&#39;time (years)&#39;)
+    plt.ylabel(&#39;Population (hundreds)&#39;)
+    plt.legend(loc=&#39;best&#39;)
+    plt.tight_layout()
+    plt.ylim([0,120])
+#    plt.savefig(&#39;Deer_Wolves_Hand.png&#39;, bbox_inches=&#39;tight&#39;,dpi=300)
+    plt.show()
+    
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;img src=&#34;output_19_0.png&#34; alt=&#34;png&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;why-do-wolves-benefit&#34;&gt;Why do Wolves benefit?&lt;/h2&gt;
+
+&lt;p&gt;It turns out that the re-introduction of wolves (red) results in an increase in plants (green) and hence an increase in deer (blue).&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;with plt.xkcd():
+    fig = plt.figure(figsize=(8,4))
+    plt.plot(time, plant, &#39;g-&#39;, label=&#39;plants&#39;,linewidth=3)
+    plt.plot(time, deer, &#39;b-&#39;, label=&#39;deer&#39;,linewidth=3)
+    plt.plot(time, wolves, &#39;r-&#39;, label=&#39;wolves&#39;,linewidth=3)
+    plt.grid()
+    plt.ylim([0,120])
+    plt.xlabel(&#39;time (years)&#39;)
+    plt.ylabel(&#39;Population (hundreds)&#39;)
+    plt.legend(loc=&#39;best&#39;)
+    plt.tight_layout()
+  #  plt.savefig(&#39;Plants_Deer_Wolves_hand.png&#39;, bbox_inches=&#39;tight&#39;,dpi=300)
+
+    plt.show()
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;img src=&#34;output_21_0.png&#34; alt=&#34;png&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;what-does-the-new-ecosystem-look-like&#34;&gt;What does the new ecosystem look like?&lt;/h2&gt;
+
+&lt;h2 id=&#34;the-maths-model-deer-plants-and-wolves&#34;&gt;The Maths model Deer, Plants and Wolves&lt;/h2&gt;
+
+&lt;p&gt;Here I add the volved to the model \begin{equation}
+\begin{array}{cl}
+\frac{d P}{dt}=0.9P-0.02PD+0.003PW,&lt;br /&gt;
+\frac{d D}{dt}=0.001D+0.001 PD-0.001DW,&lt;br /&gt;
+\frac{d W}{dt}=-0.05W+0.001 DW,&lt;br /&gt;
+\end{array}
+\end{equation}
+this set of equations models the interaction between plants (P) and deer (D).&lt;/p&gt;
+
+&lt;h3 id=&#34;how-does-maths-predict-the-future-1&#34;&gt;How does maths predict the future?&lt;/h3&gt;
+
+&lt;p&gt;These differential equations can be re-written as &lt;strong&gt;Adding and Subtraction&lt;/strong&gt;
+\begin{equation}
+\begin{array}{cl}
+P&lt;em&gt;{Future}=P&lt;/em&gt;{Current}+0.9P&lt;em&gt;{Current}-0.002P&lt;/em&gt;{Current}\times D&lt;em&gt;{Current}+0.003P&lt;/em&gt;{Current}W&lt;em&gt;{Current},&lt;br /&gt;
+D&lt;/em&gt;{Future}=D&lt;em&gt;{Current}+0.005D&lt;/em&gt;{Current}+0.0001(P&lt;em&gt;{Current}-40) \times D&lt;/em&gt;{Current}-0.001D&lt;em&gt;{Current}W&lt;/em&gt;{Current}&lt;br /&gt;
+W&lt;em&gt;{Future}=W&lt;/em&gt;{Current}-0.05W&lt;em&gt;{Current}+0.0001P&lt;/em&gt;{Current} \times W_{Current}
+\end{array}
+\end{equation}
+this set of equations models the interaction between plants (P), deer (D) and wolves.&lt;/p&gt;
+
+&lt;h2 id=&#34;how-does-it-impact-the-eco-system&#34;&gt;How does it impact the eco system&lt;/h2&gt;
+
+&lt;p&gt;The introduction of wolves resulted in a new balanced ecosystem with more plants and wolves.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;with plt.xkcd():
+    fig = plt.figure(figsize=(6,6))
+    plt.plot(plant, deer, &#39;k-&#39;, linewidth=3)
+    plt.grid()
+    plt.xlabel(&#39;plants&#39;)
+    plt.ylabel(&#39;deer&#39;)
+    plt.tight_layout()
+ #   plt.savefig(&#39;plant_vs_deer_and_Wolves.png&#39;, bbox_inches=&#39;tight&#39;,dpi=300)
+    plt.show()
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;img src=&#34;output_24_0.png&#34; alt=&#34;png&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;yellowstone-park&#34;&gt;Yellowstone Park&lt;/h2&gt;
+
+&lt;p&gt;The models in this notebook are just toy problems maybe up to illustrate a point but they were inspired by the re-introduction of wolves into Yellowstone Park shown in the video below [8].&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;from IPython.display import HTML
+
+# Youtube
+HTML(&#39;&amp;lt;iframe width=&amp;quot;560&amp;quot; height=&amp;quot;315&amp;quot; src=&amp;quot;https://www.youtube.com/embed/ysa5OBhXz-Q&amp;quot; frameborder=&amp;quot;0&amp;quot; allow=&amp;quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&amp;quot; allowfullscreen&amp;gt;&amp;lt;/iframe&amp;gt;&#39;)
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;/Users/johnbutler/anaconda3/lib/python3.7/site-packages/IPython/core/display.py:694: UserWarning: Consider using IPython.display.IFrame instead
+  warnings.warn(&amp;quot;Consider using IPython.display.IFrame instead&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/ysa5OBhXz-Q&#34; frameborder=&#34;0&#34; allow=&#34;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&#34; allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;h1 id=&#34;open-questions-and-future-discussions&#34;&gt;Open Questions and Future Discussions&lt;/h1&gt;
+
+&lt;p&gt;The model shows the benefit of wolves to a simple ecosystem model of plants and deer. Mathematical models of this type can be used to motivate the discussion.&lt;/p&gt;
+
+&lt;p&gt;The immediate questions that can arise from this simulation are:
+1. How many wolves are beneficial?
+2. Does Ireland have the same ecosystem as yellowstone?
+3. What are hidden negatives?
+4. What are hidden positives?&lt;/p&gt;
+
+&lt;p&gt;You can also look at the notebook on the negative impact of microplastics to our ecosystem [4].&lt;/p&gt;
+
+&lt;h1 id=&#34;how-does-this-describe-our-neck-muscles&#34;&gt;How does this describe our neck muscles&lt;/h1&gt;
+
+&lt;p&gt;Similar models can be used to describe how muslces interact but instead of predators and prey the have contracting and expanding muscles.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;h=0.01
+time = np.arange(0, 10, h )              # time
+N=len(time)
+Left=np.sin(time)
+Right=np.cos(time)
+
+with plt.xkcd():
+    fig = plt.figure(figsize=(8,4))
+    plt.plot(time, Left, &#39;g-&#39;, label=&#39;Left Side&#39;,linewidth=3)
+    plt.plot(time, Right, &#39;b-&#39;, label=&#39;Right Side&#39;,linewidth=3)
+    plt.grid()
+    plt.xlabel(&#39;time (s)&#39;)
+    plt.ylabel(&#39;Neck Muscle Activity&#39;)
+    plt.yticks([-1,1],[&#39;expand&#39;,&#39;contract&#39;])
+    plt.legend(loc=&#39;best&#39;)
+    plt.tight_layout()
+    plt.show()
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;img src=&#34;output_28_0.png&#34; alt=&#34;png&#34; /&gt;&lt;/p&gt;
+
+&lt;h1 id=&#34;references&#34;&gt;References&lt;/h1&gt;
+
+&lt;p&gt;[1]  Vito Volterra.  Fluctuations in the abundance of a species considered mathematically. Nature,118:558–560,1926.&lt;/p&gt;
+
+&lt;p&gt;[2] Wikipedia contributors. (2018, July 27). Lotka–Volterra equations. In Wikipedia, The Free Encyclopedia. Retrieved 09:33, September 7, 2018, from &lt;a href=&#34;https://en.wikipedia.org/w/index.php?title=Lotka%E2%80%93Volterra_equations&amp;amp;oldid=852191432&#34; target=&#34;_blank&#34;&gt;https://en.wikipedia.org/w/index.php?title=Lotka%E2%80%93Volterra_equations&amp;amp;oldid=852191432&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;[3] Alfred J Lotka.   Analytical note on certain rhythmic  relations inorganic  systems.Proceedings of the National Academy of Sciences,6(7):410–415,1920.&lt;/p&gt;
+
+&lt;p&gt;[4] Aleksandra Samotyja, Gordon Chambers, John S Butler, Microplastic as Prey &lt;a href=&#34;https://github.com/john-s-butler-dit/MicroPlastics&#34; target=&#34;_blank&#34;&gt;https://github.com/john-s-butler-dit/MicroPlastics&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;[5] Euler Method (2019, October 20) &lt;a href=&#34;https://en.wikipedia.org/wiki/Euler_method&#34; target=&#34;_blank&#34;&gt;https://en.wikipedia.org/wiki/Euler_method&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;[6] John S Butler, Numerical Analysis for differential Equation, Chapter 1 Euler Method, (2019, October 20) &lt;a href=&#34;https://github.com/john-s-butler-dit/Numerical-Analysis-Python/tree/master/Chapter%2001%20-%20Euler%20Methods&#34; target=&#34;_blank&#34;&gt;https://github.com/john-s-butler-dit/Numerical-Analysis-Python/tree/master/Chapter%2001%20-%20Euler%20Methods&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;[7] Greens call for wolves to be reintroduced to Ireland (2019, October 20) &lt;a href=&#34;https://www.irishtimes.com/news/politics/greens-call-for-wolves-to-be-reintroduced-to-ireland-1.4036692&#34; target=&#34;_blank&#34;&gt;https://www.irishtimes.com/news/politics/greens-call-for-wolves-to-be-reintroduced-to-ireland-1.4036692&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;[8] How Wolves Change a River (2019, October 20) &lt;a href=&#34;https://www.youtube.com/embed/ysa5OBhXz-Q&#34; target=&#34;_blank&#34;&gt;https://www.youtube.com/embed/ysa5OBhXz-Q&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Current source density approaches improve spatial resolution in event related potential analysis in people with Parkinson&#39;s disease.</title>
