@@ -158,14 +158,17 @@ for i in range (1,N):
 
 &lt;h2 id=&#34;the-maths-model-deer-and-plants&#34;&gt;The Maths model Deer and Plants&lt;/h2&gt;
 
-&lt;p&gt;In a balanced eco system the relationship between plants (prey) and deer (predator) can be described mathematically using a Loketta-Volterra model [2-4]
-\begin{equation}
-\begin{array}{cl}
-\frac{d P}{dt}=0.9P-0.02PD,&lt;br /&gt;
-\frac{d D}{dt}=0.001D+0.001 (P-40)D,&lt;br /&gt;
-\end{array}
-\end{equation}
-this set of equations models the interaction between plants (P) and deer (D).&lt;/p&gt;
+&lt;p&gt;In a balanced eco system the relationship between plants (prey) and deer (predator) can be described mathematically using a Loketta-Volterra model [2-4]&lt;/p&gt;
+
+&lt;p&gt;\begin{equation}
+\frac{d P}{dt}=0.9P-0.02PD,
+\end{equation}&lt;/p&gt;
+
+&lt;p&gt;\begin{equation}
+\frac{d D}{dt}=0.001D+0.001 (P-40)D,
+\end{equation}&lt;/p&gt;
+
+&lt;p&gt;this set of equations models the interaction between plants (P) and deer (D).&lt;/p&gt;
 
 &lt;p&gt;The equations can be written in words as:&lt;/p&gt;
 
@@ -199,14 +202,17 @@ this set of equations models the interaction between plants (P) and deer (D).&lt
 
 &lt;h3 id=&#34;how-does-maths-predict-the-future&#34;&gt;How does maths predict the future?&lt;/h3&gt;
 
-&lt;p&gt;These differential equations can be re-written as &lt;strong&gt;Adding and Subtraction&lt;/strong&gt; using the Euler method [5-6]
-\begin{equation}
-\begin{array}{cl}
-P&lt;em&gt;{Future}=P&lt;/em&gt;{Current}+0.9P&lt;em&gt;{Current}-0.002P&lt;/em&gt;{Current}\times D&lt;em&gt;{Current},&lt;br /&gt;
-D&lt;/em&gt;{Future}=D&lt;em&gt;{Current}+0.005D&lt;/em&gt;{Current}+0.0001(P&lt;em&gt;{Current}-40) \times D&lt;/em&gt;{Current}
-\end{array}
-\end{equation}
-this set of equations models the interaction between plants (P) and deer (D).&lt;/p&gt;
+&lt;p&gt;These differential equations can be re-written as &lt;strong&gt;Adding and Subtraction&lt;/strong&gt; using the Euler method [5-6]&lt;/p&gt;
+
+&lt;p&gt;\begin{equation}
+P&lt;em&gt;{Future}=P&lt;/em&gt;{Current}+0.9P&lt;em&gt;{Current}-0.002P&lt;/em&gt;{Current}\times D_{Current},
+{equation}&lt;/p&gt;
+
+&lt;p&gt;\begin{equation}
+D&lt;em&gt;{Future}=D&lt;/em&gt;{Current}+0.005D&lt;em&gt;{Current}+0.0001(P&lt;/em&gt;{Current}-40) \times D_{Current}
+\end{equation}&lt;/p&gt;
+
+&lt;p&gt;this set of equations models the interaction between plants (P) and deer (D).&lt;/p&gt;
 
 &lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;with plt.xkcd():
     fig = plt.figure(figsize=(8,4))
@@ -346,26 +352,38 @@ for i in range (1,N):
 
 &lt;h2 id=&#34;the-maths-model-deer-plants-and-wolves&#34;&gt;The Maths model Deer, Plants and Wolves&lt;/h2&gt;
 
-&lt;p&gt;Here I add the volved to the model \begin{equation}
-\begin{array}{cl}
-\frac{d P}{dt}=0.9P-0.02PD+0.003PW,&lt;br /&gt;
-\frac{d D}{dt}=0.001D+0.001 PD-0.001DW,&lt;br /&gt;
-\frac{d W}{dt}=-0.05W+0.001 DW,&lt;br /&gt;
-\end{array}
+&lt;p&gt;Here I add the volved to the model&lt;/p&gt;
+
+&lt;p&gt;\begin{equation}
+\frac{d P}{dt}=0.9P-0.02PD+0.003PW,
+\end{equation}&lt;/p&gt;
+
+&lt;p&gt;\begin{equation}
+\frac{d D}{dt}=0.001D+0.001 PD-0.001DW,
+\end{equation}&lt;/p&gt;
+
+&lt;p&gt;\begin{equation}
+\frac{d W}{dt}=-0.05W+0.001 DW,
 \end{equation}
 this set of equations models the interaction between plants (P) and deer (D).&lt;/p&gt;
 
 &lt;h3 id=&#34;how-does-maths-predict-the-future-1&#34;&gt;How does maths predict the future?&lt;/h3&gt;
 
-&lt;p&gt;These differential equations can be re-written as &lt;strong&gt;Adding and Subtraction&lt;/strong&gt;
-\begin{equation}
-\begin{array}{cl}
-P&lt;em&gt;{Future}=P&lt;/em&gt;{Current}+0.9P&lt;em&gt;{Current}-0.002P&lt;/em&gt;{Current}\times D&lt;em&gt;{Current}+0.003P&lt;/em&gt;{Current}W&lt;em&gt;{Current},&lt;br /&gt;
-D&lt;/em&gt;{Future}=D&lt;em&gt;{Current}+0.005D&lt;/em&gt;{Current}+0.0001(P&lt;em&gt;{Current}-40) \times D&lt;/em&gt;{Current}-0.001D&lt;em&gt;{Current}W&lt;/em&gt;{Current}&lt;br /&gt;
+&lt;p&gt;These differential equations can be re-written as &lt;strong&gt;Adding and Subtraction&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;\begin{equation}
+P&lt;em&gt;{Future}=P&lt;/em&gt;{Current}+0.9P&lt;em&gt;{Current}-0.002P&lt;/em&gt;{Current}\times D&lt;em&gt;{Current}+0.003P&lt;/em&gt;{Current}W_{Current},
+\end{equation}&lt;/p&gt;
+
+&lt;p&gt;\begin{equation}
+D&lt;em&gt;{Future}=D&lt;/em&gt;{Current}+0.005D&lt;em&gt;{Current}+0.0001(P&lt;/em&gt;{Current}-40) \times D&lt;em&gt;{Current}-0.001D&lt;/em&gt;{Current}W_{Current}
+\end{equation}&lt;/p&gt;
+
+&lt;p&gt;\begin{equation}
 W&lt;em&gt;{Future}=W&lt;/em&gt;{Current}-0.05W&lt;em&gt;{Current}+0.0001P&lt;/em&gt;{Current} \times W_{Current}
-\end{array}
-\end{equation}
-this set of equations models the interaction between plants (P), deer (D) and wolves.&lt;/p&gt;
+\end{equation}&lt;/p&gt;
+
+&lt;p&gt;this set of equations models the interaction between plants (P), deer (D) and wolves.&lt;/p&gt;
 
 &lt;h2 id=&#34;how-does-it-impact-the-eco-system&#34;&gt;How does it impact the eco system&lt;/h2&gt;
 
@@ -405,11 +423,17 @@ HTML(&#39;&amp;lt;iframe width=&amp;quot;560&amp;quot; height=&amp;quot;315&amp;
 
 &lt;p&gt;The model shows the benefit of wolves to a simple ecosystem model of plants and deer. Mathematical models of this type can be used to motivate the discussion.&lt;/p&gt;
 
-&lt;p&gt;The immediate questions that can arise from this simulation are:
-1. How many wolves are beneficial?
-2. Does Ireland have the same ecosystem as yellowstone?
-3. What are hidden negatives?
-4. What are hidden positives?&lt;/p&gt;
+&lt;p&gt;The immediate questions that can arise from this simulation are:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;How many wolves are beneficial?&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Does Ireland have the same ecosystem as yellowstone?&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;What are hidden negatives?&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;What are hidden positives?&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
 
 &lt;p&gt;You can also look at the notebook on the negative impact of microplastics to our ecosystem [4].&lt;/p&gt;
 
