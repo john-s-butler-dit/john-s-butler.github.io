@@ -6,19 +6,10 @@
     <description>Recent content in Tags on John S Butler</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 19 Oct 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 01 Jul 2019 00:00:00 +0000</lastBuildDate>
     
 	    <atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Outreach</title>
-      <link>/tags/outreach/</link>
-      <pubDate>Sat, 19 Oct 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/outreach/</guid>
-      <description></description>
-    </item>
     
     <item>
       <title>Current Source Density (CSD)</title>
@@ -98,6 +89,15 @@
       <pubDate>Mon, 01 Jul 2019 00:00:00 +0000</pubDate>
       
       <guid>/tags/visual/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Outreach</title>
+      <link>/tags/outreach/</link>
+      <pubDate>Wed, 29 May 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/outreach/</guid>
       <description></description>
     </item>
     
