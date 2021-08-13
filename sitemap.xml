@@ -3,6 +3,31 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://johnsbutler.netlify.app/</loc>
+    <lastmod>2021-08-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://johnsbutler.netlify.app/tags/outreach/</loc>
+    <lastmod>2021-08-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://johnsbutler.netlify.app/talk/</loc>
+    <lastmod>2021-08-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://johnsbutler.netlify.app/tags/</loc>
+    <lastmod>2021-08-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://johnsbutler.netlify.app/talk/neuromatchplaylist/</loc>
+    <lastmod>2021-08-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://johnsbutler.netlify.app/authors/admin/</loc>
     <lastmod>2021-04-09T00:00:00+00:00</lastmod>
   </url>
@@ -28,32 +53,7 @@
   </url>
   
   <url>
-    <loc>https://johnsbutler.netlify.app/</loc>
-    <lastmod>2021-04-09T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://johnsbutler.netlify.app/tags/outreach/</loc>
-    <lastmod>2021-04-09T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://johnsbutler.netlify.app/authors/saoirse-mccrann/</loc>
-    <lastmod>2021-04-09T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://johnsbutler.netlify.app/talk/</loc>
-    <lastmod>2021-04-09T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://johnsbutler.netlify.app/tags/</loc>
-    <lastmod>2021-04-09T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://johnsbutler.netlify.app/talk/playlist_temp/</loc>
     <lastmod>2021-04-09T00:00:00+00:00</lastmod>
   </url>
   
