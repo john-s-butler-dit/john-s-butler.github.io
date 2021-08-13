@@ -1,1557 +1,1371 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/authors/admin/</loc>
+    <loc>https://johnsbutler.netlify.app/authors/admin/</loc>
     <lastmod>2021-04-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/authors/</loc>
-    <lastmod>2021-04-09T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/talk/frontiersforyoungmindsopto/</loc>
+    <loc>https://johnsbutler.netlify.app/authors/</loc>
     <lastmod>2021-04-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/authors/ian-flitcroft/</loc>
-    <lastmod>2021-04-09T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/authors/james-loughman/</loc>
-    <lastmod>2021-04-09T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/</loc>
-    <lastmod>2021-04-09T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/outreach/</loc>
-    <lastmod>2021-04-09T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/authors/saoirse-mccrann/</loc>
-    <lastmod>2021-04-09T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/talk/</loc>
+    <loc>https://johnsbutler.netlify.app/talk/frontiersforyoungmindsopto/</loc>
     <lastmod>2021-04-09T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/</loc>
+    <loc>https://johnsbutler.netlify.app/authors/ian-flitcroft/</loc>
     <lastmod>2021-04-09T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>/talk/fens_bingo/</loc>
+    <loc>https://johnsbutler.netlify.app/authors/james-loughman/</loc>
+    <lastmod>2021-04-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://johnsbutler.netlify.app/</loc>
+    <lastmod>2021-04-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://johnsbutler.netlify.app/tags/outreach/</loc>
+    <lastmod>2021-04-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://johnsbutler.netlify.app/authors/saoirse-mccrann/</loc>
+    <lastmod>2021-04-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://johnsbutler.netlify.app/talk/</loc>
+    <lastmod>2021-04-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://johnsbutler.netlify.app/tags/</loc>
+    <lastmod>2021-04-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://johnsbutler.netlify.app/talk/fens_bingo/</loc>
     <lastmod>2020-12-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/talk/brightclub2020_mathsweek/</loc>
+    <loc>https://johnsbutler.netlify.app/talk/brightclub2020_mathsweek/</loc>
     <lastmod>2020-10-12T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/talk/frontiersforyoungmindseditor/</loc>
+    <loc>https://johnsbutler.netlify.app/talk/frontiersforyoungmindseditor/</loc>
     <lastmod>2020-09-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/talk/siam_judge/</loc>
+    <loc>https://johnsbutler.netlify.app/talk/siam_judge/</loc>
     <lastmod>2020-08-20T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/talk/brightclub2020/</loc>
+    <loc>https://johnsbutler.netlify.app/talk/brightclub2020/</loc>
     <lastmod>2020-04-29T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/talk/frontiersforyoungminds/</loc>
+    <loc>https://johnsbutler.netlify.app/talk/frontiersforyoungminds/</loc>
     <lastmod>2020-02-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/authors/jennifer-l-campos/</loc>
+    <loc>https://johnsbutler.netlify.app/authors/jennifer-l-campos/</loc>
     <lastmod>2020-02-22T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>/authors/maryam-pandi/</loc>
+    <loc>https://johnsbutler.netlify.app/authors/maryam-pandi/</loc>
     <lastmod>2020-02-22T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>/talk/imascientist2019/</loc>
+    <loc>https://johnsbutler.netlify.app/talk/imascientist2019/</loc>
     <lastmod>2019-11-20T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/talk/primaryschooltalk2019/</loc>
+    <loc>https://johnsbutler.netlify.app/talk/primaryschooltalk2019/</loc>
     <lastmod>2019-10-19T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/publication_types/2/</loc>
-    <lastmod>2019-07-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/authors/annalisa-setti/</loc>
-    <lastmod>2019-07-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/authors/conor-fearon/</loc>
-    <lastmod>2019-07-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/current-source-density-csd/</loc>
-    <lastmod>2019-07-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/publication/2019_fearon-letter/</loc>
+    <loc>https://johnsbutler.netlify.app/publication_types/2/</loc>
     <lastmod>2019-07-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/eeg/</loc>
-    <lastmod>2019-07-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/authors/ekaterina-loskutova/</loc>
-    <lastmod>2019-07-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/freezing-of-gait/</loc>
-    <lastmod>2019-07-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/authors/isabelle-killane/</loc>
-    <lastmod>2019-07-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/authors/kajal-shah-ian-d-flitcroft/</loc>
-    <lastmod>2019-07-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/publication/2019_loskutova/</loc>
+    <loc>https://johnsbutler.netlify.app/authors/annalisa-setti/</loc>
     <lastmod>2019-07-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/macular-pigment/</loc>
-    <lastmod>2019-07-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/myopia/</loc>
-    <lastmod>2019-07-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/authors/nabin-paudel/</loc>
-    <lastmod>2019-07-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/optometry/</loc>
-    <lastmod>2019-07-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/p3/</loc>
-    <lastmod>2019-07-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/parkinsons-disease/</loc>
-    <lastmod>2019-07-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/publication_types/</loc>
-    <lastmod>2019-07-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/publication/</loc>
+    <loc>https://johnsbutler.netlify.app/authors/conor-fearon/</loc>
     <lastmod>2019-07-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/authors/richard-b.-reilly/</loc>
+    <loc>https://johnsbutler.netlify.app/tags/current-source-density-csd/</loc>
     <lastmod>2019-07-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>/authors/saskia-m.-waechter/</loc>
+    <loc>https://johnsbutler.netlify.app/publication/2019_fearon-letter/</loc>
     <lastmod>2019-07-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>/authors/timothy-lynch/</loc>
+    <loc>https://johnsbutler.netlify.app/tags/eeg/</loc>
     <lastmod>2019-07-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/visual/</loc>
+    <loc>https://johnsbutler.netlify.app/authors/ekaterina-loskutova/</loc>
     <lastmod>2019-07-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>/authors/yvonne-nolan/</loc>
+    <loc>https://johnsbutler.netlify.app/tags/freezing-of-gait/</loc>
     <lastmod>2019-07-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>/talk/brightclub/</loc>
+    <loc>https://johnsbutler.netlify.app/authors/isabelle-killane/</loc>
+    <lastmod>2019-07-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://johnsbutler.netlify.app/authors/kajal-shah-ian-d-flitcroft/</loc>
+    <lastmod>2019-07-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://johnsbutler.netlify.app/publication/2019_loskutova/</loc>
+    <lastmod>2019-07-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://johnsbutler.netlify.app/tags/macular-pigment/</loc>
+    <lastmod>2019-07-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://johnsbutler.netlify.app/tags/myopia/</loc>
+    <lastmod>2019-07-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://johnsbutler.netlify.app/authors/nabin-paudel/</loc>
+    <lastmod>2019-07-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://johnsbutler.netlify.app/tags/optometry/</loc>
+    <lastmod>2019-07-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://johnsbutler.netlify.app/tags/p3/</loc>
+    <lastmod>2019-07-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://johnsbutler.netlify.app/tags/parkinsons-disease/</loc>
+    <lastmod>2019-07-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://johnsbutler.netlify.app/publication_types/</loc>
+    <lastmod>2019-07-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://johnsbutler.netlify.app/publication/</loc>
+    <lastmod>2019-07-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://johnsbutler.netlify.app/authors/richard-b.-reilly/</loc>
+    <lastmod>2019-07-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://johnsbutler.netlify.app/authors/saskia-m.-waechter/</loc>
+    <lastmod>2019-07-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://johnsbutler.netlify.app/authors/timothy-lynch/</loc>
+    <lastmod>2019-07-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://johnsbutler.netlify.app/tags/visual/</loc>
+    <lastmod>2019-07-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://johnsbutler.netlify.app/authors/yvonne-nolan/</loc>
+    <lastmod>2019-07-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://johnsbutler.netlify.app/outreach/brightclub2019/</loc>
     <lastmod>2019-05-29T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/outreach/brightclub2019/</loc>
+    <loc>https://johnsbutler.netlify.app/talk/brightclub/</loc>
     <lastmod>2019-05-29T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/outreach/</loc>
+    <loc>https://johnsbutler.netlify.app/outreach/</loc>
     <lastmod>2019-05-29T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/outreach/pos2018/</loc>
+    <loc>https://johnsbutler.netlify.app/outreach/pos2018/</loc>
     <lastmod>2019-05-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/outreach/example/</loc>
+    <loc>https://johnsbutler.netlify.app/outreach/example/</loc>
     <lastmod>2019-05-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/outreach/schooltalk2019/</loc>
+    <loc>https://johnsbutler.netlify.app/outreach/schooltalk2019/</loc>
     <lastmod>2019-05-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/outreach/pos2019/</loc>
+    <loc>https://johnsbutler.netlify.app/outreach/pos2019/</loc>
     <lastmod>2019-05-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/talk/pos2019/</loc>
+    <loc>https://johnsbutler.netlify.app/talk/pos2019/</loc>
     <lastmod>2019-05-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/talk/schooltalk2019/</loc>
+    <loc>https://johnsbutler.netlify.app/talk/schooltalk2019/</loc>
     <lastmod>2019-05-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/authors/daniel-mccartney/</loc>
-    <lastmod>2019-05-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/authors/david-a-mackey/</loc>
-    <lastmod>2019-05-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/diabetes/</loc>
-    <lastmod>2019-05-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/authors/grainne-scanlon/</loc>
-    <lastmod>2019-05-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/publication/2019_scanlon/</loc>
+    <loc>https://johnsbutler.netlify.app/authors/daniel-mccartney/</loc>
     <lastmod>2019-05-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/authors/kathryn-j-saunders/</loc>
-    <lastmod>2019-05-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/publication/2019_mccrann_mosaic/</loc>
+    <loc>https://johnsbutler.netlify.app/authors/david-a-mackey/</loc>
     <lastmod>2019-05-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/authors/niall-c-strang/</loc>
+    <loc>https://johnsbutler.netlify.app/tags/diabetes/</loc>
     <lastmod>2019-05-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>/authors/nicola-s-logan/</loc>
+    <loc>https://johnsbutler.netlify.app/authors/grainne-scanlon/</loc>
     <lastmod>2019-05-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>/authors/samantha-szeyee-lee/</loc>
+    <loc>https://johnsbutler.netlify.app/publication/2019_scanlon/</loc>
     <lastmod>2019-05-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>/decision/</loc>
-    <lastmod>2019-02-05T00:00:00+00:00</lastmod>
-    <priority>0</priority>
+    <loc>https://johnsbutler.netlify.app/authors/kathryn-j-saunders/</loc>
+    <lastmod>2019-05-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/decision/wang2002/</loc>
+    <loc>https://johnsbutler.netlify.app/publication/2019_mccrann_mosaic/</loc>
+    <lastmod>2019-05-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://johnsbutler.netlify.app/authors/niall-c-strang/</loc>
+    <lastmod>2019-05-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://johnsbutler.netlify.app/authors/nicola-s-logan/</loc>
+    <lastmod>2019-05-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://johnsbutler.netlify.app/authors/samantha-szeyee-lee/</loc>
+    <lastmod>2019-05-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://johnsbutler.netlify.app/decision/</loc>
     <lastmod>2019-02-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/slides/</loc>
-    <lastmod>2019-02-05T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/slides/example/</loc>
+    <loc>https://johnsbutler.netlify.app/decision/wang2002/</loc>
     <lastmod>2019-02-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/authors/aleksandra-samotyja/</loc>
-    <lastmod>2019-01-22T00:00:00+00:00</lastmod>
-    <priority>0</priority>
+    <loc>https://johnsbutler.netlify.app/slides/</loc>
+    <lastmod>2019-02-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/authors/gordon-chambers/</loc>
-    <lastmod>2019-01-22T00:00:00+00:00</lastmod>
-    <priority>0</priority>
+    <loc>https://johnsbutler.netlify.app/slides/example/</loc>
+    <lastmod>2019-02-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/talk/predatorprey/</loc>
+    <loc>https://johnsbutler.netlify.app/authors/aleksandra-samotyja/</loc>
     <lastmod>2019-01-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/authors/brenda-r-malcolm/</loc>
-    <lastmod>2018-10-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
+    <loc>https://johnsbutler.netlify.app/authors/gordon-chambers/</loc>
+    <lastmod>2019-01-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/publication/2018_malcolm-et-al/</loc>
-    <lastmod>2018-10-01T00:00:00+00:00</lastmod>
+    <loc>https://johnsbutler.netlify.app/talk/predatorprey/</loc>
+    <lastmod>2019-01-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/authors/john-j-foxe/</loc>
-    <lastmod>2018-10-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/talk/scienceweek2018/</loc>
+    <loc>https://johnsbutler.netlify.app/authors/brenda-r-malcolm/</loc>
     <lastmod>2018-10-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/mobi/</loc>
+    <loc>https://johnsbutler.netlify.app/publication/2018_malcolm-et-al/</loc>
     <lastmod>2018-10-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>/authors/pierfilippo-de-sanctis/</loc>
+    <loc>https://johnsbutler.netlify.app/authors/john-j-foxe/</loc>
     <lastmod>2018-10-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/power-spectral-density/</loc>
+    <loc>https://johnsbutler.netlify.app/talk/scienceweek2018/</loc>
     <lastmod>2018-10-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>/authors/sophie-molholm/</loc>
+    <loc>https://johnsbutler.netlify.app/tags/mobi/</loc>
     <lastmod>2018-10-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/walking/</loc>
+    <loc>https://johnsbutler.netlify.app/authors/pierfilippo-de-sanctis/</loc>
     <lastmod>2018-10-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/aging/</loc>
-    <lastmod>2018-09-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
+    <loc>https://johnsbutler.netlify.app/tags/power-spectral-density/</loc>
+    <lastmod>2018-10-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/multisensory/</loc>
-    <lastmod>2018-09-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
+    <loc>https://johnsbutler.netlify.app/authors/sophie-molholm/</loc>
+    <lastmod>2018-10-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/authors/robert-ramkhalawansingh/</loc>
-    <lastmod>2018-09-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
+    <loc>https://johnsbutler.netlify.app/tags/walking/</loc>
+    <lastmod>2018-10-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/self-motion/</loc>
-    <lastmod>2018-09-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/vestibular/</loc>
-    <lastmod>2018-09-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/publication/2017_aging_heading/</loc>
+    <loc>https://johnsbutler.netlify.app/tags/aging/</loc>
     <lastmod>2018-09-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/privacy/</loc>
-    <lastmod>2018-06-28T00:00:00+01:00</lastmod>
+    <loc>https://johnsbutler.netlify.app/tags/multisensory/</loc>
+    <lastmod>2018-09-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/outreach/scienceweek2018/</loc>
+    <loc>https://johnsbutler.netlify.app/authors/robert-ramkhalawansingh/</loc>
+    <lastmod>2018-09-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://johnsbutler.netlify.app/tags/self-motion/</loc>
+    <lastmod>2018-09-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://johnsbutler.netlify.app/tags/vestibular/</loc>
+    <lastmod>2018-09-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://johnsbutler.netlify.app/publication/2017_aging_heading/</loc>
+    <lastmod>2018-09-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://johnsbutler.netlify.app/outreach/scienceweek2018/</loc>
     <lastmod>2018-05-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/talk/pos2018/</loc>
+    <loc>https://johnsbutler.netlify.app/talk/pos2018/</loc>
     <lastmod>2018-05-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/authors/aaron-bush/</loc>
-    <lastmod>2018-05-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/authors/kevin-lalor/</loc>
-    <lastmod>2018-05-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/publication/2018_mccrann/</loc>
+    <loc>https://johnsbutler.netlify.app/authors/aaron-bush/</loc>
     <lastmod>2018-05-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/publication/2016_barrett/</loc>
+    <loc>https://johnsbutler.netlify.app/authors/kevin-lalor/</loc>
+    <lastmod>2018-05-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://johnsbutler.netlify.app/publication/2018_mccrann/</loc>
+    <lastmod>2018-05-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://johnsbutler.netlify.app/publication/2016_barrett/</loc>
     <lastmod>2017-12-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/authors/brendan-quinlivan/</loc>
-    <lastmod>2017-12-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/authors/catriona-barrett/</loc>
-    <lastmod>2017-12-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/authors/colm-obrien/</loc>
-    <lastmod>2017-12-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/publication/2017_mcgovern_fmri/</loc>
+    <loc>https://johnsbutler.netlify.app/authors/brendan-quinlivan/</loc>
     <lastmod>2017-12-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/dystonia/</loc>
+    <loc>https://johnsbutler.netlify.app/authors/catriona-barrett/</loc>
     <lastmod>2017-12-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>/authors/eavan-m-mcgovern/</loc>
+    <loc>https://johnsbutler.netlify.app/authors/colm-obrien/</loc>
     <lastmod>2017-12-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/glaucoma/</loc>
+    <loc>https://johnsbutler.netlify.app/publication/2017_mcgovern_fmri/</loc>
     <lastmod>2017-12-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>/authors/ines-beiser/</loc>
+    <loc>https://johnsbutler.netlify.app/tags/dystonia/</loc>
     <lastmod>2017-12-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>/authors/laura-williams/</loc>
+    <loc>https://johnsbutler.netlify.app/authors/eavan-m-mcgovern/</loc>
     <lastmod>2017-12-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>/authors/michael-farrell/</loc>
+    <loc>https://johnsbutler.netlify.app/tags/glaucoma/</loc>
     <lastmod>2017-12-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>/authors/michael-hutchinson/</loc>
+    <loc>https://johnsbutler.netlify.app/authors/ines-beiser/</loc>
     <lastmod>2017-12-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>/authors/owen-killian/</loc>
+    <loc>https://johnsbutler.netlify.app/authors/laura-williams/</loc>
     <lastmod>2017-12-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>/authors/rebecca-beck/</loc>
+    <loc>https://johnsbutler.netlify.app/authors/michael-farrell/</loc>
     <lastmod>2017-12-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>/authors/richard-b-reilly/</loc>
+    <loc>https://johnsbutler.netlify.app/authors/michael-hutchinson/</loc>
     <lastmod>2017-12-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>/authors/ronan-p-killeen/</loc>
+    <loc>https://johnsbutler.netlify.app/authors/owen-killian/</loc>
     <lastmod>2017-12-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>/authors/sean-oriordan/</loc>
+    <loc>https://johnsbutler.netlify.app/authors/rebecca-beck/</loc>
     <lastmod>2017-12-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>/authors/shruti-narasiham/</loc>
+    <loc>https://johnsbutler.netlify.app/authors/richard-b-reilly/</loc>
     <lastmod>2017-12-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/temporal-discrimination-threshold/</loc>
+    <loc>https://johnsbutler.netlify.app/authors/ronan-p-killeen/</loc>
     <lastmod>2017-12-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>/authors/dorina-birsanu/</loc>
-    <lastmod>2017-05-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
+    <loc>https://johnsbutler.netlify.app/authors/sean-oriordan/</loc>
+    <lastmod>2017-12-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/publication/2017_malcolm-et-al/</loc>
+    <loc>https://johnsbutler.netlify.app/authors/shruti-narasiham/</loc>
+    <lastmod>2017-12-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://johnsbutler.netlify.app/tags/temporal-discrimination-threshold/</loc>
+    <lastmod>2017-12-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://johnsbutler.netlify.app/authors/dorina-birsanu/</loc>
     <lastmod>2017-05-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/publication/2017_beck-jove/</loc>
+    <loc>https://johnsbutler.netlify.app/publication/2017_malcolm-et-al/</loc>
     <lastmod>2017-05-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/authors/rebecca-b-beck/</loc>
+    <loc>https://johnsbutler.netlify.app/publication/2017_beck-jove/</loc>
     <lastmod>2017-05-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>/authors/shruti-narasimham/</loc>
+    <loc>https://johnsbutler.netlify.app/authors/rebecca-b-beck/</loc>
     <lastmod>2017-05-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>/authors/wenzhu-b.-mowrey/</loc>
+    <loc>https://johnsbutler.netlify.app/authors/shruti-narasimham/</loc>
     <lastmod>2017-05-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>/publication/2017_butler-fearon-p3/</loc>
+    <loc>https://johnsbutler.netlify.app/authors/wenzhu-b.-mowrey/</loc>
+    <lastmod>2017-05-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://johnsbutler.netlify.app/publication/2017_butler-fearon-p3/</loc>
     <lastmod>2017-03-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/publication/2016_mcgovern/</loc>
+    <loc>https://johnsbutler.netlify.app/publication/2016_mcgovern/</loc>
     <lastmod>2017-01-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/authors/anna-molloy/</loc>
-    <lastmod>2017-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/authors/cathal-walsh/</loc>
-    <lastmod>2017-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/authors/daniel-g-healy/</loc>
-    <lastmod>2017-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/authors/eavan-mcgovern/</loc>
-    <lastmod>2017-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/authors/emer-oconnor/</loc>
-    <lastmod>2017-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/publication/2015_williams-epidemilogy/</loc>
+    <loc>https://johnsbutler.netlify.app/authors/anna-molloy/</loc>
     <lastmod>2017-01-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/authors/fiona-molloy/</loc>
-    <lastmod>2017-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/authors/helena-moore/</loc>
-    <lastmod>2017-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/authors/mark-j-edwards/</loc>
-    <lastmod>2017-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/publication/2016_mcgovern-menstral/</loc>
+    <loc>https://johnsbutler.netlify.app/authors/cathal-walsh/</loc>
     <lastmod>2017-01-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/authors/niall-byrne/</loc>
+    <loc>https://johnsbutler.netlify.app/authors/daniel-g-healy/</loc>
     <lastmod>2017-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>/authors/okka-kimmich/</loc>
+    <loc>https://johnsbutler.netlify.app/authors/eavan-mcgovern/</loc>
     <lastmod>2017-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>/authors/paul-lonogan/</loc>
+    <loc>https://johnsbutler.netlify.app/authors/emer-oconnor/</loc>
     <lastmod>2017-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>/authors/tim-lynch/</loc>
+    <loc>https://johnsbutler.netlify.app/publication/2015_williams-epidemilogy/</loc>
     <lastmod>2017-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>/publication/2016_butler-et-al-unreliability-thesis/</loc>
+    <loc>https://johnsbutler.netlify.app/authors/fiona-molloy/</loc>
+    <lastmod>2017-01-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://johnsbutler.netlify.app/authors/helena-moore/</loc>
+    <lastmod>2017-01-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://johnsbutler.netlify.app/authors/mark-j-edwards/</loc>
+    <lastmod>2017-01-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://johnsbutler.netlify.app/publication/2016_mcgovern-menstral/</loc>
+    <lastmod>2017-01-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://johnsbutler.netlify.app/authors/niall-byrne/</loc>
+    <lastmod>2017-01-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://johnsbutler.netlify.app/authors/okka-kimmich/</loc>
+    <lastmod>2017-01-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://johnsbutler.netlify.app/authors/paul-lonogan/</loc>
+    <lastmod>2017-01-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://johnsbutler.netlify.app/authors/tim-lynch/</loc>
+    <lastmod>2017-01-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://johnsbutler.netlify.app/publication/2016_butler-et-al-unreliability-thesis/</loc>
     <lastmod>2016-12-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/autism/</loc>
+    <loc>https://johnsbutler.netlify.app/tags/autism/</loc>
     <lastmod>2016-12-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>/authors/gizely-n-andrade/</loc>
+    <loc>https://johnsbutler.netlify.app/authors/gizely-n-andrade/</loc>
     <lastmod>2016-12-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/somatosensory/</loc>
+    <loc>https://johnsbutler.netlify.app/tags/somatosensory/</loc>
     <lastmod>2016-12-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>/publication/2016_quinlivan-headturn/</loc>
+    <loc>https://johnsbutler.netlify.app/publication/2016_quinlivan-headturn/</loc>
     <lastmod>2016-08-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/head-turn/</loc>
+    <loc>https://johnsbutler.netlify.app/tags/head-turn/</loc>
     <lastmod>2016-08-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/virtual-reality/</loc>
+    <loc>https://johnsbutler.netlify.app/tags/virtual-reality/</loc>
     <lastmod>2016-08-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>/authors/abdur-raquib-ridwan/</loc>
-    <lastmod>2016-05-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/alpha/</loc>
-    <lastmod>2016-05-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/publication/2015_quinlivanetal_ejn/</loc>
+    <loc>https://johnsbutler.netlify.app/authors/abdur-raquib-ridwan/</loc>
     <lastmod>2016-05-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/visuospatial-memory/</loc>
+    <loc>https://johnsbutler.netlify.app/tags/alpha/</loc>
     <lastmod>2016-05-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>/project/ceri/</loc>
+    <loc>https://johnsbutler.netlify.app/publication/2015_quinlivanetal_ejn/</loc>
+    <lastmod>2016-05-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://johnsbutler.netlify.app/tags/visuospatial-memory/</loc>
+    <lastmod>2016-05-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://johnsbutler.netlify.app/project/ceri/</loc>
     <lastmod>2016-04-27T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/comp-neuro/</loc>
-    <lastmod>2016-04-27T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/computational-neuroscience/</loc>
-    <lastmod>2016-04-27T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/project/comp-neuro/</loc>
+    <loc>https://johnsbutler.netlify.app/tags/ceri/</loc>
     <lastmod>2016-04-27T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/development/</loc>
-    <lastmod>2016-04-27T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/multisensory-development/</loc>
-    <lastmod>2016-04-27T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/project/</loc>
-    <lastmod>2016-04-27T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/project/multisensorydevelopment/</loc>
+    <loc>https://johnsbutler.netlify.app/tags/comp-neuro/</loc>
     <lastmod>2016-04-27T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/ceri/</loc>
+    <loc>https://johnsbutler.netlify.app/tags/computational-neuroscience/</loc>
     <lastmod>2016-04-27T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/adaptation/</loc>
-    <lastmod>2016-03-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
+    <loc>https://johnsbutler.netlify.app/project/comp-neuro/</loc>
+    <lastmod>2016-04-27T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/publication/2016_andrade-et-al-schz/</loc>
+    <loc>https://johnsbutler.netlify.app/tags/development/</loc>
+    <lastmod>2016-04-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://johnsbutler.netlify.app/tags/multisensory-development/</loc>
+    <lastmod>2016-04-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://johnsbutler.netlify.app/project/</loc>
+    <lastmod>2016-04-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://johnsbutler.netlify.app/project/multisensorydevelopment/</loc>
+    <lastmod>2016-04-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://johnsbutler.netlify.app/tags/adaptation/</loc>
     <lastmod>2016-03-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/authors/frantzy-acluche/</loc>
-    <lastmod>2016-03-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/authors/gregory-a-peters/</loc>
-    <lastmod>2016-03-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/authors/neha-uppal/</loc>
-    <lastmod>2016-03-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/schizophrenia/</loc>
-    <lastmod>2016-03-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/publication/2014_molloy-latitude/</loc>
+    <loc>https://johnsbutler.netlify.app/publication/2016_andrade-et-al-schz/</loc>
     <lastmod>2016-03-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/publication/2015_neha-somagatingdevelopment/</loc>
+    <loc>https://johnsbutler.netlify.app/authors/frantzy-acluche/</loc>
     <lastmod>2016-03-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/publication/2015_hutchinson-sexual-dimorphism-and-gaba/</loc>
+    <loc>https://johnsbutler.netlify.app/authors/gregory-a-peters/</loc>
+    <lastmod>2016-03-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://johnsbutler.netlify.app/authors/neha-uppal/</loc>
+    <lastmod>2016-03-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://johnsbutler.netlify.app/tags/schizophrenia/</loc>
+    <lastmod>2016-03-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://johnsbutler.netlify.app/publication/2014_molloy-latitude/</loc>
+    <lastmod>2016-03-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://johnsbutler.netlify.app/publication/2015_neha-somagatingdevelopment/</loc>
+    <lastmod>2016-03-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://johnsbutler.netlify.app/publication/2015_hutchinson-sexual-dimorphism-and-gaba/</loc>
     <lastmod>2015-12-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/authors/dan-g-healy/</loc>
-    <lastmod>2015-12-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/authors/gizely-n.-andrade/</loc>
-    <lastmod>2015-12-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/authors/ines-m-beiser/</loc>
-    <lastmod>2015-12-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/authors/john-j.-foxe/</loc>
-    <lastmod>2015-12-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/authors/manuel-r.-mercier/</loc>
-    <lastmod>2015-12-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/authors/richard-walsh/</loc>
-    <lastmod>2015-12-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/authors/sean-o-riordan/</loc>
-    <lastmod>2015-12-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/publication/2015_andrade-et-al-ejn/</loc>
+    <loc>https://johnsbutler.netlify.app/authors/dan-g-healy/</loc>
     <lastmod>2015-12-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/audio/</loc>
-    <lastmod>2015-09-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
+    <loc>https://johnsbutler.netlify.app/authors/gizely-n.-andrade/</loc>
+    <lastmod>2015-12-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/publication/2015_fearon_avsrt_pd/</loc>
+    <loc>https://johnsbutler.netlify.app/authors/ines-m-beiser/</loc>
+    <lastmod>2015-12-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://johnsbutler.netlify.app/authors/john-j.-foxe/</loc>
+    <lastmod>2015-12-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://johnsbutler.netlify.app/authors/manuel-r.-mercier/</loc>
+    <lastmod>2015-12-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://johnsbutler.netlify.app/authors/richard-walsh/</loc>
+    <lastmod>2015-12-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://johnsbutler.netlify.app/authors/sean-o-riordan/</loc>
+    <lastmod>2015-12-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://johnsbutler.netlify.app/publication/2015_andrade-et-al-ejn/</loc>
+    <lastmod>2015-12-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://johnsbutler.netlify.app/tags/audio/</loc>
     <lastmod>2015-09-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/behavioural/</loc>
+    <loc>https://johnsbutler.netlify.app/publication/2015_fearon_avsrt_pd/</loc>
     <lastmod>2015-09-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>/authors/louis-newman/</loc>
+    <loc>https://johnsbutler.netlify.app/tags/behavioural/</loc>
     <lastmod>2015-09-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/mulitsensory/</loc>
+    <loc>https://johnsbutler.netlify.app/authors/louis-newman/</loc>
     <lastmod>2015-09-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>/authors/brenda-malcolm/</loc>
-    <lastmod>2015-08-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
+    <loc>https://johnsbutler.netlify.app/tags/mulitsensory/</loc>
+    <lastmod>2015-09-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/authors/jeannette-r.-mahoney/</loc>
-    <lastmod>2015-08-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/publication/2015_mahoneyetal/</loc>
+    <loc>https://johnsbutler.netlify.app/authors/brenda-malcolm/</loc>
     <lastmod>2015-08-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/authors/manuel-gomez-ramirez/</loc>
-    <lastmod>2015-08-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/authors/pejman-sehatpour/</loc>
-    <lastmod>2015-08-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/publication/2015_malcolm-et-al/</loc>
+    <loc>https://johnsbutler.netlify.app/authors/jeannette-r.-mahoney/</loc>
     <lastmod>2015-08-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/authors/walter-ritter/</loc>
+    <loc>https://johnsbutler.netlify.app/publication/2015_mahoneyetal/</loc>
     <lastmod>2015-08-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>/authors/conor-mcdonnell/</loc>
-    <lastmod>2015-07-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
+    <loc>https://johnsbutler.netlify.app/authors/manuel-gomez-ramirez/</loc>
+    <lastmod>2015-08-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/authors/j-gallego/</loc>
-    <lastmod>2015-07-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
+    <loc>https://johnsbutler.netlify.app/authors/pejman-sehatpour/</loc>
+    <lastmod>2015-08-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/authors/saskia-m-waechter/</loc>
-    <lastmod>2015-07-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
+    <loc>https://johnsbutler.netlify.app/publication/2015_malcolm-et-al/</loc>
+    <lastmod>2015-08-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/publication/2015_waechteretal-ieee_neuraleng/</loc>
+    <loc>https://johnsbutler.netlify.app/authors/walter-ritter/</loc>
+    <lastmod>2015-08-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://johnsbutler.netlify.app/authors/conor-mcdonnell/</loc>
     <lastmod>2015-07-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/auditory/</loc>
-    <lastmod>2015-06-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
+    <loc>https://johnsbutler.netlify.app/authors/j-gallego/</loc>
+    <lastmod>2015-07-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/electro-corticography-ecog/</loc>
-    <lastmod>2015-06-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
+    <loc>https://johnsbutler.netlify.app/authors/saskia-m-waechter/</loc>
+    <lastmod>2015-07-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/authors/ian-c-fiebelkorn/</loc>
-    <lastmod>2015-06-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
+    <loc>https://johnsbutler.netlify.app/publication/2015_waechteretal-ieee_neuraleng/</loc>
+    <lastmod>2015-07-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/authors/manuel-r-mercier/</loc>
-    <lastmod>2015-06-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/publication/2015_mercier-et-al_avsrt/</loc>
+    <loc>https://johnsbutler.netlify.app/tags/auditory/</loc>
     <lastmod>2015-06-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/publication/2015_butler-et-al-tdt/</loc>
+    <loc>https://johnsbutler.netlify.app/tags/electro-corticography-ecog/</loc>
     <lastmod>2015-06-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/oscillations/</loc>
+    <loc>https://johnsbutler.netlify.app/authors/ian-c-fiebelkorn/</loc>
     <lastmod>2015-06-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>/authors/theodore-h-schwartz/</loc>
+    <loc>https://johnsbutler.netlify.app/authors/manuel-r-mercier/</loc>
     <lastmod>2015-06-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>/publication/2014_molloy-enviromental/</loc>
+    <loc>https://johnsbutler.netlify.app/publication/2015_mercier-et-al_avsrt/</loc>
+    <lastmod>2015-06-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://johnsbutler.netlify.app/publication/2015_butler-et-al-tdt/</loc>
+    <lastmod>2015-06-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://johnsbutler.netlify.app/tags/oscillations/</loc>
+    <lastmod>2015-06-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://johnsbutler.netlify.app/authors/theodore-h-schwartz/</loc>
+    <lastmod>2015-06-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://johnsbutler.netlify.app/publication/2014_molloy-enviromental/</loc>
     <lastmod>2015-03-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/publication/2015_crossebutlerlalor/</loc>
+    <loc>https://johnsbutler.netlify.app/publication/2015_crossebutlerlalor/</loc>
     <lastmod>2015-01-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/authors/edmund-c-lalor/</loc>
-    <lastmod>2015-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/authors/michael-j.-crosse/</loc>
-    <lastmod>2015-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/publication/2015_williams-gender-dimorphism/</loc>
+    <loc>https://johnsbutler.netlify.app/authors/edmund-c-lalor/</loc>
     <lastmod>2015-01-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/speech/</loc>
+    <loc>https://johnsbutler.netlify.app/authors/michael-j.-crosse/</loc>
     <lastmod>2015-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/stimulus-reconstruction/</loc>
+    <loc>https://johnsbutler.netlify.app/publication/2015_williams-gender-dimorphism/</loc>
     <lastmod>2015-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>/authors/heinrich-h-b%C3%BClthoff/</loc>
-    <lastmod>2014-11-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
+    <loc>https://johnsbutler.netlify.app/tags/speech/</loc>
+    <lastmod>2015-01-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/publication/2014_butler_et_alcamposbulthoff2014_velocity-mismatch/</loc>
+    <loc>https://johnsbutler.netlify.app/tags/stimulus-reconstruction/</loc>
+    <lastmod>2015-01-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://johnsbutler.netlify.app/authors/heinrich-h-b%C3%BClthoff/</loc>
     <lastmod>2014-11-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/authors/alice-b-brandwien/</loc>
-    <lastmod>2014-09-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
+    <loc>https://johnsbutler.netlify.app/publication/2014_butler_et_alcamposbulthoff2014_velocity-mismatch/</loc>
+    <lastmod>2014-11-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/authors/alice-b.-brandwein/</loc>
-    <lastmod>2014-09-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/publication/2014_andradeetal2014_npc_avsrt/</loc>
+    <loc>https://johnsbutler.netlify.app/authors/alice-b-brandwien/</loc>
     <lastmod>2014-09-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/authors/hans-peter-frey/</loc>
-    <lastmod>2014-09-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/authors/juliana-c.-bates/</loc>
-    <lastmod>2014-09-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/authors/lisa-h.-shulman/</loc>
-    <lastmod>2014-09-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/publication/2015_brandwein_etal/</loc>
+    <loc>https://johnsbutler.netlify.app/authors/alice-b.-brandwein/</loc>
     <lastmod>2014-09-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/niemann-pick-type-c-disease/</loc>
+    <loc>https://johnsbutler.netlify.app/publication/2014_andradeetal2014_npc_avsrt/</loc>
     <lastmod>2014-09-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>/authors/steve-u-walkley/</loc>
+    <loc>https://johnsbutler.netlify.app/authors/hans-peter-frey/</loc>
     <lastmod>2014-09-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>/publication/2014_desanctis-et-al/</loc>
+    <loc>https://johnsbutler.netlify.app/authors/juliana-c.-bates/</loc>
+    <lastmod>2014-09-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://johnsbutler.netlify.app/authors/lisa-h.-shulman/</loc>
+    <lastmod>2014-09-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://johnsbutler.netlify.app/publication/2015_brandwein_etal/</loc>
+    <lastmod>2014-09-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://johnsbutler.netlify.app/tags/niemann-pick-type-c-disease/</loc>
+    <lastmod>2014-09-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://johnsbutler.netlify.app/authors/steve-u-walkley/</loc>
+    <lastmod>2014-09-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://johnsbutler.netlify.app/publication/2014_desanctis-et-al/</loc>
     <lastmod>2014-07-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/publication/2014-hutchinson-concept-2014/</loc>
+    <loc>https://johnsbutler.netlify.app/publication/2014-hutchinson-concept-2014/</loc>
     <lastmod>2014-04-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/authors/tadashi-isa/</loc>
+    <loc>https://johnsbutler.netlify.app/authors/tadashi-isa/</loc>
     <lastmod>2014-04-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>/publication/2014_molloy-headset-tabletop/</loc>
+    <loc>https://johnsbutler.netlify.app/publication/2014_molloy-headset-tabletop/</loc>
     <lastmod>2014-03-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/authors/alice-b-brandwein/</loc>
-    <lastmod>2014-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/contour/</loc>
-    <lastmod>2014-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/authors/ted-s-altschuler/</loc>
-    <lastmod>2014-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/publication/2014_altschuler-et-al/</loc>
+    <loc>https://johnsbutler.netlify.app/authors/alice-b-brandwein/</loc>
     <lastmod>2014-01-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/publication/2013_mercier-et-al.-avsrt/</loc>
+    <loc>https://johnsbutler.netlify.app/tags/contour/</loc>
+    <lastmod>2014-01-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://johnsbutler.netlify.app/authors/ted-s-altschuler/</loc>
+    <lastmod>2014-01-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://johnsbutler.netlify.app/publication/2014_altschuler-et-al/</loc>
+    <lastmod>2014-01-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://johnsbutler.netlify.app/publication/2013_mercier-et-al.-avsrt/</loc>
     <lastmod>2013-10-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/authors/adam-c-snyder/</loc>
-    <lastmod>2013-04-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/publication/2013_fiebelkorn-et-al-cortical-cross-frequency/</loc>
+    <loc>https://johnsbutler.netlify.app/authors/adam-c-snyder/</loc>
     <lastmod>2013-04-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/cross-frequency-coupling/</loc>
+    <loc>https://johnsbutler.netlify.app/publication/2013_fiebelkorn-et-al-cortical-cross-frequency/</loc>
     <lastmod>2013-04-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/phase/</loc>
+    <loc>https://johnsbutler.netlify.app/tags/cross-frequency-coupling/</loc>
     <lastmod>2013-04-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/sustained-attention/</loc>
+    <loc>https://johnsbutler.netlify.app/tags/phase/</loc>
     <lastmod>2013-04-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>/authors/ian-c.-fiebelkorn/</loc>
-    <lastmod>2012-09-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
+    <loc>https://johnsbutler.netlify.app/tags/sustained-attention/</loc>
+    <lastmod>2013-04-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/intracranial/</loc>
-    <lastmod>2012-09-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/publication/2012_butler-et-al-jon/</loc>
+    <loc>https://johnsbutler.netlify.app/authors/ian-c.-fiebelkorn/</loc>
     <lastmod>2012-09-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/publication/2012_camposbutlerbulthoff_ebr_2012/</loc>
+    <loc>https://johnsbutler.netlify.app/tags/intracranial/</loc>
     <lastmod>2012-09-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/authors/adam-c.-snyder/</loc>
-    <lastmod>2012-08-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
+    <loc>https://johnsbutler.netlify.app/publication/2012_camposbutlerbulthoff_ebr_2012/</loc>
+    <lastmod>2012-09-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/authors/jason-m.-green/</loc>
-    <lastmod>2012-08-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
+    <loc>https://johnsbutler.netlify.app/publication/2012_butler-et-al-jon/</loc>
+    <lastmod>2012-09-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/publication/2012_desanctis-et-al-mobi-ieee-paper/</loc>
+    <loc>https://johnsbutler.netlify.app/authors/adam-c.-snyder/</loc>
     <lastmod>2012-08-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/authors/heinrich-h-bulthoff/</loc>
-    <lastmod>2012-05-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
+    <loc>https://johnsbutler.netlify.app/authors/jason-m.-green/</loc>
+    <lastmod>2012-08-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/authors/hugh-nolan/</loc>
-    <lastmod>2012-05-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
+    <loc>https://johnsbutler.netlify.app/publication/2012_desanctis-et-al-mobi-ieee-paper/</loc>
+    <lastmod>2012-08-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/publication/2012_nolan-butler-et-al-ebr/</loc>
+    <loc>https://johnsbutler.netlify.app/authors/heinrich-h-bulthoff/</loc>
     <lastmod>2012-05-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/oddball/</loc>
+    <loc>https://johnsbutler.netlify.app/authors/hugh-nolan/</loc>
     <lastmod>2012-05-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>/authors/robert-whelan/</loc>
+    <loc>https://johnsbutler.netlify.app/publication/2012_nolan-butler-et-al-ebr/</loc>
     <lastmod>2012-05-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>/authors/hilary-gomes/</loc>
-    <lastmod>2012-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
+    <loc>https://johnsbutler.netlify.app/tags/oddball/</loc>
+    <lastmod>2012-05-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/authors/natalie-n.-russo/</loc>
-    <lastmod>2012-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
+    <loc>https://johnsbutler.netlify.app/authors/robert-whelan/</loc>
+    <lastmod>2012-05-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/authors/ted-s.-altschuler/</loc>
-    <lastmod>2012-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/publication/2012_brandwein_etal/</loc>
+    <loc>https://johnsbutler.netlify.app/authors/hilary-gomes/</loc>
     <lastmod>2012-01-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/bayesian/</loc>
-    <lastmod>2011-07-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
+    <loc>https://johnsbutler.netlify.app/authors/natalie-n.-russo/</loc>
+    <lastmod>2012-01-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/publication/2011_fiebelkornetal2012_jon/</loc>
-    <lastmod>2011-07-01T00:00:00+00:00</lastmod>
+    <loc>https://johnsbutler.netlify.app/authors/ted-s.-altschuler/</loc>
+    <lastmod>2012-01-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/authors/stuart-t-smith/</loc>
-    <lastmod>2011-07-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
+    <loc>https://johnsbutler.netlify.app/publication/2012_brandwein_etal/</loc>
+    <lastmod>2012-01-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/publication/2012_butleretal2012/</loc>
+    <loc>https://johnsbutler.netlify.app/tags/bayesian/</loc>
     <lastmod>2011-07-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/publication/2011_nolan-et-al-electrophysiological-source-analysis/</loc>
+    <loc>https://johnsbutler.netlify.app/publication/2011_fiebelkornetal2012_jon/</loc>
+    <lastmod>2011-07-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://johnsbutler.netlify.app/authors/stuart-t-smith/</loc>
+    <lastmod>2011-07-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://johnsbutler.netlify.app/publication/2012_butleretal2012/</loc>
+    <lastmod>2011-07-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://johnsbutler.netlify.app/publication/2011_nolan-et-al-electrophysiological-source-analysis/</loc>
     <lastmod>2011-05-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/authors/heinrich-h.-bulthoff/</loc>
-    <lastmod>2011-05-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/publication/2011_nolan-et-al-motion-p3-demonstrates-neural/</loc>
+    <loc>https://johnsbutler.netlify.app/authors/heinrich-h.-bulthoff/</loc>
     <lastmod>2011-05-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/publication/2011_butler-et-al-jon/</loc>
+    <loc>https://johnsbutler.netlify.app/publication/2011_nolan-et-al-motion-p3-demonstrates-neural/</loc>
+    <lastmod>2011-05-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://johnsbutler.netlify.app/publication/2011_butler-et-al-jon/</loc>
     <lastmod>2011-04-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/authors/theodore-h.-schwartz/</loc>
+    <loc>https://johnsbutler.netlify.app/authors/theodore-h.-schwartz/</loc>
     <lastmod>2011-04-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>/publication/2011_fiebelkornetal2011_ebr/</loc>
+    <loc>https://johnsbutler.netlify.app/publication/2011_fiebelkornetal2011_ebr/</loc>
     <lastmod>2011-03-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/publication/2010_journalofvision/</loc>
+    <loc>https://johnsbutler.netlify.app/publication/2010_journalofvision/</loc>
     <lastmod>2010-09-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/publication/2014_camposetal2014/</loc>
+    <loc>https://johnsbutler.netlify.app/publication/2014_camposetal2014/</loc>
     <lastmod>2010-09-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/aiaa/</loc>
-    <lastmod>2009-09-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/publication/2009_soykaetal2009_jerk/</loc>
+    <loc>https://johnsbutler.netlify.app/tags/aiaa/</loc>
     <lastmod>2009-09-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/authors/florian-soyka/</loc>
+    <loc>https://johnsbutler.netlify.app/publication/2009_soykaetal2009_jerk/</loc>
     <lastmod>2009-09-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>/authors/frank-m-nieuwenhuizen/</loc>
+    <loc>https://johnsbutler.netlify.app/authors/florian-soyka/</loc>
     <lastmod>2009-09-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>/authors/harold-teufel/</loc>
+    <loc>https://johnsbutler.netlify.app/authors/frank-m-nieuwenhuizen/</loc>
     <lastmod>2009-09-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>/authors/karl-beykirch/</loc>
+    <loc>https://johnsbutler.netlify.app/authors/harold-teufel/</loc>
     <lastmod>2009-09-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/motion-platform/</loc>
+    <loc>https://johnsbutler.netlify.app/authors/karl-beykirch/</loc>
     <lastmod>2009-09-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>/authors/paolo-robuffo-giordano/</loc>
+    <loc>https://johnsbutler.netlify.app/tags/motion-platform/</loc>
     <lastmod>2009-09-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>/publication/2009_nolan-et-al/</loc>
+    <loc>https://johnsbutler.netlify.app/authors/paolo-robuffo-giordano/</loc>
+    <lastmod>2009-09-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://johnsbutler.netlify.app/publication/2009_nolan-et-al/</loc>
     <lastmod>2009-05-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/publication/2007_beykirchetal2007/</loc>
+    <loc>https://johnsbutler.netlify.app/publication/2007_beykirchetal2007/</loc>
     <lastmod>2007-01-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/differential-equations/</loc>
+    <loc>https://johnsbutler.netlify.app/tags/differential-equations/</loc>
     <lastmod>2007-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>/authors/hans-gunter-nusseck/</loc>
+    <loc>https://johnsbutler.netlify.app/authors/hans-gunter-nusseck/</loc>
     <lastmod>2007-01-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>/publication_types/1/</loc>
-    <lastmod>2006-09-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/publication/2006_butleretal_2006_dsc/</loc>
+    <loc>https://johnsbutler.netlify.app/publication_types/1/</loc>
     <lastmod>2006-09-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/</loc>
-    <priority>0</priority>
+    <loc>https://johnsbutler.netlify.app/publication/2006_butleretal_2006_dsc/</loc>
+    <lastmod>2006-09-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/courses/</loc>
+    <loc>https://johnsbutler.netlify.app/categories/</loc>
   </url>
   
   <url>
-    <loc>/project/dystonia/</loc>
+    <loc>https://johnsbutler.netlify.app/courses/</loc>
   </url>
   
   <url>
-    <loc>/project/mobilebrainimaging/</loc>
+    <loc>https://johnsbutler.netlify.app/project/dystonia/</loc>
   </url>
   
   <url>
-    <loc>/tags/movement-disorders/</loc>
-    <priority>0</priority>
+    <loc>https://johnsbutler.netlify.app/project/mobilebrainimaging/</loc>
   </url>
   
   <url>
-    <loc>/project/parkinsonsdisease/</loc>
+    <loc>https://johnsbutler.netlify.app/tags/movement-disorders/</loc>
   </url>
   
   <url>
-    <loc>/group/</loc>
+    <loc>https://johnsbutler.netlify.app/project/parkinsonsdisease/</loc>
   </url>
   
   <url>
-    <loc>/tags/temporal-discrimation-threshold/</loc>
-    <priority>0</priority>
+    <loc>https://johnsbutler.netlify.app/group/</loc>
   </url>
   
   <url>
-    <loc>/project/visualvestibular/</loc>
+    <loc>https://johnsbutler.netlify.app/tags/temporal-discrimation-threshold/</loc>
+  </url>
+  
+  <url>
+    <loc>https://johnsbutler.netlify.app/project/visualvestibular/</loc>
   </url>
   
 </urlset>

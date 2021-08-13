@@ -2,48 +2,48 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Robert Whelan on John S Butler</title>
-    <link>/authors/robert-whelan/</link>
+    <link>https://johnsbutler.netlify.app/authors/robert-whelan/</link>
     <description>Recent content in Robert Whelan on John S Butler</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 01 May 2012 00:00:00 +0000</lastBuildDate>
     
-	    <atom:link href="/authors/robert-whelan/index.xml" rel="self" type="application/rss+xml" />
+	    <atom:link href="https://johnsbutler.netlify.app/authors/robert-whelan/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Neural correlates of oddball detection in self-motion heading: a high-density event-related potential study of vestibular integration</title>
-      <link>/publication/2012_nolan-butler-et-al-ebr/</link>
+      <link>https://johnsbutler.netlify.app/publication/2012_nolan-butler-et-al-ebr/</link>
       <pubDate>Tue, 01 May 2012 00:00:00 +0000</pubDate>
       
-      <guid>/publication/2012_nolan-butler-et-al-ebr/</guid>
+      <guid>https://johnsbutler.netlify.app/publication/2012_nolan-butler-et-al-ebr/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Electrophysiological source analysis of passive self-motion</title>
-      <link>/publication/2011_nolan-et-al-electrophysiological-source-analysis/</link>
+      <link>https://johnsbutler.netlify.app/publication/2011_nolan-et-al-electrophysiological-source-analysis/</link>
       <pubDate>Sun, 01 May 2011 00:00:00 +0000</pubDate>
       
-      <guid>/publication/2011_nolan-et-al-electrophysiological-source-analysis/</guid>
+      <guid>https://johnsbutler.netlify.app/publication/2011_nolan-et-al-electrophysiological-source-analysis/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Motion P3 demonstrates neural nature of motion ERPs</title>
-      <link>/publication/2011_nolan-et-al-motion-p3-demonstrates-neural/</link>
+      <link>https://johnsbutler.netlify.app/publication/2011_nolan-et-al-motion-p3-demonstrates-neural/</link>
       <pubDate>Sun, 01 May 2011 00:00:00 +0000</pubDate>
       
-      <guid>/publication/2011_nolan-et-al-motion-p3-demonstrates-neural/</guid>
+      <guid>https://johnsbutler.netlify.app/publication/2011_nolan-et-al-motion-p3-demonstrates-neural/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Acquisition of human EEG data during linear self-motion on a Stewart platform</title>
-      <link>/publication/2009_nolan-et-al/</link>
+      <link>https://johnsbutler.netlify.app/publication/2009_nolan-et-al/</link>
       <pubDate>Fri, 01 May 2009 00:00:00 +0000</pubDate>
       
-      <guid>/publication/2009_nolan-et-al/</guid>
+      <guid>https://johnsbutler.netlify.app/publication/2009_nolan-et-al/</guid>
       <description></description>
     </item>
     

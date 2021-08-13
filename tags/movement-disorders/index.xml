@@ -2,100 +2,86 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Movement Disorders on John S Butler</title>
-    <link>/tags/movement-disorders/</link>
+    <link>https://johnsbutler.netlify.app/tags/movement-disorders/</link>
     <description>Recent content in Movement Disorders on John S Butler</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
     <language>en-us</language>
     
-	    <atom:link href="/tags/movement-disorders/index.xml" rel="self" type="application/rss+xml" />
+	    <atom:link href="https://johnsbutler.netlify.app/tags/movement-disorders/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Dystonia</title>
-      <link>/project/dystonia/</link>
+      <link>https://johnsbutler.netlify.app/project/dystonia/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/project/dystonia/</guid>
+      <guid>https://johnsbutler.netlify.app/project/dystonia/</guid>
       <description>&lt;hr&gt;
-
-&lt;p&gt;&lt;h1&gt; Dystonia&lt;/h1&gt;
+&lt;h1&gt; Dystonia&lt;/h1&gt;
 &lt;p&gt;
 Dystonia is one of the most common movement disorders with a prevelance in the population of 1 in every 1000 suffer from Dystonia. There is no single test that can be used to diagnose either of these disorders but they are recognised as a collection of symptoms.  Furthermore, there are no known cures just treatments to manage the symptoms hence there is a high impact on the quality of life and financial costs to managing the diseases. This cost is further exasperated by the growing aging population.
-My research uses a variety of different techniques such as virtual reality, simple behavioural tasks and neuroimaging to gain insight on the disorders.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;&lt;/p&gt;
-
+My research uses a variety of different techniques such as virtual reality, simple behavioural tasks and neuroimaging to gain insight on the disorders.
+&lt;/p&gt;
 &lt;p&gt;I have been involved in a series of studies looking at temporal discrimation as a behavioural endophenotype for Dystonia and a gateway to understanding the underlying mechanisms.
 &lt;/p&gt;
 &lt;br&gt;
 &lt;iframe allowTransparency=&#34;true&#34; allowfullscreen height=&#34;415&#34; border=&#34;0&#34; scrolling=&#34;no&#34; frameborder=&#34;0&#34; marginwheight=&#34;0&#34; marginwidth=&#34;0&#34; src=&#34;https://www.jove.com/embed/player?id=56310&amp;access=gz9r94te&amp;t=1&amp;s=1&#34; width=&#34;460&#34;&gt;&lt;p&gt;&lt;a title=&#34;Measurement &amp; Analysis of the Temporal Discrimination Threshold Applied to Cervical Dystonia&#34; href=&#34;https://www.jove.com/video/56310/measurement-analysis-temporal-discrimination-threshold-applied-to&#34;&gt;Measurement &amp; Analysis of the Temporal Discrimination Threshold Applied to Cervical Dystonia&lt;/a&gt;&lt;/p&gt;&lt;/iframe&gt;
-
 &lt;h3&gt; Selected References&lt;/h3&gt;
-
-&lt;p&gt;     L. Williams, E. McGovern, O. Kimmich, A.Molloy, I. Beisser, J. S. Butler, F. Molloy, P.Logan, DG Healy, T Lynch, R Walsh, L Cassidy, P Moriarty, H Moore, T McSwiney, C Walsh,
+&lt;p&gt;		L. Williams, E. McGovern, O. Kimmich, A.Molloy, I. Beisser, J. S. Butler, F. Molloy, P.Logan, DG Healy, T Lynch, R Walsh, L Cassidy, P Moriarty, H Moore, T McSwiney, C Walsh,
 S. O&#39;Riordan, M. Hutchinson, (2016) &#34;Epidemiological, clinical and genetic aspects of adult onset isolated focal dystonia in Ireland&#34;
 &lt;/p&gt;
-&lt;p&gt; B. Quinlivan, &lt;strong&gt;J. S. Butler&lt;/strong&gt;, I Beiser, L Williams, E McGovern, S. O&#39;Riordan, M. Hutchinson,  R.B Reilly, (2016) &#34;Application of virtual reality head mounted display for investigation of human kinematics; a novel representation of the Posner cueing effect&#34; &lt;em&gt;Journal of Neural Engineering&lt;/em&gt;
+&lt;p&gt;	B. Quinlivan, &lt;strong&gt;J. S. Butler&lt;/strong&gt;, I Beiser, L Williams, E McGovern, S. O&#39;Riordan, M. Hutchinson,  R.B Reilly, (2016) &#34;Application of virtual reality head mounted display for investigation of human kinematics; a novel representation of the Posner cueing effect&#34; &lt;em&gt;Journal of Neural Engineering&lt;/em&gt;
 &lt;/p&gt;
-
 &lt;p&gt;
 &lt;strong&gt;J S Butler*&lt;/strong&gt;, I Beiser, L Williams, E McGovern, F Molloy, T Lynch, D G Healy, H Moore, R Walsh, R B Reilly, S O&#39;Riordan, C Walsh, M Hutchinson (2015), &#34;Age-Related Sexual Dimorphism in Temporal Discrimination and in Adult-Onset Dystonia Suggests GABAergic Mechanisms.&#34;, &lt;em&gt;Frontiers in Neurology&lt;/em&gt;
 &lt;/p&gt;
-
-&lt;p&gt;&lt;p&gt;
-    L. Williams, &lt;strong&gt;J. S. Butler*&lt;/strong&gt;, A.Molloy&lt;sup&gt; &lt;/sup&gt;O. Kimmich, I. Beisser, E. McGovern, B. Quinlivan, S. O&amp;rsquo;Riordan, R.B Reilly, M.
-    Hutchinson, (Accepted) &amp;ldquo;Women do it better: sexual dimorphism in temporal discrimination&amp;rdquo; &lt;em&gt;Frontiers in Neurology Feb 2015&lt;/em&gt;
-&lt;/p&gt;
-    J. S. Butler, A.Molloy, L. Williams,&lt;sup&gt; &lt;/sup&gt;O. Kimmich, I. Beisser, E. McGovern, B. Quinlivan, S. O&amp;rsquo;Riordan, M. Hutchinson, R.B Reilly, (2015) &amp;ldquo;
-    Non-parametric bootstrapping method for measuring the temporal discrimination threshold for Movement Disorders&amp;rdquo; &lt;em&gt;Journal of Neural Engineering&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;
-    A.Molloy, O. Kimmich, L. Williams,&lt;sup&gt; &lt;/sup&gt;J. S. Butler, I. Beisser, E. McGovern, R.B Reilly, S. O&amp;rsquo;Riordan, C. Walsh, M. Hutchinson, (2015) &amp;ldquo;Sun
-    exposure is an environmental factor for the development of blepharospasm&amp;rdquo; &lt;em&gt;Journal of Neurology, Neurosurgery, and Psychiatry&lt;/em&gt;
+    L. Williams, &lt;strong&gt;J. S. Butler*&lt;/strong&gt;, A.Molloy&lt;sup&gt; &lt;/sup&gt;O. Kimmich, I. Beisser, E. McGovern, B. Quinlivan, S. O&#39;Riordan, R.B Reilly, M.
+    Hutchinson, (Accepted) &#34;Women do it better: sexual dimorphism in temporal discrimination&#34; &lt;em&gt;Frontiers in Neurology Feb 2015&lt;/em&gt;
+&lt;/p&gt;
+    J. S. Butler, A.Molloy, L. Williams,&lt;sup&gt; &lt;/sup&gt;O. Kimmich, I. Beisser, E. McGovern, B. Quinlivan, S. O&#39;Riordan, M. Hutchinson, R.B Reilly, (2015) &#34;
+    Non-parametric bootstrapping method for measuring the temporal discrimination threshold for Movement Disorders&#34; &lt;em&gt;Journal of Neural Engineering&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;
+    A.Molloy, O. Kimmich, L. Williams,&lt;sup&gt; &lt;/sup&gt;J. S. Butler, I. Beisser, E. McGovern, R.B Reilly, S. O&#39;Riordan, C. Walsh, M. Hutchinson, (2015) &#34;Sun
+    exposure is an environmental factor for the development of blepharospasm&#34; &lt;em&gt;Journal of Neurology, Neurosurgery, and Psychiatry&lt;/em&gt;
     &lt;br&gt; Featured in the Irish Medical Times and in &lt;a href=&#34;http://medicalxpress.com/news/2015-06-sunlight-exposure-latitude-linked-dystonia.html&#34;&gt;Medical Xpress&lt;/a&gt;.
 &lt;/p&gt;
       &lt;h3&gt;Collaborators&lt;/h3&gt;
-      &lt;ul&gt;
-       &lt;li&gt;Prof Richard Reilly (Trinity College Dublin)&lt;/li&gt;
-       &lt;li&gt;Prof Michael Hutchinson (St Vincent&amp;rsquo;s Hospital)&lt;/li&gt;
-    &lt;/ul&gt;&lt;/p&gt;
-</description>
+	  &lt;ul&gt;
+	   &lt;li&gt;Prof Richard Reilly (Trinity College Dublin)&lt;/li&gt;
+	   &lt;li&gt;Prof Michael Hutchinson (St Vincent&#39;s Hospital)&lt;/li&gt;
+	&lt;/ul&gt;</description>
     </item>
     
     <item>
       <title>Parkinson&#39;s Disease</title>
-      <link>/project/parkinsonsdisease/</link>
+      <link>https://johnsbutler.netlify.app/project/parkinsonsdisease/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/project/parkinsonsdisease/</guid>
+      <guid>https://johnsbutler.netlify.app/project/parkinsonsdisease/</guid>
       <description>&lt;hr&gt;
-
-&lt;p&gt;&lt;h1&gt;  Parkinson&amp;rsquo;s Disease&lt;/h1&gt;
+&lt;h1&gt;  Parkinson&#39;s Disease&lt;/h1&gt;
 &lt;p&gt;
-Approximately 1 in every 100 people over the age of 60 has Parkinson&amp;rsquo;s disease. There is no single test that can be used to diagnose either of these disorders but they are recognised as a collection of symptoms.  Furthermore, there are no known cures just treatments to manage the symptoms hence there is a high impact on the quality of life and financial costs to managing the diseases. This cost is further exasperated by the growing aging population.
-My research uses a variety of different techniques such as virtual reality, simple behavioural tasks and neuroimaging to gain insight on the disorders.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;
+Approximately 1 in every 100 people over the age of 60 has Parkinson&#39;s disease. There is no single test that can be used to diagnose either of these disorders but they are recognised as a collection of symptoms.  Furthermore, there are no known cures just treatments to manage the symptoms hence there is a high impact on the quality of life and financial costs to managing the diseases. This cost is further exasperated by the growing aging population.
+My research uses a variety of different techniques such as virtual reality, simple behavioural tasks and neuroimaging to gain insight on the disorders.
+&lt;/p&gt;
 &lt;p&gt;
-I have been involved in research investigating sensory, motor and decision making processing in people with Parkinson&amp;rsquo;s Disease with and without Freezing of Gait.
+I have been involved in research investigating sensory, motor and decision making processing in people with Parkinson&#39;s Disease with and without Freezing of Gait.
 &lt;/p&gt;
 &lt;br&gt;
 &lt;iframe width=&#34;560&#34; height=&#34;315&#34; src=&#34;https://www.youtube.com/embed/D5rrpNGn-nw&#34; frameborder=&#34;0&#34; allow=&#34;autoplay; encrypted-media&#34; allowfullscreen&gt;&lt;/iframe&gt;
-&lt;h3&gt; Selected References&lt;/h3&gt;&lt;/p&gt;
-
+&lt;h3&gt; Selected References&lt;/h3&gt;
 &lt;p&gt;&lt;strong&gt;J. S. Butler&lt;/strong&gt;, C. Fearon, I. Killane, S M. Waechter, R.B Reilly, T.L. Lynch, (2017)
 &#34;Motor Preparation Rather Than Decision-Making Differentiates Parkinson&#39;s Disease Patients With And Without Freezing of Gait&#34;
 Clinical Neurophysiology&lt;/p&gt;
-
 &lt;p&gt;
 C. Fearon, &lt;strong&gt;J. S. Butler*&lt;/strong&gt;, L. Newman,  T.L. Lynch, R.B Reilly, (2015) &#34;Auditory, visual, and multisensory processing in Parkinson&#39;s disease&#34;  &lt;em&gt;Parkinsonism &lt;/em&gt;
 &lt;/p&gt;
-
 &lt;pre&gt;&lt;code&gt;  &amp;lt;h3&amp;gt;Collaborators&amp;lt;/h3&amp;gt;
   &amp;lt;ul&amp;gt;
    &amp;lt;li&amp;gt;Prof Richard Reilly (Trinity College Dublin)&amp;lt;/li&amp;gt;
    &amp;lt;li&amp;gt;Prof Timothy Lynch (Mater Hospitcal)&amp;lt;/li&amp;gt;
-&amp;lt;/ul&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
+&amp;lt;/ul&amp;gt;&lt;/code&gt;&lt;/pre&gt;
 </description>
     </item>
     

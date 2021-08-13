@@ -2,60 +2,74 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Aleksandra Samotyja on John S Butler</title>
-    <link>/authors/aleksandra-samotyja/</link>
+    <link>https://johnsbutler.netlify.app/authors/aleksandra-samotyja/</link>
     <description>Recent content in Aleksandra Samotyja on John S Butler</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 22 Jan 2019 00:00:00 +0000</lastBuildDate>
     
-	    <atom:link href="/authors/aleksandra-samotyja/index.xml" rel="self" type="application/rss+xml" />
+	    <atom:link href="https://johnsbutler.netlify.app/authors/aleksandra-samotyja/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Microplastic as Prey</title>
-      <link>/talk/predatorprey/</link>
+      <link>https://johnsbutler.netlify.app/talk/predatorprey/</link>
       <pubDate>Tue, 22 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>/talk/predatorprey/</guid>
-      <description>
-
-&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
-
+      <guid>https://johnsbutler.netlify.app/talk/predatorprey/</guid>
+      <description>&lt;h1 id=&#34;introduction&#34;&gt;Introduction&lt;/h1&gt;
 &lt;p&gt;This webpage describes a mathematical model that simulates impact of the introduction of microplastics on fish and salmon population using Python.
 The webpage is divided into six parts:&lt;/p&gt;
-
 &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;The first section outlines the normal predator prey interaction first observed in hare and lynx;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;The second section  will mathematically model the predator-prey relationship of salmon and small fish;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;The third section describes and models the growth of the human population and increase in the production of microplastics;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;The fourth section describes the impact of microplastics on the small fish, salmon and human population;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;The fifth section shows the results of the simulations of the ecosystem  for different levels of plastic production rates;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;The final section presents some questions that arise from this problem.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The first section outlines the normal predator prey interaction first observed in hare and lynx;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The second section  will mathematically model the predator-prey relationship of salmon and small fish;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The third section describes and models the growth of the human population and increase in the production of microplastics;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The fourth section describes the impact of microplastics on the small fish, salmon and human population;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The fifth section shows the results of the simulations of the ecosystem  for different levels of plastic production rates;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;The final section presents some questions that arise from this problem.&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ul&gt;
-
 &lt;p&gt;The webpage is written such that it can be read by some one with no programming experience but if you want to read the code you can click on the button below.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; numpy &lt;span style=&#34;color:#f92672&#34;&gt;as&lt;/span&gt; np
+&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; math 
 
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;import numpy as np
-import math 
+&lt;span style=&#34;color:#f92672&#34;&gt;%&lt;/span&gt;matplotlib inline
+&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; matplotlib.pyplot &lt;span style=&#34;color:#f92672&#34;&gt;as&lt;/span&gt; plt &lt;span style=&#34;color:#75715e&#34;&gt;# side-stepping mpl backend&lt;/span&gt;
+&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; matplotlib.gridspec &lt;span style=&#34;color:#f92672&#34;&gt;as&lt;/span&gt; gridspec &lt;span style=&#34;color:#75715e&#34;&gt;# subplots&lt;/span&gt;
+&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; warnings
+warnings&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;filterwarnings(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;ignore&amp;#34;&lt;/span&gt;)
+&lt;span style=&#34;color:#f92672&#34;&gt;from&lt;/span&gt; __future__ &lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; print_function
+&lt;span style=&#34;color:#f92672&#34;&gt;from&lt;/span&gt; ipywidgets &lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; interact, interactive, fixed, interact_manual
+&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; ipywidgets &lt;span style=&#34;color:#f92672&#34;&gt;as&lt;/span&gt; widgets
+plastic_widget1 &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; widgets&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;FloatSlider(min&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0.001&lt;/span&gt;, max&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;, step&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0.01&lt;/span&gt;,value&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0.1&lt;/span&gt;)
+plastic_widget &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; widgets&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;FloatSlider(min&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0.001&lt;/span&gt;, max&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;, step&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0.01&lt;/span&gt;,value&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0.1&lt;/span&gt;)
+&lt;span style=&#34;color:#f92672&#34;&gt;from&lt;/span&gt; IPython.display &lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; HTML
 
-%matplotlib inline
-import matplotlib.pyplot as plt # side-stepping mpl backend
-import matplotlib.gridspec as gridspec # subplots
-import warnings
-warnings.filterwarnings(&amp;quot;ignore&amp;quot;)
-from __future__ import print_function
-from ipywidgets import interact, interactive, fixed, interact_manual
-import ipywidgets as widgets
-plastic_widget1 = widgets.FloatSlider(min=0.001, max=1, step=0.01,value=0.1)
-plastic_widget = widgets.FloatSlider(min=0.001, max=1, step=0.01,value=0.1)
-from IPython.display import HTML
-
-HTML(&#39;&#39;&#39;&amp;lt;script&amp;gt;
+HTML(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&amp;#39;&amp;#39;&amp;lt;script&amp;gt;
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;code_show=true; 
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;function code_toggle() {
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt; if (code_show){
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt; $(&amp;#39;div.input&amp;#39;).hide();
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt; } else {
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt; $(&amp;#39;div.input&amp;#39;).show();
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt; }
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt; code_show = !code_show
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;} 
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;$( document ).ready(code_toggle);
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;lt;/script&amp;gt;
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;lt;form action=&amp;#34;javascript:code_toggle()&amp;#34;&amp;gt;&amp;lt;input type=&amp;#34;submit&amp;#34; value=&amp;#34;Click here to toggle on/off the raw code.&amp;#34;&amp;gt;&amp;lt;/form&amp;gt;&amp;#39;&amp;#39;&amp;#39;&lt;/span&gt;)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;script&gt;
 code_show=true; 
 function code_toggle() {
  if (code_show){
@@ -66,43 +80,21 @@ function code_toggle() {
  code_show = !code_show
 } 
 $( document ).ready(code_toggle);
-&amp;lt;/script&amp;gt;
-&amp;lt;form action=&amp;quot;javascript:code_toggle()&amp;quot;&amp;gt;&amp;lt;input type=&amp;quot;submit&amp;quot; value=&amp;quot;Click here to toggle on/off the raw code.&amp;quot;&amp;gt;&amp;lt;/form&amp;gt;&#39;&#39;&#39;)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;script&gt;
-code_show=true;
-function code_toggle() {
- if (code_show){
- $(&amp;lsquo;div.input&amp;rsquo;).hide();
- } else {
- $(&amp;lsquo;div.input&amp;rsquo;).show();
- }
- code_show = !code_show
-}
-$( document ).ready(code_toggle);
 &lt;/script&gt;
-&lt;form action=&#34;javascript:code_toggle()&#34;&gt;&lt;input type=&#34;submit&#34; value=&#34;Click here to toggle on/off the raw code.&#34;&gt;&lt;/form&gt;&lt;/p&gt;
-
+&lt;form action=&#34;javascript:code_toggle()&#34;&gt;&lt;input type=&#34;submit&#34; value=&#34;Click here to toggle on/off the raw code.&#34;&gt;&lt;/form&gt;
 &lt;h1 id=&#34;predator-prey&#34;&gt;Predator Prey&lt;/h1&gt;
-
 &lt;h2 id=&#34;predators-and-prey&#34;&gt;Predators and prey&lt;/h2&gt;
-
 &lt;p&gt;The cyclical relationship of Predators and Prey in the wild  means that when there is an abundance of prey, the predators will eat more and the prey population will increase. On the other hand, if there is a shortage in the number of prey, the number of predators will decrease due to the scaricty of food source [1].&lt;/p&gt;
-
 &lt;h2 id=&#34;fish-and-salmon&#34;&gt;Fish and Salmon&lt;/h2&gt;
-
 &lt;p&gt;In a balanced eco system the relationship between small fish (prey) and salmon (predator) can be described mathematically using a Loketta-Volterra model [2-4]
 \begin{equation}
 \begin{array}{cl}
-\frac{d F}{dt}=F-0.02SF,&lt;br /&gt;
-\frac{d S}{dt}=-0.05S+0.001 F S,&lt;br /&gt;
+\frac{d F}{dt}=F-0.02SF,\&lt;br&gt;
+\frac{d S}{dt}=-0.05S+0.001 F S,\&lt;br&gt;
 \end{array}
 \end{equation}
 this set of equations models the interaction between small fish (F) and salmon (S).&lt;/p&gt;
-
 &lt;p&gt;The equations can be written in words as:&lt;/p&gt;
-
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -111,14 +103,12 @@ this set of equations models the interaction between small fish (F) and salmon (
 &lt;th&gt;the current population with a control factor&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
-
 &lt;tbody&gt;
 &lt;tr&gt;
 &lt;td&gt;The increase in fish population  $\frac{d F}{dt}$&lt;/td&gt;
 &lt;td&gt;is equal to&lt;/td&gt;
 &lt;td&gt;the current fish population $F$ minus the amount of fish salmon eat $-0.02FS$&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
 &lt;td&gt;The increase in salmon population $\frac{d S}{dt}$&lt;/td&gt;
 &lt;td&gt;is equal to&lt;/td&gt;
@@ -126,48 +116,39 @@ this set of equations models the interaction between small fish (F) and salmon (
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-
 &lt;p&gt;Or they can be summed up as the salmon are the predators who eat the small fish to survive.&lt;/p&gt;
-
 &lt;p&gt;Figure 2 shows a simulation of the populations of salmon and small fish from 2000 to 2100, assuming that nothing is added to enviroment.  The salmon population fluxuates between 45 and 55 billion while the small fish population fluctuates from 25 to 85 billion. The equation illustates a relative equilibrium between the two populations ensuring neither population gets too big or too small.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;# INITIAL CONDITIONS
-N=10000
-time = np.linspace(2000, 2100, N )              # time
-h=100/N
-fish=50*np.ones(N) # 60 billions small fish
-salmon=45*np.ones(N) # 30 billion salmon
-SMALLFISH = np.array( [1,-0.02])
-SALMON= np.array([-0.05,0.001])
-for i in range (1,N):
-    fish[i]=fish[i-1]+h*fish[i-1]*(SMALLFISH[0]+SMALLFISH[1]*salmon[i-1])
-    salmon[i]=salmon[i-1]+h*salmon[i-1]*(SALMON[0]+SALMON[1]*fish[i-1])
-## PLOTTING
-fig = plt.figure(figsize=(8,4))
-plt.plot(time, fish, &#39;r-&#39;, label=&#39;small fish&#39;)
-plt.plot(time, salmon, &#39;b-&#39;, label=&#39;salmon&#39;)
-plt.grid()
-plt.xlabel(&#39;time (years)&#39;)
-plt.ylabel(&#39;Population (billions)&#39;)
-plt.title(&#39;Figure 2: Predator Predy relationship of Salmon and small fish&#39;)
-plt.legend(loc=&#39;best&#39;)
-plt.tight_layout()
-plt.show()
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;img src=&#34;output_5_0.png&#34; alt=&#34;png&#34; /&gt;&lt;/p&gt;
-
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# INITIAL CONDITIONS&lt;/span&gt;
+N&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;10000&lt;/span&gt;
+time &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; np&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;linspace(&lt;span style=&#34;color:#ae81ff&#34;&gt;2000&lt;/span&gt;, &lt;span style=&#34;color:#ae81ff&#34;&gt;2100&lt;/span&gt;, N )              &lt;span style=&#34;color:#75715e&#34;&gt;# time&lt;/span&gt;
+h&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;100&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;N
+fish&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;50&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;np&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;ones(N) &lt;span style=&#34;color:#75715e&#34;&gt;# 60 billions small fish&lt;/span&gt;
+salmon&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;45&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;np&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;ones(N) &lt;span style=&#34;color:#75715e&#34;&gt;# 30 billion salmon&lt;/span&gt;
+SMALLFISH &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; np&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;array( [&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;,&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0.02&lt;/span&gt;])
+SALMON&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; np&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;array([&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0.05&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;0.001&lt;/span&gt;])
+&lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; i &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; range (&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;,N):
+    fish[i]&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;fish[i&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;]&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;h&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;fish[i&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;]&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;(SMALLFISH[&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;]&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;SMALLFISH[&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;]&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;salmon[i&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;])
+    salmon[i]&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;salmon[i&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;]&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;h&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;salmon[i&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;]&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;(SALMON[&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;]&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;SALMON[&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;]&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;fish[i&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;])
+&lt;span style=&#34;color:#75715e&#34;&gt;## PLOTTING&lt;/span&gt;
+fig &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; plt&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;figure(figsize&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;8&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;4&lt;/span&gt;))
+plt&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;plot(time, fish, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;r-&amp;#39;&lt;/span&gt;, label&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;small fish&amp;#39;&lt;/span&gt;)
+plt&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;plot(time, salmon, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;b-&amp;#39;&lt;/span&gt;, label&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;salmon&amp;#39;&lt;/span&gt;)
+plt&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;grid()
+plt&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;xlabel(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;time (years)&amp;#39;&lt;/span&gt;)
+plt&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;ylabel(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Population (billions)&amp;#39;&lt;/span&gt;)
+plt&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;title(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Figure 2: Predator Predy relationship of Salmon and small fish&amp;#39;&lt;/span&gt;)
+plt&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;legend(loc&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;best&amp;#39;&lt;/span&gt;)
+plt&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;tight_layout()
+plt&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;show()
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;output_5_0.png&#34; alt=&#34;png&#34;&gt;&lt;/p&gt;
 &lt;h1 id=&#34;humans&#34;&gt;Humans&lt;/h1&gt;
-
 &lt;h2 id=&#34;human-population-growth&#34;&gt;Human population growth&lt;/h2&gt;
-
 &lt;p&gt;Humans  are adaptable omnivores who have fire and tools so we are able to eat most animals and plants [5]. This means humans violate this the cyclical relationship. When humans have eaten all of one prey, such as the dodo, we just move on to another prey with seemingly little impact on human population growth. From 1800 to 1900 the human population increased by 60% from 1 billion to 1.6 billion. From 1900 to 2000 the human population has increased by almost 400% from 1.6 to 6 billion. Figure 3 shows the predicted increase in human population (yellow) in billions from 6 billion in 2000 to around 16 billion in 2100. The population should level off as number of foods sources can only sustain so many huamns. This growth can be descibed as a the equation:
 \begin{equation}
 \frac{d H}{dt}=0.05H-0.003H^2,
 \end{equation}
 where $H$ is human population.
 The equations can be written in words as:&lt;/p&gt;
-
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -176,51 +157,44 @@ The equations can be written in words as:&lt;/p&gt;
 &lt;th&gt;the current population and a control factor&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
-
 &lt;tbody&gt;
 &lt;tr&gt;
 &lt;td&gt;The increase in human population  $\frac{d H}{dt}$&lt;/td&gt;
 &lt;td&gt;is equal to&lt;/td&gt;
 &lt;td&gt;the current human population $0.05H$ minus a factor to control for over population $-0.003H^2$&lt;/td&gt;
 &lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;It can be summed up as the human population keeps increasing until there is nothing left to eat.&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;humans&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;6&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;np&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;ones(N) &lt;span style=&#34;color:#75715e&#34;&gt;# 6 billion humans&lt;/span&gt;
 
-&lt;p&gt;It can be summed up as the human population keeps increasing until there is nothing left to eat.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;humans=6*np.ones(N) # 6 billion humans
-
-for i in range (1,N):              
-    humans[i]=humans[i-1]+h*humans[i-1]*(0.05-0.003*humans[i-1]) 
-fig= plt.figure(figsize=(8,4))
-plt.plot(time, humans, &#39;y-&#39;, label = &#39;Humans&#39;)
-plt.xlabel(&#39;time (yrs)&#39;)
-plt.ylabel(&#39;Population (billions)&#39;)
-plt.legend(loc=&#39;best&#39;)
-plt.tight_layout()
-plt.ylim(0,20)
-plt.title(&#39;Figure 3: Human Population&#39;)
-plt.show()
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;img src=&#34;output_7_0.png&#34; alt=&#34;png&#34; /&gt;&lt;/p&gt;
-
+&lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; i &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; range (&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;,N):              
+    humans[i]&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;humans[i&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;]&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;h&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;humans[i&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;]&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;0.05&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0.003&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;humans[i&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;]) 
+fig&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; plt&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;figure(figsize&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;8&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;4&lt;/span&gt;))
+plt&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;plot(time, humans, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;y-&amp;#39;&lt;/span&gt;, label &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Humans&amp;#39;&lt;/span&gt;)
+plt&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;xlabel(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;time (yrs)&amp;#39;&lt;/span&gt;)
+plt&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;ylabel(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Population (billions)&amp;#39;&lt;/span&gt;)
+plt&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;legend(loc&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;best&amp;#39;&lt;/span&gt;)
+plt&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;tight_layout()
+plt&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;ylim(&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;20&lt;/span&gt;)
+plt&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;title(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Figure 3: Human Population&amp;#39;&lt;/span&gt;)
+plt&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;show()
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;output_7_0.png&#34; alt=&#34;png&#34;&gt;&lt;/p&gt;
 &lt;h2 id=&#34;impact-of-humans&#34;&gt;Impact of Humans&lt;/h2&gt;
-
 &lt;p&gt;Due to the increasing human population the demand on food sources is getting highter and higher. This demand could put popular food sources at risk of being eaten into extinction. In the recent decades, governments have tried to address this by introduction quotas and identifying at risk animals. While this can address the direct impact of humans on the ecosystem it does not address the indirect by products of modern life such as microplastics.&lt;/p&gt;
-
 &lt;h2 id=&#34;microplastics-and-humans&#34;&gt;MicroPlastics and Humans&lt;/h2&gt;
-
-&lt;p&gt;Microplastics is any plastic entity which is approximately less than 5mm in size &lt;a href=&#34;http://www.dit.ie/physics/research/microplastics/&#34; target=&#34;_blank&#34;&gt;6&lt;/a&gt;.
-The increase in microplastics can be modelled as a relationship with the human population. This can be descrived by the equation:&lt;br /&gt;
+&lt;p&gt;Microplastics is any plastic entity which is approximately less than 5mm in size [6] (&lt;a href=&#34;http://www.dit.ie/physics/research/microplastics/)&#34;&gt;http://www.dit.ie/physics/research/microplastics/)&lt;/a&gt;.
+The increase in microplastics can be modelled as a relationship with the human population. This can be descrived by the equation:&lt;br&gt;
 \begin{equation}
 \begin{array}{cl}
 \frac{d P}{dt}=plastic_{rate}H.
 \end{array}
 \end{equation}&lt;/p&gt;
-
 &lt;p&gt;The parameter $plastic_{rate}$ is used the describe the relationship between the human population (H) and the rate of increase in microplastics (P) production.&lt;/p&gt;
-
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -229,7 +203,6 @@ The increase in microplastics can be modelled as a relationship with the human p
 &lt;th&gt;the current population with a control factor&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
-
 &lt;tbody&gt;
 &lt;tr&gt;
 &lt;td&gt;The increase in microplastics  $\frac{d P}{dt}$&lt;/td&gt;
@@ -238,50 +211,39 @@ The increase in microplastics can be modelled as a relationship with the human p
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-
 &lt;p&gt;Positive values of production rate mean the more humans, the more microplastics.
 Even if the production of micropalstics is stopped, the amount of microplastics will remain the same. So even after humans are gone, our plastic foot print will remain.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;plastic_model&lt;/span&gt;(plastic_rate):
+    humans&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;6&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;np&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;ones(N) &lt;span style=&#34;color:#75715e&#34;&gt;# 30 billion salmon&lt;/span&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;def plastic_model(plastic_rate):
-    humans=6*np.ones(N) # 30 billion salmon
+    plastics&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;np&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;ones(N) &lt;span style=&#34;color:#75715e&#34;&gt;# 1 billion microplastics&lt;/span&gt;
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; i &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; range (&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;,N):              
+        plastics[i]&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;plastics[i&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;]&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;h&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;humans[i&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;]&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;(plastic_rate) 
+        humans[i]&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;humans[i&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;]&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;h&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;humans[i&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;]&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;0.05&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0.003&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;humans[i&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;]) 
 
-    plastics=1*np.ones(N) # 1 billion microplastics
-    for i in range (1,N):              
-        plastics[i]=plastics[i-1]+h*humans[i-1]*(plastic_rate) 
-        humans[i]=humans[i-1]+h*humans[i-1]*(0.05-0.003*humans[i-1]) 
-
-    fig= plt.figure(figsize=(8,3))
-    plt.plot(time, plastics, &#39;g&#39;, label = &#39;Microplastics&#39;)
-    plt.plot(time, humans, &#39;y-&#39;, label = &#39;Humans&#39;)
-    plt.xlabel(&#39;time (yrs)&#39;)
-    plt.ylabel(&#39;Population&#39;)
-    plt.legend(loc=&#39;best&#39;)
-    plt.tight_layout()
-    plt.title(&#39;Figure 4: Relationship of Human Population and Microplastics with a plastic rate =  %s&#39;%(plastic_rate))
-    plt.show()
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;In Figure 4 the rate of microplastic production can be manipulated to illustrate the result of a change in amount of microplastics.  The figure plots modelled microplastics (green) and human population as a function of time from 2000 to 2100.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;plastic_model(0.01);
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;img src=&#34;output_12_0.png&#34; alt=&#34;png&#34; /&gt;&lt;/p&gt;
-
+    fig&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; plt&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;figure(figsize&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;8&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;))
+    plt&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;plot(time, plastics, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;g&amp;#39;&lt;/span&gt;, label &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Microplastics&amp;#39;&lt;/span&gt;)
+    plt&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;plot(time, humans, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;y-&amp;#39;&lt;/span&gt;, label &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Humans&amp;#39;&lt;/span&gt;)
+    plt&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;xlabel(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;time (yrs)&amp;#39;&lt;/span&gt;)
+    plt&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;ylabel(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Population&amp;#39;&lt;/span&gt;)
+    plt&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;legend(loc&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;best&amp;#39;&lt;/span&gt;)
+    plt&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;tight_layout()
+    plt&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;title(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Figure 4: Relationship of Human Population and Microplastics with a plastic rate =  &lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;%s&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;%&lt;/span&gt;(plastic_rate))
+    plt&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;show()
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;In Figure 4 the rate of microplastic production can be manipulated to illustrate the result of a change in amount of microplastics.  The figure plots modelled microplastics (green) and human population as a function of time from 2000 to 2100.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;plastic_model(&lt;span style=&#34;color:#ae81ff&#34;&gt;0.01&lt;/span&gt;);
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;output_12_0.png&#34; alt=&#34;png&#34;&gt;&lt;/p&gt;
 &lt;h1 id=&#34;microplastics-and-fish&#34;&gt;Microplastics and Fish&lt;/h1&gt;
-
 &lt;p&gt;While fishing quotas account for the direct impact of man on fish it does not account for by-products of modern life like mircroplastics to the ecosystem. It has been documented that fish are now
-consuming microplastics which can impact the population of fish.&lt;br /&gt;
+consuming microplastics which can impact the population of fish.&lt;br&gt;
 For these reasons we consider microplastics as a predator of small fish.
 To model the impact of microplastics on small fish (prey) and the knock on effect it has on salmon (prey).&lt;/p&gt;
-
 &lt;p&gt;To model the negative impact of microplastics on the small fish population an extra term is added to the small fish equation:
 \begin{equation}
 \begin{array}{cl}
-\frac{d F}{dt}=F-0.02SF-0.01FP.&lt;br /&gt;
+\frac{d F}{dt}=F-0.02SF-0.01FP.\&lt;br&gt;
 \end{array}
 \end{equation}&lt;/p&gt;
-
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -290,7 +252,6 @@ To model the impact of microplastics on small fish (prey) and the knock on effec
 &lt;th&gt;the current population with a control factor&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
-
 &lt;tbody&gt;
 &lt;tr&gt;
 &lt;td&gt;The change in small fish  $\frac{d F}{dt}$&lt;/td&gt;
@@ -299,11 +260,8 @@ To model the impact of microplastics on small fish (prey) and the knock on effec
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-
 &lt;h2 id=&#34;the-ecosystem-model&#34;&gt;The ecosystem model&lt;/h2&gt;
-
 &lt;p&gt;Bringing all these equations together results in a system of four first order differential equations which describe a simple ecosystem of,&lt;/p&gt;
-
 &lt;p&gt;the population of Small Fish (F),
 \begin{equation}
 \frac{d F}{dt}=F-0.02SF-0.01FP;
@@ -321,78 +279,57 @@ and human population (H),
 \frac{d H}{dt}=0.0001H-0.002H^2+0.0006SH+0.001HF.
 \end{equation}
 The system was modeled from 2000 to the year 2100 are shown in the Figures bellow for different plastic rates. The figures show the small fish population  in red, the salmon population in blue, the plastics in green and human population in yellow.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;plastic_fish_model&lt;/span&gt;(plastic_rate):   
+    &lt;span style=&#34;color:#75715e&#34;&gt;# INITIAL CONDITIONS&lt;/span&gt;
+    fish&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;50&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;np&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;ones(N) &lt;span style=&#34;color:#75715e&#34;&gt;# 60 billions small fish&lt;/span&gt;
+    salmon&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;45&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;np&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;ones(N) &lt;span style=&#34;color:#75715e&#34;&gt;# 30 billion salmon&lt;/span&gt;
+    plastics&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0.001&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;np&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;ones(N) &lt;span style=&#34;color:#75715e&#34;&gt;# 1 billion microplastics&lt;/span&gt;
+    humans&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;6&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;np&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;ones(N) &lt;span style=&#34;color:#75715e&#34;&gt;# 7 billion humans&lt;/span&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;def plastic_fish_model(plastic_rate):   
-    # INITIAL CONDITIONS
-    fish=50*np.ones(N) # 60 billions small fish
-    salmon=45*np.ones(N) # 30 billion salmon
-    plastics=0.001*np.ones(N) # 1 billion microplastics
-    humans=6*np.ones(N) # 7 billion humans
-
-    SMALLFISH = np.array( [1,-0.02,-0.01])
-    SALMON= np.array([-0.05,0.001,0])
-    for i in range (1,N):
-        fish[i]=fish[i-1]+h*fish[i-1]*(SMALLFISH[0]+SMALLFISH[1]*salmon[i-1]+SMALLFISH[2]*(plastics [i-1]))
-        salmon[i]=salmon[i-1]+h*salmon[i-1]*(SALMON[0]+SALMON[1]*fish[i-1]+SALMON[2]*plastics [i-1])
-        plastics[i]=plastics[i-1]+h*humans[i-1]*(plastic_rate)
-        humans[i]=humans[i-1]+h*humans[i-1]*(0.05-0.003*humans[i-1]) 
-    fig = plt.figure(figsize=(8,6))
-    plt.title(&#39;Figure: Impact of plastic rate =  %s on the ecosystem&#39;%(plastic_rate))
-    plt.plot(time, fish, &#39;r-&#39;, label=&#39;small fish&#39;)
-    plt.plot(time, salmon, &#39;b-&#39;, label=&#39;salmon&#39;)
-    plt.plot(time, plastics, &#39;g&#39;, label=&#39;Microplastics&#39;)
-    plt.plot(time, humans, &#39;y&#39;, label=&#39;Humans&#39;)
-    plt.grid()
-    plt.title(&#39;The impact of microplastics&#39;)
-    plt.xlabel(&#39;time (years)&#39;)
-    plt.ylabel(&#39;Population in Billions&#39;)
-    plt.legend(loc=&#39;best&#39;)
-    plt.tight_layout()
-    plt.show()
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h1 id=&#34;results&#34;&gt;Results&lt;/h1&gt;
-
+    SMALLFISH &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; np&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;array( [&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;,&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0.02&lt;/span&gt;,&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0.01&lt;/span&gt;])
+    SALMON&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; np&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;array([&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0.05&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;0.001&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;])
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; i &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; range (&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;,N):
+        fish[i]&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;fish[i&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;]&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;h&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;fish[i&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;]&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;(SMALLFISH[&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;]&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;SMALLFISH[&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;]&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;salmon[i&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;]&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;SMALLFISH[&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;]&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;(plastics [i&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;]))
+        salmon[i]&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;salmon[i&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;]&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;h&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;salmon[i&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;]&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;(SALMON[&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;]&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;SALMON[&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;]&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;fish[i&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;]&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;SALMON[&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;]&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;plastics [i&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;])
+        plastics[i]&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;plastics[i&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;]&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;h&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;humans[i&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;]&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;(plastic_rate)
+        humans[i]&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;humans[i&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;]&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;h&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;humans[i&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;]&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;0.05&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0.003&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;humans[i&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;]) 
+    fig &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; plt&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;figure(figsize&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;8&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;6&lt;/span&gt;))
+    plt&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;title(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Figure: Impact of plastic rate =  &lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;%s&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt; on the ecosystem&amp;#39;&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;%&lt;/span&gt;(plastic_rate))
+    plt&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;plot(time, fish, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;r-&amp;#39;&lt;/span&gt;, label&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;small fish&amp;#39;&lt;/span&gt;)
+    plt&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;plot(time, salmon, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;b-&amp;#39;&lt;/span&gt;, label&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;salmon&amp;#39;&lt;/span&gt;)
+    plt&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;plot(time, plastics, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;g&amp;#39;&lt;/span&gt;, label&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Microplastics&amp;#39;&lt;/span&gt;)
+    plt&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;plot(time, humans, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;y&amp;#39;&lt;/span&gt;, label&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Humans&amp;#39;&lt;/span&gt;)
+    plt&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;grid()
+    plt&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;title(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;The impact of microplastics&amp;#39;&lt;/span&gt;)
+    plt&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;xlabel(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;time (years)&amp;#39;&lt;/span&gt;)
+    plt&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;ylabel(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Population in Billions&amp;#39;&lt;/span&gt;)
+    plt&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;legend(loc&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;best&amp;#39;&lt;/span&gt;)
+    plt&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;tight_layout()
+    plt&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;show()
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h1 id=&#34;results&#34;&gt;Results&lt;/h1&gt;
 &lt;p&gt;The figure below shows the output of the model for a plastic rate of 0.05. The introduction of microplastics results in a decrease in the small fish population which then impacts the salmon population as small fish are their primary food source.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;plastic_fish_model(0.05)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;img src=&#34;output_17_0.png&#34; alt=&#34;png&#34; /&gt;&lt;/p&gt;
-
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;plastic_fish_model(&lt;span style=&#34;color:#ae81ff&#34;&gt;0.05&lt;/span&gt;)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;output_17_0.png&#34; alt=&#34;png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;If the production rate of plastics is doubled to 0.1. The introduction of microplastics in to the ecosystem will lead to the extinction of small fish (red) by 2080 and salmon (blue) will be more or less extinct by 2100.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;plastic_fish_model(0.1)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;img src=&#34;output_19_0.png&#34; alt=&#34;png&#34; /&gt;&lt;/p&gt;
-
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;plastic_fish_model(&lt;span style=&#34;color:#ae81ff&#34;&gt;0.1&lt;/span&gt;)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;img src=&#34;output_19_0.png&#34; alt=&#34;png&#34;&gt;&lt;/p&gt;
 &lt;h1 id=&#34;open-questions&#34;&gt;Open Questions&lt;/h1&gt;
-
 &lt;p&gt;The model shows the destructive impact of microplastics on a simple ecosystem model of small fish, salmon, microplastics and humans. Mathematical models of this type can be used to discuss&lt;/p&gt;
-
-&lt;p&gt;The immediate questions that arise from this simulation are:
-1. What is our current rate of plastic production?
-2. How will the extinction of small fish impact the human population?
-3. How can we do to prevent this from happening?&lt;/p&gt;
-
+&lt;p&gt;The immediate questions that arise from this simulation are:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;What is our current rate of plastic production?&lt;/li&gt;
+&lt;li&gt;How will the extinction of small fish impact the human population?&lt;/li&gt;
+&lt;li&gt;How can we do to prevent this from happening?&lt;/li&gt;
+&lt;/ol&gt;
 &lt;h1 id=&#34;references&#34;&gt;References&lt;/h1&gt;
-
-&lt;p&gt;[1] Lynx-hare  fur  trade.&lt;a href=&#34;https://theglyptodon.wordpress.com/2011/05/02/the-fur-trades-records/&#34; target=&#34;_blank&#34;&gt;https://theglyptodon.wordpress.com/2011/05/02/the-fur-trades-records/&lt;/a&gt;.  Accessed:2018-03-20.&lt;/p&gt;
-
-&lt;p&gt;[2] Wikipedia contributors. (2018, July 27). Lotka–Volterra equations. In Wikipedia, The Free Encyclopedia. Retrieved 09:33, September 7, 2018, from &lt;a href=&#34;https://en.wikipedia.org/w/index.php?title=Lotka%E2%80%93Volterra_equations&amp;amp;oldid=852191432&#34; target=&#34;_blank&#34;&gt;https://en.wikipedia.org/w/index.php?title=Lotka%E2%80%93Volterra_equations&amp;amp;oldid=852191432&lt;/a&gt;&lt;/p&gt;
-
+&lt;p&gt;[1] Lynx-hare  fur  trade.https://theglyptodon.wordpress.com/2011/05/02/the-fur-trades-records/.  Accessed:2018-03-20.&lt;/p&gt;
+&lt;p&gt;[2] Wikipedia contributors. (2018, July 27). Lotka–Volterra equations. In Wikipedia, The Free Encyclopedia. Retrieved 09:33, September 7, 2018, from &lt;a href=&#34;https://en.wikipedia.org/w/index.php?title=Lotka%E2%80%93Volterra_equations&amp;amp;oldid=852191432&#34;&gt;https://en.wikipedia.org/w/index.php?title=Lotka%E2%80%93Volterra_equations&amp;amp;oldid=852191432&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;[3] Alfred J Lotka.   Analytical note on certain rhythmic  relations inorganic  systems.Proceedings of the National Academy of Sciences,6(7):410–415,1920.&lt;/p&gt;
-
 &lt;p&gt;[4]  Vito Volterra.  Fluctuations in the abundance of a species consid-ered mathematically.Nature,118:558–560,1926.&lt;/p&gt;
-
 &lt;p&gt;[5] Harari, Yuval N. (2015). Sapiens : a brief history of humankind. New York :Harper.&lt;/p&gt;
-
-&lt;p&gt;[6] Gordon Chambers, (2017) Microplastics, Retrieved 09:33, September 7, 2018, &lt;a href=&#34;http://www.dit.ie/physics/research/microplastics/&#34; target=&#34;_blank&#34;&gt;http://www.dit.ie/physics/research/microplastics/&lt;/a&gt;&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;
-&lt;/code&gt;&lt;/pre&gt;
-</description>
+&lt;p&gt;[6] Gordon Chambers, (2017) Microplastics, Retrieved 09:33, September 7, 2018, &lt;a href=&#34;http://www.dit.ie/physics/research/microplastics/&#34;&gt;http://www.dit.ie/physics/research/microplastics/&lt;/a&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
     </item>
     
   </channel>

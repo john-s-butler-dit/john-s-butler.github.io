@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Alpha on John S Butler</title>
-    <link>/tags/alpha/</link>
+    <link>https://johnsbutler.netlify.app/tags/alpha/</link>
     <description>Recent content in Alpha on John S Butler</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 01 May 2016 00:00:00 +0000</lastBuildDate>
     
-	    <atom:link href="/tags/alpha/index.xml" rel="self" type="application/rss+xml" />
+	    <atom:link href="https://johnsbutler.netlify.app/tags/alpha/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Exploring the unknown: electrophysiological and behavioural measures of visuospatial learning</title>
-      <link>/publication/2015_quinlivanetal_ejn/</link>
+      <link>https://johnsbutler.netlify.app/publication/2015_quinlivanetal_ejn/</link>
       <pubDate>Sun, 01 May 2016 00:00:00 +0000</pubDate>
       
-      <guid>/publication/2015_quinlivanetal_ejn/</guid>
+      <guid>https://johnsbutler.netlify.app/publication/2015_quinlivanetal_ejn/</guid>
       <description></description>
     </item>
     

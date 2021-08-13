@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Power Spectral Density on John S Butler</title>
-    <link>/tags/power-spectral-density/</link>
+    <link>https://johnsbutler.netlify.app/tags/power-spectral-density/</link>
     <description>Recent content in Power Spectral Density on John S Butler</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 01 Oct 2018 00:00:00 +0000</lastBuildDate>
     
-	    <atom:link href="/tags/power-spectral-density/index.xml" rel="self" type="application/rss+xml" />
+	    <atom:link href="https://johnsbutler.netlify.app/tags/power-spectral-density/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Cognitive load reduces the effects of optic flow on gait and electrocortical dynamics during treadmill walking</title>
-      <link>/publication/2018_malcolm-et-al/</link>
+      <link>https://johnsbutler.netlify.app/publication/2018_malcolm-et-al/</link>
       <pubDate>Mon, 01 Oct 2018 00:00:00 +0000</pubDate>
       
-      <guid>/publication/2018_malcolm-et-al/</guid>
+      <guid>https://johnsbutler.netlify.app/publication/2018_malcolm-et-al/</guid>
       <description></description>
     </item>
     

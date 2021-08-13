@@ -2,39 +2,39 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Manuel R. Mercier on John S Butler</title>
-    <link>/authors/manuel-r.-mercier/</link>
+    <link>https://johnsbutler.netlify.app/authors/manuel-r.-mercier/</link>
     <description>Recent content in Manuel R. Mercier on John S Butler</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 01 Dec 2015 00:00:00 +0000</lastBuildDate>
     
-	    <atom:link href="/authors/manuel-r.-mercier/index.xml" rel="self" type="application/rss+xml" />
+	    <atom:link href="https://johnsbutler.netlify.app/authors/manuel-r.-mercier/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Spatio-temporal dynamics of adaptation in the human visual system; a high-density electrical mapping study</title>
-      <link>/publication/2015_andrade-et-al-ejn/</link>
+      <link>https://johnsbutler.netlify.app/publication/2015_andrade-et-al-ejn/</link>
       <pubDate>Tue, 01 Dec 2015 00:00:00 +0000</pubDate>
       
-      <guid>/publication/2015_andrade-et-al-ejn/</guid>
+      <guid>https://johnsbutler.netlify.app/publication/2015_andrade-et-al-ejn/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Multisensory Representation of Frequency across Audition and Touch; High Density Electrical Mapping Reveals Early Sensory-Perceptual Coupling</title>
-      <link>/publication/2012_butler-et-al-jon/</link>
+      <link>https://johnsbutler.netlify.app/publication/2012_butler-et-al-jon/</link>
       <pubDate>Sat, 01 Sep 2012 00:00:00 +0000</pubDate>
       
-      <guid>/publication/2012_butler-et-al-jon/</guid>
+      <guid>https://johnsbutler.netlify.app/publication/2012_butler-et-al-jon/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Common or Redundant Neural Circuits for Duration Processing across Audition and Touch</title>
-      <link>/publication/2011_butler-et-al-jon/</link>
+      <link>https://johnsbutler.netlify.app/publication/2011_butler-et-al-jon/</link>
       <pubDate>Fri, 01 Apr 2011 00:00:00 +0000</pubDate>
       
-      <guid>/publication/2011_butler-et-al-jon/</guid>
+      <guid>https://johnsbutler.netlify.app/publication/2011_butler-et-al-jon/</guid>
       <description></description>
     </item>
     

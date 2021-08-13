@@ -2,147 +2,106 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Decisions on John S Butler</title>
-    <link>/decision/</link>
+    <link>https://johnsbutler.netlify.app/decision/</link>
     <description>Recent content in Decisions on John S Butler</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 05 Feb 2019 00:00:00 +0000</lastBuildDate>
     
-	    <atom:link href="/decision/index.xml" rel="self" type="application/rss+xml" />
+	    <atom:link href="https://johnsbutler.netlify.app/decision/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Probabilistic Decision Making by Slow Reverberation in Cortical Circuits</title>
-      <link>/decision/wang2002/</link>
+      <link>https://johnsbutler.netlify.app/decision/wang2002/</link>
       <pubDate>Tue, 05 Feb 2019 00:00:00 +0000</pubDate>
       
-      <guid>/decision/wang2002/</guid>
-      <description>
-
-&lt;h1 id=&#34;probabilistic-decision-making-by-slow-reverberation-in-cortical-circuits&#34;&gt;Probabilistic Decision Making by Slow Reverberation in Cortical Circuits&lt;/h1&gt;
-
+      <guid>https://johnsbutler.netlify.app/decision/wang2002/</guid>
+      <description>&lt;h1 id=&#34;probabilistic-decision-making-by-slow-reverberation-in-cortical-circuits&#34;&gt;Probabilistic Decision Making by Slow Reverberation in Cortical Circuits&lt;/h1&gt;
 &lt;p&gt;Wang Neuron, December 5, 2002, 36:955-968&lt;/p&gt;
-
 &lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;
-
 &lt;p&gt;This notebook will work through the seminal paper by Wang (2002) to simulate synaptic decision making. The note book will follow the flow of the original paper and reproduce each figure.&lt;/p&gt;
-
 &lt;h2 id=&#34;material-and-methods&#34;&gt;Material and Methods&lt;/h2&gt;
-
 &lt;h3 id=&#34;the-two-variable-network-model&#34;&gt;The two-variable network model&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&#34;Wang2002/Figure1.jpg&#34; alt=&#34;Neuronal Firing Type&#34; style=&#34;width: 400px;&#34;/&gt;
-&lt;em&gt; Figure 1: Model Architecture and Coherence-Dependent Stochastic inputs.&lt;/p&gt;
-
+&lt;img src=&#34;Wang2002/Figure1.jpg&#34; alt=&#34;Neuronal Firing Type&#34; style=&#34;width: 400px;&#34;/&gt;
+&lt;em&gt; Figure 1: Model Architecture and Coherence-Dependent Stochastic inputs.
 &lt;p&gt;(A) Schematic depiction of the model. There are two pyramidal cell groups (A and B), each of which is selective to one of the two stimuli (mimicking motion to the right or left). Within each pyramidal neural group there is strong recurrrent excitatory connections that can sustain persistent activity triggered by a transient preferred stimulus. The two neural groups compete through feedback inhibition from interneurons.&lt;/p&gt;
-
 &lt;p&gt;(B) Top: the inputs are Poisson rates that vary in time and obey Gaussian distributions, with means μA and μB and with standard deviation σ. The means $μ_A$ and $μ_B$ depend on the coherence level linearly (insert). Bottom: an example of stochastic inputs to neural groups A and B with $μ_0$ = 40 and $σ$ = 10 in Hz, c′ = 6.4%. At every 50 ms, the two stimuli are independently resampled using their Gaussian distributions, so that the inputs vary stochastically in time. If $σ$ = 0, the two inputs would be constant in time.&lt;/em&gt;&lt;/p&gt;
-
 &lt;h2 id=&#34;the-cortical-network-model&#34;&gt;The Cortical Network Model&lt;/h2&gt;
-
 &lt;p&gt;The corical network consists of N=2000 neurons with excitaroty pyramidal cells ($N_E$=1600) and inhibitory $N_I$ interneurons ($N_I$=400).&lt;/p&gt;
-
 &lt;h3 id=&#34;neurons-the-integrate-and-fire-model&#34;&gt;Neurons The Integrate and Fire Model&lt;/h3&gt;
-
 &lt;p&gt;The nuerons are simulated unsing the integrate and fire model:
-\begin{equation}  C_m\frac{dV(t)}{dt} =-g_L(V(t)-V&lt;em&gt;L)-I&lt;/em&gt;{syn}(t), \end{equation}
-where $V(t)$ is the membrane potential, $C_m$ is the membrane capacity,  $g_L$ is the membrane leak conductance, $V&lt;em&gt;L$ is the resting potential and $I&lt;/em&gt;{syn}$ represents the total synaptic current flow.
-To simulate spiking a firing threshold $V&lt;em&gt;{th}$ and a refactory period $\tau&lt;/em&gt;{ref}$ are introduced such that
+\begin{equation}  C_m\frac{dV(t)}{dt} =-g_L(V(t)-V_L)-I_{syn}(t), \end{equation}
+where $V(t)$ is the membrane potential, $C_m$ is the membrane capacity,  $g_L$ is the membrane leak conductance, $V_L$ is the resting potential and $I_{syn}$ represents the total synaptic current flow.
+To simulate spiking a firing threshold $V_{th}$ and a refactory period $\tau_{ref}$ are introduced such that
 \begin{equation}  if V(t) &amp;gt; V_{th}, \end{equation}
-\begin{equation}   V(t) =V_rest+RI&lt;em&gt;0\frac{\Delta}{\tau&lt;/em&gt;{ref}}, for \Delta &amp;lt;&amp;lt; \tau&lt;em&gt;{ref} \end{equation}
-with a reset potential $V&lt;/em&gt;{reset}$&lt;/p&gt;
-
+\begin{equation}   V(t) =V_rest+RI_0\frac{\Delta}{\tau_{ref}}, for \Delta &amp;laquo; \tau_{ref} \end{equation}
+with a reset potential $V_{reset}$&lt;/p&gt;
 &lt;h3 id=&#34;parameters&#34;&gt;Parameters&lt;/h3&gt;
-
 &lt;p&gt;The parameters for the model are:&lt;/p&gt;
-
 &lt;p&gt;| Parameter | Excitatory (E)  | Inhibitory (I) | Units |
 |&amp;mdash;&amp;mdash;|&amp;mdash;&amp;mdash;|&amp;mdash;&amp;mdash;|
 |   $C_m$ | 0.5|0.2|  nF  |
 |   $g_L$ | 25|20| nS  |
-|   $V&lt;em&gt;L$ | -70|-70| mV  |
-|   $V&lt;/em&gt;{reset}$ |-55|-55| mV  |
-|   $V&lt;em&gt;{th}$ |-50|-50| mV  |
-|   $\tau&lt;/em&gt;{ref}$ |2|1| ms  |
+|   $V_L$ | -70|-70| mV  |
+|   $V_{reset}$ |-55|-55| mV  |
+|   $V_{th}$ |-50|-50| mV  |
+|   $\tau_{ref}$ |2|1| ms  |
 |   $\tau_{m}$ |20|10| ms  |&lt;/p&gt;
-
 &lt;h3 id=&#34;libraries&#34;&gt;Libraries&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# LIBRARY&lt;/span&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;# LIBRARY
+&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; numpy &lt;span style=&#34;color:#f92672&#34;&gt;as&lt;/span&gt; np &lt;span style=&#34;color:#75715e&#34;&gt;# vector manipulation&lt;/span&gt;
+&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; math  &lt;span style=&#34;color:#75715e&#34;&gt;# math functions&lt;/span&gt;
+&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; sys
 
-import numpy as np # vector manipulation
-import math  # math functions
-import sys
+&lt;span style=&#34;color:#75715e&#34;&gt;# THIS IS FOR PLOTTING&lt;/span&gt;
+&lt;span style=&#34;color:#f92672&#34;&gt;%&lt;/span&gt;matplotlib inline
+&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; matplotlib.pyplot &lt;span style=&#34;color:#f92672&#34;&gt;as&lt;/span&gt; plt &lt;span style=&#34;color:#75715e&#34;&gt;# side-stepping mpl backend&lt;/span&gt;
+&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; warnings
+warnings&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;filterwarnings(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;ignore&amp;#34;&lt;/span&gt;)
 
-# THIS IS FOR PLOTTING
-%matplotlib inline
-import matplotlib.pyplot as plt # side-stepping mpl backend
-import warnings
-warnings.filterwarnings(&amp;quot;ignore&amp;quot;)
-
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h3 id=&#34;synapses&#34;&gt;Synapses&lt;/h3&gt;
-
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;synapses&#34;&gt;Synapses&lt;/h3&gt;
 &lt;h3 id=&#34;neural-circuit&#34;&gt;Neural Circuit&lt;/h3&gt;
-
 &lt;p&gt;The total synpatic input current is given by
-$$ I&lt;em&gt;{syn}=I&lt;/em&gt;{ext,AMPA}(t)+I&lt;em&gt;{rec,AMPA}(t)+I&lt;/em&gt;{rec,NMDA}(t)+I_{rec,GABA}(t),$$&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;def I_syn_t(I_extAMPA,I_recAMPA,I_recNMDA,I_recGABA):
-    I_syn=I_extAMPA+I_recAMPA+I_recNMDA+I_recGABA
-    return I_syn
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;where the external AMPA input is given by
-$$ I&lt;em&gt;{ext,AMPA}=g&lt;/em&gt;{ext,AMPA}(V(t)-V_{E})s^{ext,AMPA}(t), $$&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;def I_extAMPA_t(g_extAMPA,V,s_extAMPA):
-    V_E=0
-    I_extAMPA=g_extAMPA*(V-V_E)*s_extAMPA
-    return I_extAMPA
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;the recurrent AMPA input is given by
-$$ I&lt;em&gt;{rec,AMPA}=g&lt;/em&gt;{rec,AMPA}(V(t)-V&lt;em&gt;{E})\Sigma&lt;/em&gt;{j=1}^{c_E}s^{ext,AMPA}(t), $$&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;def I_recAMPA_t(g_recAMPA,V,w,s_AMPA):
-    V_E=0
-    I_recAMPA=g_recAMPA*(V-V_E)*np.sum(np.dot(w,s_AMPA)
-    return I_recAMPA
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;pre&gt;&lt;code&gt;  File &amp;quot;&amp;lt;ipython-input-4-de7012b96bf7&amp;gt;&amp;quot;, line 4
+$$ I_{syn}=I_{ext,AMPA}(t)+I_{rec,AMPA}(t)+I_{rec,NMDA}(t)+I_{rec,GABA}(t),$$&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;I_syn_t&lt;/span&gt;(I_extAMPA,I_recAMPA,I_recNMDA,I_recGABA):
+    I_syn&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;I_extAMPA&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;I_recAMPA&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;I_recNMDA&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;I_recGABA
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; I_syn
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;where the external AMPA input is given by
+$$ I_{ext,AMPA}=g_{ext,AMPA}(V(t)-V_{E})s^{ext,AMPA}(t), $$&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;I_extAMPA_t&lt;/span&gt;(g_extAMPA,V,s_extAMPA):
+    V_E&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;
+    I_extAMPA&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;g_extAMPA&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;(V&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;V_E)&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;s_extAMPA
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; I_extAMPA
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;the recurrent AMPA input is given by
+$$ I_{rec,AMPA}=g_{rec,AMPA}(V(t)-V_{E})\Sigma_{j=1}^{c_E}s^{ext,AMPA}(t), $$&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;I_recAMPA_t&lt;/span&gt;(g_recAMPA,V,w,s_AMPA):
+    V_E&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;
+    I_recAMPA&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;g_recAMPA&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;(V&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;V_E)&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;np&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;sum(np&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;dot(w,s_AMPA)
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; I_recAMPA
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;pre&gt;&lt;code&gt;  File &amp;quot;&amp;lt;ipython-input-4-de7012b96bf7&amp;gt;&amp;quot;, line 4
     return I_recAMPA
          ^
 SyntaxError: invalid syntax
 &lt;/code&gt;&lt;/pre&gt;
-
 &lt;p&gt;the recurrent NMDA is given by
-$$ I&lt;em&gt;{rec,NMDA}=\frac{g&lt;/em&gt;{NMDA}(V(t)-V&lt;em&gt;E)}{(1+[Mg^{2+}]exp(-0.062V(t))/3.57)}\Sigma&lt;/em&gt;{j=1}^{c_E}s^{NMDA}(t), $$&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;def I_recNMDA_t(g_extNMDA,V,w,s_NMDA):
-    V_E=0
-    Mg=1
-    I_recNMDA=g_NMDA*(V-V_E)/(1+Mg*np.exp(-0.062*V)/3.57)*np.sum(np.dot(w,s_NMDA))
-    return I_recNMDA
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;the recurrent GABA is given by
-$$ I&lt;em&gt;{rec,GABA}=g&lt;/em&gt;{GABA}(V(t)-V&lt;em&gt;I)\Sigma&lt;/em&gt;{j=1}^{c&lt;em&gt;I}s^{GABA}(t), $$
-where $V&lt;/em&gt;{E}=0mV$, $V&lt;em&gt;I=-70 mV$, $w&lt;/em&gt;{j}$ are dimensionless weights&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;def I_recNMDA_t(g_extNMDA,V,w,s_NMDA):
-    V_I=-70
-    Mg=1
-    I_recNMDA=g_NMDA*(V-V_I)/(1+Mg*np.exp(-0.062*V)/3.57)*np.sum(np.dot(w,s_NMDA))
-    return I_recNMDA
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h3 id=&#34;parameters-1&#34;&gt;Parameters&lt;/h3&gt;
-
+$$ I_{rec,NMDA}=\frac{g_{NMDA}(V(t)-V_E)}{(1+[Mg^{2+}]exp(-0.062V(t))/3.57)}\Sigma_{j=1}^{c_E}s^{NMDA}(t), $$&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;I_recNMDA_t&lt;/span&gt;(g_extNMDA,V,w,s_NMDA):
+    V_E&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;
+    Mg&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;
+    I_recNMDA&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;g_NMDA&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;(V&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;V_E)&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;Mg&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;np&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;exp(&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0.062&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;V)&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;3.57&lt;/span&gt;)&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;np&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;sum(np&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;dot(w,s_NMDA))
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; I_recNMDA
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;the recurrent GABA is given by
+$$ I_{rec,GABA}=g_{GABA}(V(t)-V_I)\Sigma_{j=1}^{c_I}s^{GABA}(t), $$
+where $V_{E}=0mV$, $V_I=-70 mV$, $w_{j}$ are dimensionless weights&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;I_recNMDA_t&lt;/span&gt;(g_extNMDA,V,w,s_NMDA):
+    V_I&lt;span style=&#34;color:#f92672&#34;&gt;=-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;70&lt;/span&gt;
+    Mg&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;
+    I_recNMDA&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;g_NMDA&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;(V&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;V_I)&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;Mg&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;np&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;exp(&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0.062&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;V)&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;3.57&lt;/span&gt;)&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;np&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;sum(np&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;dot(w,s_NMDA))
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; I_recNMDA
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;parameters-1&#34;&gt;Parameters&lt;/h3&gt;
 &lt;p&gt;The parameters for the model are:&lt;/p&gt;
-
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -151,26 +110,22 @@ where $V&lt;/em&gt;{E}=0mV$, $V&lt;em&gt;I=-70 mV$, $w&lt;/em&gt;{j}$ are dimens
 &lt;th&gt;Inhibitory&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
-
 &lt;tbody&gt;
 &lt;tr&gt;
 &lt;td&gt;$g_{ext,AMPA}$&lt;/td&gt;
 &lt;td&gt;2.1&lt;/td&gt;
 &lt;td&gt;1.62&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
 &lt;td&gt;$g_{rec,AMPA}$&lt;/td&gt;
 &lt;td&gt;0.05&lt;/td&gt;
 &lt;td&gt;0.04&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
 &lt;td&gt;$g_{NMDA}$&lt;/td&gt;
 &lt;td&gt;0.165&lt;/td&gt;
 &lt;td&gt;0.13&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
 &lt;td&gt;$g_{GABA}$&lt;/td&gt;
 &lt;td&gt;1.3&lt;/td&gt;
@@ -178,163 +133,119 @@ where $V&lt;/em&gt;{E}=0mV$, $V&lt;em&gt;I=-70 mV$, $w&lt;/em&gt;{j}$ are dimens
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-
 &lt;h3 id=&#34;ampa-channels&#34;&gt;AMPA Channels&lt;/h3&gt;
+&lt;p&gt;$$ \frac{d s_{j}^{AMPA}(t)}{dt} =\frac{s_{j}^{AMPA}(t)}{\tau_{AMPA}}+\Sigma_k \delta(t-t^k_j)$$
+where $\tau_{AMPA}=2$ms adn the sum over $k$ represents a sum of spikes emitted by presynaptic neuron $j$.&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;s_AMPA&lt;/span&gt;(s_AMPA,SPIKES):
+    tau_AMPA&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;
+    s_AMPA&lt;span style=&#34;color:#f92672&#34;&gt;=-&lt;/span&gt;s_AMPA&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;tau_AMPA&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;np&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;sum(SPIKES)
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; s_AMPA
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;nmda-channels&#34;&gt;NMDA Channels&lt;/h3&gt;
+&lt;p&gt;$$ \frac{d s_{j}^{NMDA}(t)}{dt} =-\frac{s_{j}^{NMDA}(t)}{\tau_{NMDA,decay}}+\alpha(1- s_{j}^{NMDA}(t) )$$
+$$ \frac{d x_{j}(t)}{dt} =-\frac{x_{j}(t)}{\tau_{NMDA,rise}}+\Sigma_k \delta(t-t^k_j)$$
+where the decay time of NMDA currents $\tau_{NMDA,decay}=100ms$, $\alpha=0.5 ms^{-1}$ and $\tau_{NMDA,rise}=2ms$&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;s_AMPA&lt;/span&gt;(s_AMPA,SPIKES):
+    tau_AMPA&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;
+    s_AMPA&lt;span style=&#34;color:#f92672&#34;&gt;=-&lt;/span&gt;s_AMPA&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;tau_AMPA&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;np&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;sum(SPIKES)
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; s_AMPA
 
-&lt;p&gt;$$ \frac{d s&lt;em&gt;{j}^{AMPA}(t)}{dt} =\frac{s&lt;/em&gt;{j}^{AMPA}(t)}{\tau_{AMPA}}+\Sigma_k \delta(t-t^k&lt;em&gt;j)$$
-where $\tau&lt;/em&gt;{AMPA}=2$ms adn the sum over $k$ represents a sum of spikes emitted by presynaptic neuron $j$.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;def s_AMPA(s_AMPA,SPIKES):
-    tau_AMPA=2
-    s_AMPA=-s_AMPA/tau_AMPA+np.sum(SPIKES)
-    return s_AMPA
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h3 id=&#34;nmda-channels&#34;&gt;NMDA Channels&lt;/h3&gt;
-
-&lt;p&gt;$$ \frac{d s&lt;em&gt;{j}^{NMDA}(t)}{dt} =-\frac{s&lt;/em&gt;{j}^{NMDA}(t)}{\tau&lt;em&gt;{NMDA,decay}}+\alpha(1- s&lt;/em&gt;{j}^{NMDA}(t) )$$
-$$ \frac{d x&lt;em&gt;{j}(t)}{dt} =-\frac{x&lt;/em&gt;{j}(t)}{\tau_{NMDA,rise}}+\Sigma_k \delta(t-t^k&lt;em&gt;j)$$
-where the decay time of NMDA currents $\tau&lt;/em&gt;{NMDA,decay}=100ms$, $\alpha=0.5 ms^{-1}$ and $\tau_{NMDA,rise}=2ms$&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;def s_AMPA(s_AMPA,SPIKES):
-    tau_AMPA=2
-    s_AMPA=-s_AMPA/tau_AMPA+np.sum(SPIKES)
-    return s_AMPA
-
-def s_AMPA(s_AMPA,SPIKES):
-    tau_AMPA=2
-    s_AMPA=-s_AMPA/tau_AMPA+np.sum(SPIKES)
-    return s_AMPA
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h3 id=&#34;gaba-channels&#34;&gt;GABA Channels&lt;/h3&gt;
-
-&lt;p&gt;$$ \frac{d s&lt;em&gt;{j}^{GABA}(t)}{dt} =-\frac{s&lt;/em&gt;{j}^{GABA}(t)}{\tau&lt;em&gt;{GABA}}+\alpha(1- s&lt;/em&gt;{j}^{NMDA}(t) )$$
+&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;s_AMPA&lt;/span&gt;(s_AMPA,SPIKES):
+    tau_AMPA&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;
+    s_AMPA&lt;span style=&#34;color:#f92672&#34;&gt;=-&lt;/span&gt;s_AMPA&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;tau_AMPA&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;np&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;sum(SPIKES)
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; s_AMPA
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;gaba-channels&#34;&gt;GABA Channels&lt;/h3&gt;
+&lt;p&gt;$$ \frac{d s_{j}^{GABA}(t)}{dt} =-\frac{s_{j}^{GABA}(t)}{\tau_{GABA}}+\alpha(1- s_{j}^{NMDA}(t) )$$
 where the decay time of GABA currents $\tau_{GABA}=5ms$.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;def I_input_1(c_dash):
-    J_A_ext=0.00052 # nA/Hz
-    mu_0=30 # Hz
-    I_motion=J_A_ext*mu_0*(1+(c_dash)/100)
-    return I_motion
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;structure-of-recurrent-excitatory-connections-between-pyramidal-cells&#34;&gt;Structure of Recurrent Excitatory Connections between Pyramidal cells&lt;/h2&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;def I_input_2(c_dash):
-    J_A_ext=0.00052 # nA/Hz
-    mu_0=30 # Hz
-    I_motion=J_A_ext*mu_0*(1-(c_dash)/100)
-    return I_motion
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;numerical-solution&#34;&gt;Numerical Solution&lt;/h2&gt;
-
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;I_input_1&lt;/span&gt;(c_dash):
+    J_A_ext&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0.00052&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;# nA/Hz&lt;/span&gt;
+    mu_0&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;30&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;# Hz&lt;/span&gt;
+    I_motion&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;J_A_ext&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;mu_0&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;(c_dash)&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;100&lt;/span&gt;)
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; I_motion
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;structure-of-recurrent-excitatory-connections-between-pyramidal-cells&#34;&gt;Structure of Recurrent Excitatory Connections between Pyramidal cells&lt;/h2&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;I_input_2&lt;/span&gt;(c_dash):
+    J_A_ext&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0.00052&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;# nA/Hz&lt;/span&gt;
+    mu_0&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;30&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;# Hz&lt;/span&gt;
+    I_motion&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;J_A_ext&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;mu_0&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;(c_dash)&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;100&lt;/span&gt;)
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; I_motion
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;numerical-solution&#34;&gt;Numerical Solution&lt;/h2&gt;
 &lt;h3 id=&#34;second-order-runge-kutta&#34;&gt;Second Order Runge Kutta&lt;/h3&gt;
-
 &lt;p&gt;$$y_{i+1}=y_i+\frac{\Delta}{2}(k_1+k_2),$$
 $$k_1=f(x_i,y_i),$$
 $$k_2=f(x_i+\frac{\Delta}{2},y_i+\frac{\Delta}{2}k_1).$$&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;RK2&lt;/span&gt;(y,x,f):
+    delta&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0.05&lt;/span&gt;
+    k1&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;f(x,y)
+    k2&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;f(x&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;delta&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;,y&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;delta&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;k1)
+    y&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;y&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;delta&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;(k1&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;k2)
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; y
 
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;def RK2(y,x,f):
-    delta=0.05
-    k1=f(x,y)
-    k2=f(x+delta/2,y+delta/2*k1)
-    y=y+delta/2*(k1+k2)
-    return y
+&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;f&lt;/span&gt;(x,y):
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; x&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;y
 
-def f(x,y):
-    return x+y
-
-RK2(1,2,f)
+RK2(&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;,f)
 
 
-&lt;/code&gt;&lt;/pre&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;c_dash&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0.0&lt;/span&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;c_dash=0.0
-
-for i in range (0,len(time)-1):
-    if time[i] &amp;gt;=500 and time[i]&amp;lt;600:
-        c_dash=25.0
-    elif time[i] &amp;gt;=700 and time[i]&amp;lt;800:
-        c_dash=35.0
-    elif time[i] &amp;gt;=900 and time[i]&amp;lt;1000:
-        c_dash=45.0
-    elif time[i] &amp;gt;=1100 and time[i]&amp;lt;1200:
-        c_dash=25.0
-    else:
-        c_dash=0.0
+&lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; i &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; range (&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;,len(time)&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;):
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; time[i] &lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;500&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;and&lt;/span&gt; time[i]&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;600&lt;/span&gt;:
+        c_dash&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;25.0&lt;/span&gt;
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;elif&lt;/span&gt; time[i] &lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;700&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;and&lt;/span&gt; time[i]&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;800&lt;/span&gt;:
+        c_dash&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;35.0&lt;/span&gt;
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;elif&lt;/span&gt; time[i] &lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;900&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;and&lt;/span&gt; time[i]&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1000&lt;/span&gt;:
+        c_dash&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;45.0&lt;/span&gt;
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;elif&lt;/span&gt; time[i] &lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1100&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;and&lt;/span&gt; time[i]&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1200&lt;/span&gt;:
+        c_dash&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;25.0&lt;/span&gt;
+    &lt;span style=&#34;color:#66d9ef&#34;&gt;else&lt;/span&gt;:
+        c_dash&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0.0&lt;/span&gt;
     
     
-    Firing_target_1[i]=H(x_1[i])
-    Firing_target_2[i]=H(x_2[i])
+    Firing_target_1[i]&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;H(x_1[i])
+    Firing_target_2[i]&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;H(x_2[i])
     
-    I_noise_1[i+1]=Background_Activity(I_noise_1[i])
-    I_noise_2[i+1]=Background_Activity(I_noise_2[i])
+    I_noise_1[i&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;]&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;Background_Activity(I_noise_1[i])
+    I_noise_2[i&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;]&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;Background_Activity(I_noise_2[i])
     
-    I_1[i+1]=I_input_1(c_dash)
-    I_2[i+1]=I_input_2(c_dash)
+    I_1[i&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;]&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;I_input_1(c_dash)
+    I_2[i&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;]&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;I_input_2(c_dash)
    
-    x_1[i+1],x_2[i+1]=total_synaptic_current(S_1[i],S_2[i],I_1[i+1],
-                                      I_2[i+1],I_noise_1[i+1],I_noise_2[i+1])
-    S_1[i+1]=Network_Dynamics(S_1[i],x_1[i+1])
-    S_2[i+1]=Network_Dynamics(S_2[i],x_2[i+1])
+    x_1[i&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;],x_2[i&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;]&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;total_synaptic_current(S_1[i],S_2[i],I_1[i&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;],
+                                      I_2[i&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;],I_noise_1[i&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;],I_noise_2[i&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;])
+    S_1[i&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;]&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;Network_Dynamics(S_1[i],x_1[i&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;])
+    S_2[i&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;]&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;Network_Dynamics(S_2[i],x_2[i&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;])
    
 
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h3 id=&#34;plotting&#34;&gt;Plotting&lt;/h3&gt;
-
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;plotting&#34;&gt;Plotting&lt;/h3&gt;
 &lt;h4 id=&#34;input&#34;&gt;Input&lt;/h4&gt;
-
-&lt;p&gt;&lt;img src=&#34;Wang2002/Figure2.gif&#34; alt=&#34;Neuronal Firing Type&#34; style=&#34;width: 400px;&#34;/&gt;
+&lt;img src=&#34;Wang2002/Figure2.gif&#34; alt=&#34;Neuronal Firing Type&#34; style=&#34;width: 400px;&#34;/&gt;
 &lt;em&gt; Figure 2. Model Reproduces Salient Characteristics of Decision-Correlated Neural Activity in LIP&lt;/em&gt;
 &lt;img src=&#34;Wang2002/Figure3.jpg&#34; alt=&#34;Neuronal Firing Type&#34; style=&#34;width: 400px;&#34;/&gt;
-&lt;em&gt; Figure 3. Decision Dynamics with Inputs of Zero Coherence&lt;/p&gt;
-
+&lt;em&gt; Figure 3. Decision Dynamics with Inputs of Zero Coherence
 &lt;p&gt;(A) Two trial simulations (red, neural group A; blue, neural group B). From top to bottom: raster, population firing rates rA and rB, stochastic inputs, and time integrals of inputs. In these two examples, decision choice (A or B) is correlated with the larger time integral of the input.&lt;/p&gt;
-
 &lt;p&gt;(B) Network dynamics in the decision space for the same two trials as in (A). Note the initial random walk along the diagonal line (when the population activity is similar for the two groups); afterwards the network converges to one of the two attractors (at [rA = 20 Hz, rB = 3 Hz] and [rA = 3 Hz, rB = 20 Hz].&lt;/p&gt;
-
-&lt;p&gt;&amp;copy; Histogram of the difference in the input time integral for trials in which the decision choice is A (red curve) or B (blue curve). For trials where attractor A wins, the average I standard deviation of ΔS is 0.8 ± 3, whereas for trials where attractor B wins, it is −0.7 ± 3 (n = 1000, σ = 10 Hz, and stimulus duration is 1 s).&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;Wang2002/Figure4.jpg&#34; alt=&#34;Neuronal Firing Type&#34; style=&#34;width: 400px;&#34;/&gt;
-&lt;em&gt; Figure 4. Performance and Population Activity Time Courses&lt;/p&gt;
-
+&lt;p&gt;(C) Histogram of the difference in the input time integral for trials in which the decision choice is A (red curve) or B (blue curve). For trials where attractor A wins, the average I standard deviation of ΔS is 0.8 ± 3, whereas for trials where attractor B wins, it is −0.7 ± 3 (n = 1000, σ = 10 Hz, and stimulus duration is 1 s).&lt;/em&gt;&lt;/p&gt;
+&lt;img src=&#34;Wang2002/Figure4.jpg&#34; alt=&#34;Neuronal Firing Type&#34; style=&#34;width: 400px;&#34;/&gt;
+&lt;em&gt; Figure 4. Performance and Population Activity Time Courses
 &lt;p&gt;(A) Neurometric functions (% correct). Data are fitted by Weibull functions. Filled circle: noisy stimuli (σ = 4 Hz) with symmetrical dependence of the mean values on input coherence (the ratio of the slopes is ρA/ρB = 1). Open circle: without noise in the stimulus (σ = 0), the network&amp;rsquo;s performance is virtually the same. Filled square: asymmetrical dependence of the mean stimuli on coherence (the ratio of the slopes is ρA/ρB = 4). The coherence threshold is slightly lower.&lt;/p&gt;
-
 &lt;p&gt;(B) Time course of population activity for four coherence levels. Black curves, the choice is the preferred stimulus; gray curves, the choice is the nonpreferred stimulus. Correct trials are indicated by solid curves, error trials by dashed curves.&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;Wang2002/Figure5.gif&#34; alt=&#34;Neuronal Firing Type&#34; style=&#34;width: 400px;&#34;/&gt;
-&lt;em&gt; Figure 5. Reaction Time Simulations&lt;/p&gt;
-
+&lt;img src=&#34;Wang2002/Figure5.gif&#34; alt=&#34;Neuronal Firing Type&#34; style=&#34;width: 400px;&#34;/&gt;
+&lt;em&gt; Figure 5. Reaction Time Simulations
 &lt;p&gt;Same parameters as in Figure 4.&lt;/p&gt;
-
 &lt;p&gt;(A) During a 2 s stimulation, at the moment when one of the two neural groups reaches a fixed threshold (15 Hz) of population firing activity, the decision is made and the deliberation or decision time is read out. The decision time is longer and more variable at low coherence (left) than at high coherence (right). This is further quantified by the decision time histogram (bottom), which has a larger mean and is broader at low coherence (left) than at high coherence (right).&lt;/p&gt;
-
 &lt;p&gt;(B) Left: Neurometric functions for the reaction time stimulation (circle) and with fixed stimulus duration of 1 s (square). The coherence threshold (defined by 82% correct) is αRT = 8.4% and αFD = 10.4%. Right: Average decision time is linear in the logarithm of the coherence level, ranging from 200 ms at high c′ to 800 ms at low c′. At very low coherence there is a saturation. Note the large standard deviation of decision time, especially at low coherence.&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;Wang2002/Figure6.gif&#34; alt=&#34;Neuronal Firing Type&#34; style=&#34;width: 400px;&#34;/&gt;
-&lt;em&gt;Figure 6. Dependence of the Decision Performance on the Duration of Stimulus Presentation&lt;/p&gt;
-
+&lt;img src=&#34;Wang2002/Figure6.gif&#34; alt=&#34;Neuronal Firing Type&#34; style=&#34;width: 400px;&#34;/&gt;
+&lt;em&gt;Figure 6. Dependence of the Decision Performance on the Duration of Stimulus Presentation
 &lt;p&gt;The stimulus offset is followed by a fixed delay of 2 s, and the decision choice is based on which of the two attractors wins the competition.&lt;/p&gt;
-
 &lt;p&gt;(A) Neurometric function is shifted to the left with longer stimuli.&lt;/p&gt;
-
 &lt;p&gt;(B) Coherence threshold (α defined by 82% correct choices) decreases with the stimulus duration and plateaus for stimulus presentation longer than 1.5 s.&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;Wang2002/Figure7.jpg&#34; alt=&#34;Neuronal Firing Type&#34; style=&#34;width: 400px;&#34;/&gt;
-&lt;em&gt; Figure 7. Optimal Decision-Making Performance Requires Sufficiently Strong and Slow Synaptic Reverberations&lt;/p&gt;
-
+&lt;img src=&#34;Wang2002/Figure7.jpg&#34; alt=&#34;Neuronal Firing Type&#34; style=&#34;width: 400px;&#34;/&gt;
+&lt;em&gt; Figure 7. Optimal Decision-Making Performance Requires Sufficiently Strong and Slow Synaptic Reverberations
 &lt;p&gt;(A) When the strength of recurrent connections is weaker (w+ = 1.4 instead of w+ = 1.7), attractor dynamics can no longer be sustained by intrinsic network excitation. Neural activities of subpopulation A (left) and B (right) are shown at two coherence levels (1.6% and 51.2%). Same conventions as in Figure 2. In this case, there is a reduced time integration (ramping activity), categorical choice at low coherence is lost, and mnemonic persistent activity is absent during the delay period.&lt;/p&gt;
-
 &lt;p&gt;(B) Network behavior with an increased strength of recurrent connections (w+ = 1.8). Left: population activities in ten individual trials for the control (red, neural group A; blue, neural group B) and for enhanced recurrency (purple, neural group A; green, neural group B). With stronger excitatory reverberations, persistent activity level is doubled (from 20 Hz in control to 40 Hz), and the integration time of stimulus is shortened by a half. The performance is reduced from 72% to 60% correct at c′ = 6.4%. Right: the network&amp;rsquo;s performance is worse, with the neurometric function&amp;rsquo;s threshold increased from 8.4% (red) to 15.6% (purple).&lt;/em&gt;
 &lt;img src=&#34;Wang2002/Figure7.jpg&#34; alt=&#34;Neuronal Firing Type&#34; style=&#34;width: 400px;&#34;/&gt;
 &lt;em&gt; (A) The input signal is reversed during stimulation, where the signal strength is weak (6.4%) and the same before and after the reversal. Percentage choices for A and B as function of the onset time of reversal. The dependence is initially linear as a function of the time of reversal, consistent with an integration of the first and second inputs of the opposite signs. However, the behavioral performance is no longer affected if signal reversal occurs too late (e.g., the reversal time is larger than 700 ms after the stimulus onset), when the network becomes dominated by the intrinsic attractor dynamics.&lt;/p&gt;
-
 &lt;p&gt;(B) Even when the signal is reversed 1 s after the stimulus onset, the decision is still reversable by a more powerful input. Percentage choices for A and B as function of the coherence level of the reversed signal. When the new input is sufficiently large (coherence above 70%–80%), the decision is always reversed in favor of the “new evidence.”&lt;/p&gt;
-
-&lt;p&gt;&amp;copy; Examples for control (top) and signal reversal from c′ = 6.4% to −80% at 1 s after the stimulus onset (bottom). Note the slow ramp-down of population activity in group A (red), and ramp-up of population activity in group B (blue) during the second half of the stimulation when the decision is reversed.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;(C) Examples for control (top) and signal reversal from c′ = 6.4% to −80% at 1 s after the stimulus onset (bottom). Note the slow ramp-down of population activity in group A (red), and ramp-up of population activity in group B (blue) during the second half of the stimulation when the decision is reversed.&lt;/em&gt;&lt;/p&gt;
 </description>
     </item>
     

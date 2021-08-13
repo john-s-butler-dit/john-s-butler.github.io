@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Research Group on John S Butler</title>
-    <link>/group/</link>
+    <link>https://johnsbutler.netlify.app/group/</link>
     <description>Recent content in Research Group on John S Butler</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
     <language>en-us</language>
     
-	    <atom:link href="/group/index.xml" rel="self" type="application/rss+xml" />
+	    <atom:link href="https://johnsbutler.netlify.app/group/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>
