@@ -82,7 +82,7 @@
   
   
   
-  <link rel="stylesheet" href="/css/academic.min.464f8fc8547c173d52c1aa8ce0cf18de.css">
+  <link rel="stylesheet" href="/css/academic.min.2601df5967b7591a6d935a717f340143.css">
 
   
 
@@ -737,15 +737,15 @@ with a reset potential $V_{reset}$</p>
 |   $\tau_{ref}$ |2|1| ms  |
 |   $\tau_{m}$ |20|10| ms  |</p>
 <h3 id="libraries">Libraries</h3>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># LIBRARY</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># LIBRARY</span>
 
-<span style="color:#f92672">import</span> numpy <span style="color:#f92672">as</span> np <span style="color:#75715e"># vector manipulation</span>
+<span style="color:#f92672">import</span> numpy <span style="color:#66d9ef">as</span> np <span style="color:#75715e"># vector manipulation</span>
 <span style="color:#f92672">import</span> math  <span style="color:#75715e"># math functions</span>
 <span style="color:#f92672">import</span> sys
 
 <span style="color:#75715e"># THIS IS FOR PLOTTING</span>
 <span style="color:#f92672">%</span>matplotlib inline
-<span style="color:#f92672">import</span> matplotlib.pyplot <span style="color:#f92672">as</span> plt <span style="color:#75715e"># side-stepping mpl backend</span>
+<span style="color:#f92672">import</span> matplotlib.pyplot <span style="color:#66d9ef">as</span> plt <span style="color:#75715e"># side-stepping mpl backend</span>
 <span style="color:#f92672">import</span> warnings
 warnings<span style="color:#f92672">.</span>filterwarnings(<span style="color:#e6db74">&#34;ignore&#34;</span>)
 
@@ -753,18 +753,18 @@ warnings<span style="color:#f92672">.</span>filterwarnings(<span style="color:#e
 <h3 id="neural-circuit">Neural Circuit</h3>
 <p>The total synpatic input current is given by
 $$ I_{syn}=I_{ext,AMPA}(t)+I_{rec,AMPA}(t)+I_{rec,NMDA}(t)+I_{rec,GABA}(t),$$</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">I_syn_t</span>(I_extAMPA,I_recAMPA,I_recNMDA,I_recGABA):
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">I_syn_t</span>(I_extAMPA,I_recAMPA,I_recNMDA,I_recGABA):
     I_syn<span style="color:#f92672">=</span>I_extAMPA<span style="color:#f92672">+</span>I_recAMPA<span style="color:#f92672">+</span>I_recNMDA<span style="color:#f92672">+</span>I_recGABA
     <span style="color:#66d9ef">return</span> I_syn
 </code></pre></div><p>where the external AMPA input is given by
 $$ I_{ext,AMPA}=g_{ext,AMPA}(V(t)-V_{E})s^{ext,AMPA}(t), $$</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">I_extAMPA_t</span>(g_extAMPA,V,s_extAMPA):
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">I_extAMPA_t</span>(g_extAMPA,V,s_extAMPA):
     V_E<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>
     I_extAMPA<span style="color:#f92672">=</span>g_extAMPA<span style="color:#f92672">*</span>(V<span style="color:#f92672">-</span>V_E)<span style="color:#f92672">*</span>s_extAMPA
     <span style="color:#66d9ef">return</span> I_extAMPA
 </code></pre></div><p>the recurrent AMPA input is given by
 $$ I_{rec,AMPA}=g_{rec,AMPA}(V(t)-V_{E})\Sigma_{j=1}^{c_E}s^{ext,AMPA}(t), $$</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">I_recAMPA_t</span>(g_recAMPA,V,w,s_AMPA):
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">I_recAMPA_t</span>(g_recAMPA,V,w,s_AMPA):
     V_E<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>
     I_recAMPA<span style="color:#f92672">=</span>g_recAMPA<span style="color:#f92672">*</span>(V<span style="color:#f92672">-</span>V_E)<span style="color:#f92672">*</span>np<span style="color:#f92672">.</span>sum(np<span style="color:#f92672">.</span>dot(w,s_AMPA)
     <span style="color:#66d9ef">return</span> I_recAMPA
@@ -775,7 +775,7 @@ SyntaxError: invalid syntax
 </code></pre>
 <p>the recurrent NMDA is given by
 $$ I_{rec,NMDA}=\frac{g_{NMDA}(V(t)-V_E)}{(1+[Mg^{2+}]exp(-0.062V(t))/3.57)}\Sigma_{j=1}^{c_E}s^{NMDA}(t), $$</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">I_recNMDA_t</span>(g_extNMDA,V,w,s_NMDA):
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">I_recNMDA_t</span>(g_extNMDA,V,w,s_NMDA):
     V_E<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>
     Mg<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>
     I_recNMDA<span style="color:#f92672">=</span>g_NMDA<span style="color:#f92672">*</span>(V<span style="color:#f92672">-</span>V_E)<span style="color:#f92672">/</span>(<span style="color:#ae81ff">1</span><span style="color:#f92672">+</span>Mg<span style="color:#f92672">*</span>np<span style="color:#f92672">.</span>exp(<span style="color:#f92672">-</span><span style="color:#ae81ff">0.062</span><span style="color:#f92672">*</span>V)<span style="color:#f92672">/</span><span style="color:#ae81ff">3.57</span>)<span style="color:#f92672">*</span>np<span style="color:#f92672">.</span>sum(np<span style="color:#f92672">.</span>dot(w,s_NMDA))
@@ -783,7 +783,7 @@ $$ I_{rec,NMDA}=\frac{g_{NMDA}(V(t)-V_E)}{(1+[Mg^{2+}]exp(-0.062V(t))/3.57)}\Sig
 </code></pre></div><p>the recurrent GABA is given by
 $$ I_{rec,GABA}=g_{GABA}(V(t)-V_I)\Sigma_{j=1}^{c_I}s^{GABA}(t), $$
 where $V_{E}=0mV$, $V_I=-70 mV$, $w_{j}$ are dimensionless weights</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">I_recNMDA_t</span>(g_extNMDA,V,w,s_NMDA):
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">I_recNMDA_t</span>(g_extNMDA,V,w,s_NMDA):
     V_I<span style="color:#f92672">=-</span><span style="color:#ae81ff">70</span>
     Mg<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>
     I_recNMDA<span style="color:#f92672">=</span>g_NMDA<span style="color:#f92672">*</span>(V<span style="color:#f92672">-</span>V_I)<span style="color:#f92672">/</span>(<span style="color:#ae81ff">1</span><span style="color:#f92672">+</span>Mg<span style="color:#f92672">*</span>np<span style="color:#f92672">.</span>exp(<span style="color:#f92672">-</span><span style="color:#ae81ff">0.062</span><span style="color:#f92672">*</span>V)<span style="color:#f92672">/</span><span style="color:#ae81ff">3.57</span>)<span style="color:#f92672">*</span>np<span style="color:#f92672">.</span>sum(np<span style="color:#f92672">.</span>dot(w,s_NMDA))
@@ -824,7 +824,7 @@ where $V_{E}=0mV$, $V_I=-70 mV$, $w_{j}$ are dimensionless weights</p>
 <h3 id="ampa-channels">AMPA Channels</h3>
 <p>$$ \frac{d s_{j}^{AMPA}(t)}{dt} =\frac{s_{j}^{AMPA}(t)}{\tau_{AMPA}}+\Sigma_k \delta(t-t^k_j)$$
 where $\tau_{AMPA}=2$ms adn the sum over $k$ represents a sum of spikes emitted by presynaptic neuron $j$.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">s_AMPA</span>(s_AMPA,SPIKES):
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">s_AMPA</span>(s_AMPA,SPIKES):
     tau_AMPA<span style="color:#f92672">=</span><span style="color:#ae81ff">2</span>
     s_AMPA<span style="color:#f92672">=-</span>s_AMPA<span style="color:#f92672">/</span>tau_AMPA<span style="color:#f92672">+</span>np<span style="color:#f92672">.</span>sum(SPIKES)
     <span style="color:#66d9ef">return</span> s_AMPA
@@ -832,7 +832,7 @@ where $\tau_{AMPA}=2$ms adn the sum over $k$ represents a sum of spikes emitted 
 <p>$$ \frac{d s_{j}^{NMDA}(t)}{dt} =-\frac{s_{j}^{NMDA}(t)}{\tau_{NMDA,decay}}+\alpha(1- s_{j}^{NMDA}(t) )$$
 $$ \frac{d x_{j}(t)}{dt} =-\frac{x_{j}(t)}{\tau_{NMDA,rise}}+\Sigma_k \delta(t-t^k_j)$$
 where the decay time of NMDA currents $\tau_{NMDA,decay}=100ms$, $\alpha=0.5 ms^{-1}$ and $\tau_{NMDA,rise}=2ms$</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">s_AMPA</span>(s_AMPA,SPIKES):
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">s_AMPA</span>(s_AMPA,SPIKES):
     tau_AMPA<span style="color:#f92672">=</span><span style="color:#ae81ff">2</span>
     s_AMPA<span style="color:#f92672">=-</span>s_AMPA<span style="color:#f92672">/</span>tau_AMPA<span style="color:#f92672">+</span>np<span style="color:#f92672">.</span>sum(SPIKES)
     <span style="color:#66d9ef">return</span> s_AMPA
@@ -844,13 +844,13 @@ where the decay time of NMDA currents $\tau_{NMDA,decay}=100ms$, $\alpha=0.5 ms^
 </code></pre></div><h3 id="gaba-channels">GABA Channels</h3>
 <p>$$ \frac{d s_{j}^{GABA}(t)}{dt} =-\frac{s_{j}^{GABA}(t)}{\tau_{GABA}}+\alpha(1- s_{j}^{NMDA}(t) )$$
 where the decay time of GABA currents $\tau_{GABA}=5ms$.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">I_input_1</span>(c_dash):
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">I_input_1</span>(c_dash):
     J_A_ext<span style="color:#f92672">=</span><span style="color:#ae81ff">0.00052</span> <span style="color:#75715e"># nA/Hz</span>
     mu_0<span style="color:#f92672">=</span><span style="color:#ae81ff">30</span> <span style="color:#75715e"># Hz</span>
     I_motion<span style="color:#f92672">=</span>J_A_ext<span style="color:#f92672">*</span>mu_0<span style="color:#f92672">*</span>(<span style="color:#ae81ff">1</span><span style="color:#f92672">+</span>(c_dash)<span style="color:#f92672">/</span><span style="color:#ae81ff">100</span>)
     <span style="color:#66d9ef">return</span> I_motion
 </code></pre></div><h2 id="structure-of-recurrent-excitatory-connections-between-pyramidal-cells">Structure of Recurrent Excitatory Connections between Pyramidal cells</h2>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">I_input_2</span>(c_dash):
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">I_input_2</span>(c_dash):
     J_A_ext<span style="color:#f92672">=</span><span style="color:#ae81ff">0.00052</span> <span style="color:#75715e"># nA/Hz</span>
     mu_0<span style="color:#f92672">=</span><span style="color:#ae81ff">30</span> <span style="color:#75715e"># Hz</span>
     I_motion<span style="color:#f92672">=</span>J_A_ext<span style="color:#f92672">*</span>mu_0<span style="color:#f92672">*</span>(<span style="color:#ae81ff">1</span><span style="color:#f92672">-</span>(c_dash)<span style="color:#f92672">/</span><span style="color:#ae81ff">100</span>)
@@ -860,7 +860,7 @@ where the decay time of GABA currents $\tau_{GABA}=5ms$.</p>
 <p>$$y_{i+1}=y_i+\frac{\Delta}{2}(k_1+k_2),$$
 $$k_1=f(x_i,y_i),$$
 $$k_2=f(x_i+\frac{\Delta}{2},y_i+\frac{\Delta}{2}k_1).$$</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">RK2</span>(y,x,f):
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">RK2</span>(y,x,f):
     delta<span style="color:#f92672">=</span><span style="color:#ae81ff">0.05</span>
     k1<span style="color:#f92672">=</span>f(x,y)
     k2<span style="color:#f92672">=</span>f(x<span style="color:#f92672">+</span>delta<span style="color:#f92672">/</span><span style="color:#ae81ff">2</span>,y<span style="color:#f92672">+</span>delta<span style="color:#f92672">/</span><span style="color:#ae81ff">2</span><span style="color:#f92672">*</span>k1)
@@ -873,7 +873,7 @@ $$k_2=f(x_i+\frac{\Delta}{2},y_i+\frac{\Delta}{2}k_1).$$</p>
 RK2(<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">2</span>,f)
 
 
-</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">c_dash<span style="color:#f92672">=</span><span style="color:#ae81ff">0.0</span>
+</code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">c_dash<span style="color:#f92672">=</span><span style="color:#ae81ff">0.0</span>
 
 <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range (<span style="color:#ae81ff">0</span>,len(time)<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>):
     <span style="color:#66d9ef">if</span> time[i] <span style="color:#f92672">&gt;=</span><span style="color:#ae81ff">500</span> <span style="color:#f92672">and</span> time[i]<span style="color:#f92672">&lt;</span><span style="color:#ae81ff">600</span>:
@@ -970,7 +970,7 @@ RK2(<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">2</span>,f)
   <div class="media author-card" itemscope itemtype="http://schema.org/Person">
     
       
-      <img class="portrait mr-3" src="/authors/admin/avatar_hu554e1b7fd376a2eff2110ae0da3c3609_309212_250x250_fill_lanczos_center_2.png" itemprop="image" alt="Avatar">
+      <img class="portrait mr-3" src="/authors/admin/avatar_hu554e1b7fd376a2eff2110ae0da3c3609_309212_250x250_fill_lanczos_center_3.png" itemprop="image" alt="Avatar">
     
 
     <div class="media-body">
@@ -1164,7 +1164,7 @@ RK2(<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">2</span>,f)
     
     
     
-    <script src="/js/academic.min.3394a224b26ce58ff36f44c54743e0ab.js"></script>
+    <script src="/js/academic.min.79fd01dcc54fc3c04fcf5dd1a5f94d87.js"></script>
 
     
 

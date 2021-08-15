@@ -82,7 +82,7 @@
   
   
   
-  <link rel="stylesheet" href="/css/academic.min.464f8fc8547c173d52c1aa8ce0cf18de.css">
+  <link rel="stylesheet" href="/css/academic.min.2601df5967b7591a6d935a717f340143.css">
 
   
 
@@ -755,17 +755,17 @@ The webpage is divided into six parts:</p>
 </li>
 </ul>
 <p>The webpage is written such that it can be read by some one with no programming experience but if you want to read the code you can click on the button below.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> numpy <span style="color:#f92672">as</span> np
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> numpy <span style="color:#66d9ef">as</span> np
 <span style="color:#f92672">import</span> math 
 
 <span style="color:#f92672">%</span>matplotlib inline
-<span style="color:#f92672">import</span> matplotlib.pyplot <span style="color:#f92672">as</span> plt <span style="color:#75715e"># side-stepping mpl backend</span>
-<span style="color:#f92672">import</span> matplotlib.gridspec <span style="color:#f92672">as</span> gridspec <span style="color:#75715e"># subplots</span>
+<span style="color:#f92672">import</span> matplotlib.pyplot <span style="color:#66d9ef">as</span> plt <span style="color:#75715e"># side-stepping mpl backend</span>
+<span style="color:#f92672">import</span> matplotlib.gridspec <span style="color:#66d9ef">as</span> gridspec <span style="color:#75715e"># subplots</span>
 <span style="color:#f92672">import</span> warnings
 warnings<span style="color:#f92672">.</span>filterwarnings(<span style="color:#e6db74">&#34;ignore&#34;</span>)
 <span style="color:#f92672">from</span> __future__ <span style="color:#f92672">import</span> print_function
 <span style="color:#f92672">from</span> ipywidgets <span style="color:#f92672">import</span> interact, interactive, fixed, interact_manual
-<span style="color:#f92672">import</span> ipywidgets <span style="color:#f92672">as</span> widgets
+<span style="color:#f92672">import</span> ipywidgets <span style="color:#66d9ef">as</span> widgets
 plastic_widget1 <span style="color:#f92672">=</span> widgets<span style="color:#f92672">.</span>FloatSlider(min<span style="color:#f92672">=</span><span style="color:#ae81ff">0.001</span>, max<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>, step<span style="color:#f92672">=</span><span style="color:#ae81ff">0.01</span>,value<span style="color:#f92672">=</span><span style="color:#ae81ff">0.1</span>)
 plastic_widget <span style="color:#f92672">=</span> widgets<span style="color:#f92672">.</span>FloatSlider(min<span style="color:#f92672">=</span><span style="color:#ae81ff">0.001</span>, max<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>, step<span style="color:#f92672">=</span><span style="color:#ae81ff">0.01</span>,value<span style="color:#f92672">=</span><span style="color:#ae81ff">0.1</span>)
 <span style="color:#f92672">from</span> IPython.display <span style="color:#f92672">import</span> HTML
@@ -832,7 +832,7 @@ this set of equations models the interaction between small fish (F) and salmon (
 </table>
 <p>Or they can be summed up as the salmon are the predators who eat the small fish to survive.</p>
 <p>Figure 2 shows a simulation of the populations of salmon and small fish from 2000 to 2100, assuming that nothing is added to enviroment.  The salmon population fluxuates between 45 and 55 billion while the small fish population fluctuates from 25 to 85 billion. The equation illustates a relative equilibrium between the two populations ensuring neither population gets too big or too small.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># INITIAL CONDITIONS</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># INITIAL CONDITIONS</span>
 N<span style="color:#f92672">=</span><span style="color:#ae81ff">10000</span>
 time <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>linspace(<span style="color:#ae81ff">2000</span>, <span style="color:#ae81ff">2100</span>, N )              <span style="color:#75715e"># time</span>
 h<span style="color:#f92672">=</span><span style="color:#ae81ff">100</span><span style="color:#f92672">/</span>N
@@ -884,7 +884,7 @@ The equations can be written in words as:</p>
 </tr>
 </tbody>
 </table>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">humans<span style="color:#f92672">=</span><span style="color:#ae81ff">6</span><span style="color:#f92672">*</span>np<span style="color:#f92672">.</span>ones(N) <span style="color:#75715e"># 6 billion humans</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">humans<span style="color:#f92672">=</span><span style="color:#ae81ff">6</span><span style="color:#f92672">*</span>np<span style="color:#f92672">.</span>ones(N) <span style="color:#75715e"># 6 billion humans</span>
 
 <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range (<span style="color:#ae81ff">1</span>,N):              
     humans[i]<span style="color:#f92672">=</span>humans[i<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>]<span style="color:#f92672">+</span>h<span style="color:#f92672">*</span>humans[i<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>]<span style="color:#f92672">*</span>(<span style="color:#ae81ff">0.05</span><span style="color:#f92672">-</span><span style="color:#ae81ff">0.003</span><span style="color:#f92672">*</span>humans[i<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>]) 
@@ -927,7 +927,7 @@ The increase in microplastics can be modelled as a relationship with the human p
 </table>
 <p>Positive values of production rate mean the more humans, the more microplastics.
 Even if the production of micropalstics is stopped, the amount of microplastics will remain the same. So even after humans are gone, our plastic foot print will remain.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">plastic_model</span>(plastic_rate):
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">plastic_model</span>(plastic_rate):
     humans<span style="color:#f92672">=</span><span style="color:#ae81ff">6</span><span style="color:#f92672">*</span>np<span style="color:#f92672">.</span>ones(N) <span style="color:#75715e"># 30 billion salmon</span>
 
     plastics<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span><span style="color:#f92672">*</span>np<span style="color:#f92672">.</span>ones(N) <span style="color:#75715e"># 1 billion microplastics</span>
@@ -945,7 +945,7 @@ Even if the production of micropalstics is stopped, the amount of microplastics 
     plt<span style="color:#f92672">.</span>title(<span style="color:#e6db74">&#39;Figure 4: Relationship of Human Population and Microplastics with a plastic rate =  </span><span style="color:#e6db74">%s</span><span style="color:#e6db74">&#39;</span><span style="color:#f92672">%</span>(plastic_rate))
     plt<span style="color:#f92672">.</span>show()
 </code></pre></div><p>In Figure 4 the rate of microplastic production can be manipulated to illustrate the result of a change in amount of microplastics.  The figure plots modelled microplastics (green) and human population as a function of time from 2000 to 2100.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">plastic_model(<span style="color:#ae81ff">0.01</span>);
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">plastic_model(<span style="color:#ae81ff">0.01</span>);
 </code></pre></div><p><img src="output_12_0.png" alt="png"></p>
 <h1 id="microplastics-and-fish">Microplastics and Fish</h1>
 <p>While fishing quotas account for the direct impact of man on fish it does not account for by-products of modern life like mircroplastics to the ecosystem. It has been documented that fish are now
@@ -993,7 +993,7 @@ and human population (H),
 \frac{d H}{dt}=0.0001H-0.002H^2+0.0006SH+0.001HF.
 \end{equation}
 The system was modeled from 2000 to the year 2100 are shown in the Figures bellow for different plastic rates. The figures show the small fish population  in red, the salmon population in blue, the plastics in green and human population in yellow.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">plastic_fish_model</span>(plastic_rate):   
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">plastic_fish_model</span>(plastic_rate):   
     <span style="color:#75715e"># INITIAL CONDITIONS</span>
     fish<span style="color:#f92672">=</span><span style="color:#ae81ff">50</span><span style="color:#f92672">*</span>np<span style="color:#f92672">.</span>ones(N) <span style="color:#75715e"># 60 billions small fish</span>
     salmon<span style="color:#f92672">=</span><span style="color:#ae81ff">45</span><span style="color:#f92672">*</span>np<span style="color:#f92672">.</span>ones(N) <span style="color:#75715e"># 30 billion salmon</span>
@@ -1022,10 +1022,10 @@ The system was modeled from 2000 to the year 2100 are shown in the Figures bello
     plt<span style="color:#f92672">.</span>show()
 </code></pre></div><h1 id="results">Results</h1>
 <p>The figure below shows the output of the model for a plastic rate of 0.05. The introduction of microplastics results in a decrease in the small fish population which then impacts the salmon population as small fish are their primary food source.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">plastic_fish_model(<span style="color:#ae81ff">0.05</span>)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">plastic_fish_model(<span style="color:#ae81ff">0.05</span>)
 </code></pre></div><p><img src="output_17_0.png" alt="png"></p>
 <p>If the production rate of plastics is doubled to 0.1. The introduction of microplastics in to the ecosystem will lead to the extinction of small fish (red) by 2080 and salmon (blue) will be more or less extinct by 2100.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">plastic_fish_model(<span style="color:#ae81ff">0.1</span>)
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">plastic_fish_model(<span style="color:#ae81ff">0.1</span>)
 </code></pre></div><p><img src="output_19_0.png" alt="png"></p>
 <h1 id="open-questions">Open Questions</h1>
 <p>The model shows the destructive impact of microplastics on a simple ecosystem model of small fish, salmon, microplastics and humans. Mathematical models of this type can be used to discuss</p>
@@ -1042,7 +1042,7 @@ The system was modeled from 2000 to the year 2100 are shown in the Figures bello
 <p>[4]  Vito Volterra.  Fluctuations in the abundance of a species consid-ered mathematically.Nature,118:558–560,1926.</p>
 <p>[5] Harari, Yuval N. (2015). Sapiens : a brief history of humankind. New York :Harper.</p>
 <p>[6] Gordon Chambers, (2017) Microplastics, Retrieved 09:33, September 7, 2018, <a href="http://www.dit.ie/physics/research/microplastics/">http://www.dit.ie/physics/research/microplastics/</a></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">
 </code></pre></div>
     </div>
 
@@ -1194,7 +1194,7 @@ The system was modeled from 2000 to the year 2100 are shown in the Figures bello
     
     
     
-    <script src="/js/academic.min.3394a224b26ce58ff36f44c54743e0ab.js"></script>
+    <script src="/js/academic.min.79fd01dcc54fc3c04fcf5dd1a5f94d87.js"></script>
 
     
 
