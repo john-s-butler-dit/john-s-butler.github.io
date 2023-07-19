@@ -24,6 +24,16 @@ Also, pretty much if you offer me a complimentary mug I’ll happily give a Scie
     </item>
     
     <item>
+      <title>Publications</title>
+      <link>https://johnsbutler.netlify.app/publication/</link>
+      <pubDate>Mon, 01 Jul 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://johnsbutler.netlify.app/publication/</guid>
+      <description>&lt;p&gt;Also check my &lt;a href=&#34;https://scholar.google.com/citations?hl=en&amp;user=XxHqFtcAAAAJ&amp;view_op=list_works&amp;sortby=pubdate&#34;&gt; Google Scholar profile &lt;/a&gt;, &lt;a href=&#34;https://orcid.org/0000-0001-5567-8634&#34;&gt;ORCID&lt;/a&gt; or &lt;a href=&#34;https://www.researchgate.net/profile/John_Butler5&#34;&gt; ResearchGate &lt;/a&gt; for my publications.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Outreach</title>
       <link>https://johnsbutler.netlify.app/outreach/</link>
       <pubDate>Wed, 29 May 2019 00:00:00 +0000</pubDate>
@@ -97,16 +107,6 @@ I helped out at the online summer school Neuromatch Academy.
 &lt;p&gt;&lt;a href=&#34;https://github.com/NeuromatchAcademy/course-content&#34;&gt; Neuromatch Academy GITHUB repository. &lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://www.youtube.com/channel/UC4LoD4yNBuLKQwDOV6t-KPw&#34;&gt; Neuromatch Academy Youtube. &lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://doi.org/10.31219/osf.io/9fp4v&#34;&gt; A pre-print about the process&lt;/a&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Publications</title>
-      <link>https://johnsbutler.netlify.app/publication/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://johnsbutler.netlify.app/publication/</guid>
-      <description>&lt;p&gt;Also check my &lt;a href=&#34;https://scholar.google.com/citations?hl=en&amp;user=XxHqFtcAAAAJ&amp;view_op=list_works&amp;sortby=pubdate&#34;&gt; Google Scholar profile &lt;/a&gt;, &lt;a href=&#34;https://orcid.org/0000-0001-5567-8634&#34;&gt;ORCID&lt;/a&gt; or &lt;a href=&#34;https://www.researchgate.net/profile/John_Butler5&#34;&gt; ResearchGate &lt;/a&gt; for my publications.&lt;/p&gt;
 </description>
     </item>
     
