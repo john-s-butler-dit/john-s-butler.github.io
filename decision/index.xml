@@ -49,15 +49,15 @@ with a reset potential $V_{reset}$&lt;/p&gt;
 |   $\tau_{ref}$ |2|1| ms  |
 |   $\tau_{m}$ |20|10| ms  |&lt;/p&gt;
 &lt;h3 id=&#34;libraries&#34;&gt;Libraries&lt;/h3&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# LIBRARY&lt;/span&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# LIBRARY&lt;/span&gt;
 
-&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; numpy &lt;span style=&#34;color:#f92672&#34;&gt;as&lt;/span&gt; np &lt;span style=&#34;color:#75715e&#34;&gt;# vector manipulation&lt;/span&gt;
+&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; numpy &lt;span style=&#34;color:#66d9ef&#34;&gt;as&lt;/span&gt; np &lt;span style=&#34;color:#75715e&#34;&gt;# vector manipulation&lt;/span&gt;
 &lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; math  &lt;span style=&#34;color:#75715e&#34;&gt;# math functions&lt;/span&gt;
 &lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; sys
 
 &lt;span style=&#34;color:#75715e&#34;&gt;# THIS IS FOR PLOTTING&lt;/span&gt;
 &lt;span style=&#34;color:#f92672&#34;&gt;%&lt;/span&gt;matplotlib inline
-&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; matplotlib.pyplot &lt;span style=&#34;color:#f92672&#34;&gt;as&lt;/span&gt; plt &lt;span style=&#34;color:#75715e&#34;&gt;# side-stepping mpl backend&lt;/span&gt;
+&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; matplotlib.pyplot &lt;span style=&#34;color:#66d9ef&#34;&gt;as&lt;/span&gt; plt &lt;span style=&#34;color:#75715e&#34;&gt;# side-stepping mpl backend&lt;/span&gt;
 &lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; warnings
 warnings&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;filterwarnings(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;ignore&amp;#34;&lt;/span&gt;)
 
@@ -65,18 +65,18 @@ warnings&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;filterwarnings(&
 &lt;h3 id=&#34;neural-circuit&#34;&gt;Neural Circuit&lt;/h3&gt;
 &lt;p&gt;The total synpatic input current is given by
 $$ I_{syn}=I_{ext,AMPA}(t)+I_{rec,AMPA}(t)+I_{rec,NMDA}(t)+I_{rec,GABA}(t),$$&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;I_syn_t&lt;/span&gt;(I_extAMPA,I_recAMPA,I_recNMDA,I_recGABA):
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;I_syn_t&lt;/span&gt;(I_extAMPA,I_recAMPA,I_recNMDA,I_recGABA):
     I_syn&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;I_extAMPA&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;I_recAMPA&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;I_recNMDA&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;I_recGABA
     &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; I_syn
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;where the external AMPA input is given by
 $$ I_{ext,AMPA}=g_{ext,AMPA}(V(t)-V_{E})s^{ext,AMPA}(t), $$&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;I_extAMPA_t&lt;/span&gt;(g_extAMPA,V,s_extAMPA):
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;I_extAMPA_t&lt;/span&gt;(g_extAMPA,V,s_extAMPA):
     V_E&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;
     I_extAMPA&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;g_extAMPA&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;(V&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;V_E)&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;s_extAMPA
     &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; I_extAMPA
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;the recurrent AMPA input is given by
 $$ I_{rec,AMPA}=g_{rec,AMPA}(V(t)-V_{E})\Sigma_{j=1}^{c_E}s^{ext,AMPA}(t), $$&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;I_recAMPA_t&lt;/span&gt;(g_recAMPA,V,w,s_AMPA):
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;I_recAMPA_t&lt;/span&gt;(g_recAMPA,V,w,s_AMPA):
     V_E&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;
     I_recAMPA&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;g_recAMPA&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;(V&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;V_E)&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;np&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;sum(np&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;dot(w,s_AMPA)
     &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; I_recAMPA
@@ -87,7 +87,7 @@ SyntaxError: invalid syntax
 &lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;the recurrent NMDA is given by
 $$ I_{rec,NMDA}=\frac{g_{NMDA}(V(t)-V_E)}{(1+[Mg^{2+}]exp(-0.062V(t))/3.57)}\Sigma_{j=1}^{c_E}s^{NMDA}(t), $$&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;I_recNMDA_t&lt;/span&gt;(g_extNMDA,V,w,s_NMDA):
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;I_recNMDA_t&lt;/span&gt;(g_extNMDA,V,w,s_NMDA):
     V_E&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;
     Mg&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;
     I_recNMDA&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;g_NMDA&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;(V&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;V_E)&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;Mg&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;np&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;exp(&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0.062&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;V)&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;3.57&lt;/span&gt;)&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;np&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;sum(np&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;dot(w,s_NMDA))
@@ -95,7 +95,7 @@ $$ I_{rec,NMDA}=\frac{g_{NMDA}(V(t)-V_E)}{(1+[Mg^{2+}]exp(-0.062V(t))/3.57)}\Sig
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;the recurrent GABA is given by
 $$ I_{rec,GABA}=g_{GABA}(V(t)-V_I)\Sigma_{j=1}^{c_I}s^{GABA}(t), $$
 where $V_{E}=0mV$, $V_I=-70 mV$, $w_{j}$ are dimensionless weights&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;I_recNMDA_t&lt;/span&gt;(g_extNMDA,V,w,s_NMDA):
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;I_recNMDA_t&lt;/span&gt;(g_extNMDA,V,w,s_NMDA):
     V_I&lt;span style=&#34;color:#f92672&#34;&gt;=-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;70&lt;/span&gt;
     Mg&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;
     I_recNMDA&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;g_NMDA&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;(V&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;V_I)&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;Mg&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;np&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;exp(&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0.062&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;V)&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;3.57&lt;/span&gt;)&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;np&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;sum(np&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;dot(w,s_NMDA))
@@ -136,7 +136,7 @@ where $V_{E}=0mV$, $V_I=-70 mV$, $w_{j}$ are dimensionless weights&lt;/p&gt;
 &lt;h3 id=&#34;ampa-channels&#34;&gt;AMPA Channels&lt;/h3&gt;
 &lt;p&gt;$$ \frac{d s_{j}^{AMPA}(t)}{dt} =\frac{s_{j}^{AMPA}(t)}{\tau_{AMPA}}+\Sigma_k \delta(t-t^k_j)$$
 where $\tau_{AMPA}=2$ms adn the sum over $k$ represents a sum of spikes emitted by presynaptic neuron $j$.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;s_AMPA&lt;/span&gt;(s_AMPA,SPIKES):
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;s_AMPA&lt;/span&gt;(s_AMPA,SPIKES):
     tau_AMPA&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;
     s_AMPA&lt;span style=&#34;color:#f92672&#34;&gt;=-&lt;/span&gt;s_AMPA&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;tau_AMPA&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;np&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;sum(SPIKES)
     &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; s_AMPA
@@ -144,7 +144,7 @@ where $\tau_{AMPA}=2$ms adn the sum over $k$ represents a sum of spikes emitted 
 &lt;p&gt;$$ \frac{d s_{j}^{NMDA}(t)}{dt} =-\frac{s_{j}^{NMDA}(t)}{\tau_{NMDA,decay}}+\alpha(1- s_{j}^{NMDA}(t) )$$
 $$ \frac{d x_{j}(t)}{dt} =-\frac{x_{j}(t)}{\tau_{NMDA,rise}}+\Sigma_k \delta(t-t^k_j)$$
 where the decay time of NMDA currents $\tau_{NMDA,decay}=100ms$, $\alpha=0.5 ms^{-1}$ and $\tau_{NMDA,rise}=2ms$&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;s_AMPA&lt;/span&gt;(s_AMPA,SPIKES):
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;s_AMPA&lt;/span&gt;(s_AMPA,SPIKES):
     tau_AMPA&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;
     s_AMPA&lt;span style=&#34;color:#f92672&#34;&gt;=-&lt;/span&gt;s_AMPA&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;tau_AMPA&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;np&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;sum(SPIKES)
     &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; s_AMPA
@@ -156,13 +156,13 @@ where the decay time of NMDA currents $\tau_{NMDA,decay}=100ms$, $\alpha=0.5 ms^
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;gaba-channels&#34;&gt;GABA Channels&lt;/h3&gt;
 &lt;p&gt;$$ \frac{d s_{j}^{GABA}(t)}{dt} =-\frac{s_{j}^{GABA}(t)}{\tau_{GABA}}+\alpha(1- s_{j}^{NMDA}(t) )$$
 where the decay time of GABA currents $\tau_{GABA}=5ms$.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;I_input_1&lt;/span&gt;(c_dash):
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;I_input_1&lt;/span&gt;(c_dash):
     J_A_ext&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0.00052&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;# nA/Hz&lt;/span&gt;
     mu_0&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;30&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;# Hz&lt;/span&gt;
     I_motion&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;J_A_ext&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;mu_0&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;(c_dash)&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;100&lt;/span&gt;)
     &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; I_motion
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;structure-of-recurrent-excitatory-connections-between-pyramidal-cells&#34;&gt;Structure of Recurrent Excitatory Connections between Pyramidal cells&lt;/h2&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;I_input_2&lt;/span&gt;(c_dash):
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;I_input_2&lt;/span&gt;(c_dash):
     J_A_ext&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0.00052&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;# nA/Hz&lt;/span&gt;
     mu_0&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;30&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;# Hz&lt;/span&gt;
     I_motion&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;J_A_ext&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;mu_0&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;(&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;(c_dash)&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;100&lt;/span&gt;)
@@ -172,7 +172,7 @@ where the decay time of GABA currents $\tau_{GABA}=5ms$.&lt;/p&gt;
 &lt;p&gt;$$y_{i+1}=y_i+\frac{\Delta}{2}(k_1+k_2),$$
 $$k_1=f(x_i,y_i),$$
 $$k_2=f(x_i+\frac{\Delta}{2},y_i+\frac{\Delta}{2}k_1).$$&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;RK2&lt;/span&gt;(y,x,f):
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;RK2&lt;/span&gt;(y,x,f):
     delta&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0.05&lt;/span&gt;
     k1&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;f(x,y)
     k2&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;f(x&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;delta&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;,y&lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt;delta&lt;span style=&#34;color:#f92672&#34;&gt;/&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt;k1)
@@ -185,7 +185,7 @@ $$k_2=f(x_i+\frac{\Delta}{2},y_i+\frac{\Delta}{2}k_1).$$&lt;/p&gt;
 RK2(&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;,&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;,f)
 
 
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;c_dash&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0.0&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;c_dash&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;0.0&lt;/span&gt;
 
 &lt;span style=&#34;color:#66d9ef&#34;&gt;for&lt;/span&gt; i &lt;span style=&#34;color:#f92672&#34;&gt;in&lt;/span&gt; range (&lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;,len(time)&lt;span style=&#34;color:#f92672&#34;&gt;-&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;):
     &lt;span style=&#34;color:#66d9ef&#34;&gt;if&lt;/span&gt; time[i] &lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;=&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;500&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;and&lt;/span&gt; time[i]&lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#ae81ff&#34;&gt;600&lt;/span&gt;:
