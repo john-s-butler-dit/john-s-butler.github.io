@@ -6,30 +6,30 @@
     <description>Recent content on John S Butler</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 09 Sep 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 07 Jul 2023 00:00:00 +0000</lastBuildDate>
     
 	    <atom:link href="https://johnsbutler.netlify.app/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>Publications</title>
+      <link>https://johnsbutler.netlify.app/publication/</link>
+      <pubDate>Fri, 07 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://johnsbutler.netlify.app/publication/</guid>
+      <description>&lt;p&gt;Also check my &lt;a href=&#34;https://scholar.google.com/citations?hl=en&amp;user=XxHqFtcAAAAJ&amp;view_op=list_works&amp;sortby=pubdate&#34;&gt; Google Scholar profile &lt;/a&gt;, &lt;a href=&#34;https://orcid.org/0000-0001-5567-8634&#34;&gt;ORCID&lt;/a&gt; or &lt;a href=&#34;https://www.researchgate.net/profile/John_Butler5&#34;&gt; ResearchGate &lt;/a&gt; for my publications.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Science Communication</title>
       <link>https://johnsbutler.netlify.app/talk/</link>
-      <pubDate>Thu, 09 Sep 2021 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 06 Jun 2023 00:00:00 +0000</pubDate>
       
       <guid>https://johnsbutler.netlify.app/talk/</guid>
       <description>&lt;p&gt;Science, Technology, Engineering and Maths are for everyone, and while it can take years to conduct research the concepts should be accessible to all. For that reason, I write articles and give  outreach talks about my ongoing research. &lt;br&gt;
 Also, pretty much if you offer me a complimentary mug I’ll happily give a Science  talk.
 &lt;img src=&#34;SciComCups.jpg&#34; width=&#34;200&#34; height=&#34;100&#34;&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Publications</title>
-      <link>https://johnsbutler.netlify.app/publication/</link>
-      <pubDate>Mon, 01 Jul 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://johnsbutler.netlify.app/publication/</guid>
-      <description>&lt;p&gt;Also check my &lt;a href=&#34;https://scholar.google.com/citations?hl=en&amp;user=XxHqFtcAAAAJ&amp;view_op=list_works&amp;sortby=pubdate&#34;&gt; Google Scholar profile &lt;/a&gt;, &lt;a href=&#34;https://orcid.org/0000-0001-5567-8634&#34;&gt;ORCID&lt;/a&gt; or &lt;a href=&#34;https://www.researchgate.net/profile/John_Butler5&#34;&gt; ResearchGate &lt;/a&gt; for my publications.&lt;/p&gt;
 </description>
     </item>
     

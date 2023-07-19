@@ -2,17 +2,62 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://johnsbutler.netlify.app/authors/admin/</loc>
+    <lastmod>2023-07-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://johnsbutler.netlify.app/publication_types/12/</loc>
+    <lastmod>2023-07-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://johnsbutler.netlify.app/authors/</loc>
+    <lastmod>2023-07-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://johnsbutler.netlify.app/publication/2023_brainstorm/</loc>
+    <lastmod>2023-07-07T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://johnsbutler.netlify.app/</loc>
-    <lastmod>2021-09-09T00:00:00+00:00</lastmod>
+    <lastmod>2023-07-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://johnsbutler.netlify.app/tags/mathematics/</loc>
+    <lastmod>2023-07-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://johnsbutler.netlify.app/tags/outreach/</loc>
-    <lastmod>2021-09-09T00:00:00+00:00</lastmod>
+    <lastmod>2023-07-07T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://johnsbutler.netlify.app/talk/</loc>
-    <lastmod>2021-09-09T00:00:00+00:00</lastmod>
+    <loc>https://johnsbutler.netlify.app/publication_types/</loc>
+    <lastmod>2023-07-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://johnsbutler.netlify.app/publication/</loc>
+    <lastmod>2023-07-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://johnsbutler.netlify.app/authors/rebecca-brady/</loc>
+    <lastmod>2023-07-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://johnsbutler.netlify.app/tags/</loc>
-    <lastmod>2021-09-09T00:00:00+00:00</lastmod>
+    <lastmod>2023-07-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://johnsbutler.netlify.app/talk/2023brainstorm_drink/</loc>
+    <lastmod>2023-06-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://johnsbutler.netlify.app/talk/</loc>
+    <lastmod>2023-06-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://johnsbutler.netlify.app/talk/2023pos/</loc>
+    <lastmod>2023-05-18T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://johnsbutler.netlify.app/talk/2023functionroom/</loc>
+    <lastmod>2023-05-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://johnsbutler.netlify.app/talk/2022nmc_kids/</loc>
+    <lastmod>2022-11-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://johnsbutler.netlify.app/publication_types/2/</loc>
+    <lastmod>2021-12-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://johnsbutler.netlify.app/publication/2021_bradybutler/</loc>
+    <lastmod>2021-12-12T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://johnsbutler.netlify.app/talk/frontiersforyoungpredprey/</loc>
+    <lastmod>2021-12-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://johnsbutler.netlify.app/talk/surebyte/</loc>
     <lastmod>2021-09-09T00:00:00+00:00</lastmod>
@@ -22,12 +67,6 @@
   </url><url>
     <loc>https://johnsbutler.netlify.app/talk/pos2021/</loc>
     <lastmod>2021-05-18T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://johnsbutler.netlify.app/authors/admin/</loc>
-    <lastmod>2021-04-09T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://johnsbutler.netlify.app/authors/</loc>
-    <lastmod>2021-04-09T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://johnsbutler.netlify.app/talk/frontiersforyoungmindsopto/</loc>
     <lastmod>2021-04-09T00:00:00+00:00</lastmod>
@@ -73,9 +112,6 @@
   </url><url>
     <loc>https://johnsbutler.netlify.app/talk/primaryschooltalk2019/</loc>
     <lastmod>2019-10-19T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://johnsbutler.netlify.app/publication_types/2/</loc>
-    <lastmod>2019-07-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://johnsbutler.netlify.app/authors/annalisa-setti/</loc>
     <lastmod>2019-07-01T00:00:00+00:00</lastmod>
@@ -123,12 +159,6 @@
     <lastmod>2019-07-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://johnsbutler.netlify.app/tags/parkinsons-disease/</loc>
-    <lastmod>2019-07-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://johnsbutler.netlify.app/publication_types/</loc>
-    <lastmod>2019-07-01T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://johnsbutler.netlify.app/publication/</loc>
     <lastmod>2019-07-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://johnsbutler.netlify.app/authors/richard-b.-reilly/</loc>
