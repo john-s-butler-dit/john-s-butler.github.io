@@ -841,8 +841,6 @@
   </url><url>
     <loc>https://johnsbutler.netlify.app/categories/</loc>
   </url><url>
-    <loc>https://johnsbutler.netlify.app/courses/</loc>
-  </url><url>
     <loc>https://johnsbutler.netlify.app/project/dystonia/</loc>
   </url><url>
     <loc>https://johnsbutler.netlify.app/project/mobilebrainimaging/</loc>
@@ -852,6 +850,8 @@
     <loc>https://johnsbutler.netlify.app/project/parkinsonsdisease/</loc>
   </url><url>
     <loc>https://johnsbutler.netlify.app/group/</loc>
+  </url><url>
+    <loc>https://johnsbutler.netlify.app/courses/</loc>
   </url><url>
     <loc>https://johnsbutler.netlify.app/tags/temporal-discrimation-threshold/</loc>
   </url><url>
