@@ -102,22 +102,6 @@ Also, pretty much if you offer me a complimentary mug I’ll happily give a Scie
       <description>&lt;h2&gt; Current Modules &lt;/h2&gt;
 &lt;hr&gt;
 &lt;h3&gt; Undergraduate Modules &lt;/h3&gt;
-&lt;hr&gt;
-&lt;h3&gt;Introduction to Probability and Statistical Inference&lt;/h3&gt;
-Postgraduate Certificate in Applied Statistics&lt;br&gt;
-CPD Diploma in Data Analysis for Professionals&lt;br&gt;
-&lt;a href=&#34;https://sites.google.com/dit.ie/math4001/home&#34;&gt; Module website (Restricted Access)&lt;/a&gt;&lt;br&gt;
-&lt;a href=&#34;https://github.com/john-s-butler-dit/Probability_and_Statistical_Inference&#34;&gt; GITHUB repository of R markdown code &lt;/a&gt;
-&lt;br&gt;
-Years Taught: 2015-
-&lt;hr&gt;
-&lt;h3&gt; Mathematics for Physics (TU754/3)&lt;/h3&gt;
-Industrial &amp; Environmental Physics&lt;br&gt;
-&lt;a href=&#34;https://sites.google.com/dit.ie/math3901/home&#34;&gt; Module website &lt;/a&gt; &lt;br&gt;
-&lt;a href=&#34;https://www.youtube.com/playlist?list=PLtys-ajYdIGW73qlt3saJZ4yd3BCelriL&#34;&gt; YouTube videos. &lt;/a&gt;
-&lt;br&gt;
-Years Taught: 2015-
-&lt;hr&gt;
 &lt;h3&gt;Algorithms (TU874/1) &lt;/h3&gt;
 BSc Honours Mathematical Sciences&lt;br&gt;
 &lt;a href=&#34;https://sites.google.com/dit.ie/math1812/home&#34;&gt; Module Website&lt;/a&gt;  &lt;br&gt;
@@ -136,8 +120,22 @@ BSc Honours Mathematical Sciences&lt;br&gt;
 &lt;br&gt;
 Years Taught: 2022-
 &lt;hr&gt;
+&lt;h3&gt; Mathematics for Physics (TU754/3)&lt;/h3&gt;
+Industrial &amp; Environmental Physics&lt;br&gt;
+&lt;a href=&#34;https://sites.google.com/dit.ie/math3901/home&#34;&gt; Module website &lt;/a&gt; &lt;br&gt;
+&lt;a href=&#34;https://www.youtube.com/playlist?list=PLtys-ajYdIGW73qlt3saJZ4yd3BCelriL&#34;&gt; YouTube videos. &lt;/a&gt;
+&lt;br&gt;
+Years Taught: 2015-
+&lt;hr&gt;
 &lt;hr&gt;
 &lt;h3&gt; Postgraduate Modules &lt;/h3&gt;
+&lt;h3&gt;Introduction to Probability and Statistical Inference&lt;/h3&gt;
+Postgraduate Certificate in Applied Statistics&lt;br&gt;
+CPD Diploma in Data Analysis for Professionals&lt;br&gt;
+&lt;a href=&#34;https://sites.google.com/dit.ie/math4001/home&#34;&gt; Module website (Restricted Access)&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;https://github.com/john-s-butler-dit/Probability_and_Statistical_Inference&#34;&gt; GITHUB repository of R markdown code &lt;/a&gt;
+&lt;br&gt;
+Years Taught: 2015-
 &lt;hr&gt;
 &lt;h3&gt;Numerical Methods and Machine Learning for Differential Equations&lt;/h3&gt;
 MSc Applied Mathematics&lt;br&gt;
@@ -162,19 +160,11 @@ I helped out at the online summer school Neuromatch Academy.&lt;br&gt;
 &lt;a href=&#34;https://www.neuromatchacademy.org&#34;&gt; Neuromatch Academy website. &lt;/a&gt; &lt;br&gt;
 &lt;a href=&#34;https://github.com/NeuromatchAcademy/course-content&#34;&gt; Neuromatch Academy GITHUB repository. &lt;/a&gt; &lt;br&gt;
 &lt;a href=&#34;https://www.youtube.com/channel/UC4LoD4yNBuLKQwDOV6t-KPw&#34;&gt; Neuromatch Academy Youtube. &lt;/a&gt; &lt;br&gt;
-&lt;a href=&#34;https://doi.org/10.31219/osf.io/9fp4v&#34;&gt; A pre-print about the process&lt;/a&gt;
+ t&#39;Hart et al., (2022). Neuromatch Academy: a 3-week, online summer school in computational neuroscience. Journal of Open Source Education, 5(49), 118, &lt;a href=&#34;https://jose.theoj.org/papers/10.21105/jose.00118&#34;&gt;https://doi.org/10.21105/jose.00118&lt;/a&gt;
 &lt;p&gt;Years Contributing: 2020-&lt;/p&gt;
 &lt;hr&gt;
 &lt;hr&gt;
 &lt;h2&gt; Past Undergraduate Modules &lt;/h2&gt;
-&lt;hr&gt;
-&lt;h3&gt;Numerical Analysis&lt;/h3&gt;
-BSc Honours Mathematical Sciences&lt;br&gt;
-&lt;a href=&#34;http://www.maths.dit.ie/~johnbutler/Teaching_NumericalMethods.html&#34;&gt; Module Website &lt;/a&gt; &lt;br&gt;
-&lt;a href=&#34;../files/Teaching/Numerical_Analysis_for_Differential_Equations.pdf&#34;&gt;Module LaTex notes&lt;/a&gt; &lt;br&gt;
-&lt;a href=&#34;https://github.com/john-s-butler-dit/Numerical-Analysis-Python&#34;&gt; GITHUB repository of Python code. &lt;/a&gt; 
-&lt;br&gt;
-Years Taught: 2015-2021
 &lt;hr&gt;
 &lt;h3&gt;Foundation Mathematics &lt;/h3&gt;
 BSc Honours Mathematical Sciences&lt;br&gt;
@@ -184,10 +174,13 @@ Years Taught: 2016-2018
 BSc Honours Mathematical Sciences&lt;br&gt;
 Years Taught: 2018
 &lt;hr&gt;
-&lt;h3&gt;Introduction to Mechanics with Python &lt;/h3&gt;
+&lt;h3&gt;Numerical Analysis&lt;/h3&gt;
 BSc Honours Mathematical Sciences&lt;br&gt;
-Years Taught: 2018
-&lt;hr&gt;
+&lt;a href=&#34;http://www.maths.dit.ie/~johnbutler/Teaching_NumericalMethods.html&#34;&gt; Module Website &lt;/a&gt; &lt;br&gt;
+&lt;a href=&#34;../files/Teaching/Numerical_Analysis_for_Differential_Equations.pdf&#34;&gt;Module LaTex notes&lt;/a&gt; &lt;br&gt;
+&lt;a href=&#34;https://github.com/john-s-butler-dit/Numerical-Analysis-Python&#34;&gt; GITHUB repository of Python code. &lt;/a&gt; 
+&lt;br&gt;
+Years Taught: 2015-2021
 &lt;hr&gt;
 &lt;h3&gt;Mathematics 1 &lt;/h3&gt;
 Automation Engineering&lt;br&gt;
@@ -203,14 +196,6 @@ MSc Applied Mathematics&lt;br&gt;
 &lt;a href=&#34;https://github.com/john-s-butler-dit/Numerical-Analysis-Python&#34;&gt; GITHUB repository of Python code. &lt;/a&gt; 
 &lt;br&gt;
 Years Taught: 2002-2004,2015-2021
-&lt;hr&gt;
-&lt;hr&gt;
-&lt;h3&gt;Numerical Methods for Differential Equations&lt;/h3&gt;
-&lt;a href=&#34;http://www.maths.dit.ie/~johnbutler/Teaching_NumericalMethods.html&#34;&gt; Module Website &lt;/a&gt; &lt;br&gt;
-&lt;a href=&#34;../files/Teaching/Numerical_Analysis_for_Differential_Equations.pdf&#34;&gt;Module LaTex notes&lt;/a&gt; &lt;br&gt;
-&lt;a href=&#34;https://github.com/john-s-butler-dit/Numerical-Analysis-Python&#34;&gt; GITHUB repository of Python code. &lt;/a&gt; 
-&lt;br&gt;
-Years Taught: 2015-2020
 &lt;hr&gt;
 &lt;h3&gt;Mathematical laboratory&lt;/h3&gt;
 MSc Applied Mathematics&lt;br&gt;
