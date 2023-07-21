@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Daniel I Flitcroft on John S Butler</title>
+    <link>https://johnsbutler.netlify.app/authors/daniel-i-flitcroft/</link>
+    <description>Recent content in Daniel I Flitcroft on John S Butler</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 01 Mar 2022 00:00:00 +0000</lastBuildDate>
+    
+	    <atom:link href="https://johnsbutler.netlify.app/authors/daniel-i-flitcroft/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>The refractive error and vision impairment estimation with spectacle data study</title>
+      <link>https://johnsbutler.netlify.app/publication/2022_moorerefractory/</link>
+      <pubDate>Tue, 01 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://johnsbutler.netlify.app/publication/2022_moorerefractory/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Big Data Analysis of Vision Screening Standards Used to Evaluate Fitness to Drive</title>
+      <link>https://johnsbutler.netlify.app/publication/2022_moorebigdata/</link>
+      <pubDate>Tue, 25 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://johnsbutler.netlify.app/publication/2022_moorebigdata/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Application of big-data for epidemiological studies of refractive error</title>
+      <link>https://johnsbutler.netlify.app/publication/2021_moorebigdata/</link>
+      <pubDate>Sun, 25 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://johnsbutler.netlify.app/publication/2021_moorebigdata/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

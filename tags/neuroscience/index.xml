@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Neuroscience on John S Butler</title>
+    <link>https://johnsbutler.netlify.app/tags/neuroscience/</link>
+    <description>Recent content in Neuroscience on John S Butler</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 22 Nov 2022 00:00:00 +0000</lastBuildDate>
+    
+	    <atom:link href="https://johnsbutler.netlify.app/tags/neuroscience/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Neural correlates of multisensory enhancement in audiovisual narrative speech perception: A fMRI investigation</title>
+      <link>https://johnsbutler.netlify.app/publication/2022_ross/</link>
+      <pubDate>Tue, 22 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://johnsbutler.netlify.app/publication/2022_ross/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Attentional influences on neural processing of biological motion in typically developing children and those on the autism spectrum</title>
+      <link>https://johnsbutler.netlify.app/publication/2022_knight/</link>
+      <pubDate>Wed, 22 Jun 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://johnsbutler.netlify.app/publication/2022_knight/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Neuromatch Academy: a 3-week, online summer school in computational neuroscience</title>
+      <link>https://johnsbutler.netlify.app/publication/2022_thart/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://johnsbutler.netlify.app/publication/2022_thart/</guid>
+      <description>&lt;p&gt;And my badly painted version of a possible supplementary figure
+&lt;img src = &#34;../../BadlyPainted/2022_NMA_BadlyPainted.jpeg&#34;&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

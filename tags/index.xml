@@ -30,6 +30,60 @@
     </item>
     
     <item>
+      <title>Auditory</title>
+      <link>https://johnsbutler.netlify.app/tags/auditory/</link>
+      <pubDate>Tue, 22 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://johnsbutler.netlify.app/tags/auditory/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Autism</title>
+      <link>https://johnsbutler.netlify.app/tags/autism/</link>
+      <pubDate>Tue, 22 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://johnsbutler.netlify.app/tags/autism/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Multisensory</title>
+      <link>https://johnsbutler.netlify.app/tags/multisensory/</link>
+      <pubDate>Tue, 22 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://johnsbutler.netlify.app/tags/multisensory/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Neuroscience</title>
+      <link>https://johnsbutler.netlify.app/tags/neuroscience/</link>
+      <pubDate>Tue, 22 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://johnsbutler.netlify.app/tags/neuroscience/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Visual</title>
+      <link>https://johnsbutler.netlify.app/tags/visual/</link>
+      <pubDate>Tue, 22 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://johnsbutler.netlify.app/tags/visual/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Optometry</title>
+      <link>https://johnsbutler.netlify.app/tags/optometry/</link>
+      <pubDate>Tue, 01 Mar 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://johnsbutler.netlify.app/tags/optometry/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Comedy</title>
       <link>https://johnsbutler.netlify.app/tags/comedy/</link>
       <pubDate>Wed, 02 Feb 2022 00:00:00 +0000</pubDate>
@@ -39,36 +93,18 @@
     </item>
     
     <item>
-      <title>Current Source Density (CSD)</title>
-      <link>https://johnsbutler.netlify.app/tags/current-source-density-csd/</link>
-      <pubDate>Mon, 01 Jul 2019 00:00:00 +0000</pubDate>
+      <title>Computational Neuroscience</title>
+      <link>https://johnsbutler.netlify.app/tags/computational-neuroscience/</link>
+      <pubDate>Sat, 01 Jan 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://johnsbutler.netlify.app/tags/current-source-density-csd/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>EEG</title>
-      <link>https://johnsbutler.netlify.app/tags/eeg/</link>
-      <pubDate>Mon, 01 Jul 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://johnsbutler.netlify.app/tags/eeg/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Freezing of Gait</title>
-      <link>https://johnsbutler.netlify.app/tags/freezing-of-gait/</link>
-      <pubDate>Mon, 01 Jul 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://johnsbutler.netlify.app/tags/freezing-of-gait/</guid>
+      <guid>https://johnsbutler.netlify.app/tags/computational-neuroscience/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Macular Pigment</title>
       <link>https://johnsbutler.netlify.app/tags/macular-pigment/</link>
-      <pubDate>Mon, 01 Jul 2019 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Sep 2021 00:00:00 +0000</pubDate>
       
       <guid>https://johnsbutler.netlify.app/tags/macular-pigment/</guid>
       <description></description>
@@ -77,25 +113,34 @@
     <item>
       <title>Myopia</title>
       <link>https://johnsbutler.netlify.app/tags/myopia/</link>
-      <pubDate>Mon, 01 Jul 2019 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 01 Sep 2021 00:00:00 +0000</pubDate>
       
       <guid>https://johnsbutler.netlify.app/tags/myopia/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Optometry</title>
-      <link>https://johnsbutler.netlify.app/tags/optometry/</link>
-      <pubDate>Mon, 01 Jul 2019 00:00:00 +0000</pubDate>
+      <title>EEG</title>
+      <link>https://johnsbutler.netlify.app/tags/eeg/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://johnsbutler.netlify.app/tags/optometry/</guid>
+      <guid>https://johnsbutler.netlify.app/tags/eeg/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Freezing of Gait</title>
+      <link>https://johnsbutler.netlify.app/tags/freezing-of-gait/</link>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://johnsbutler.netlify.app/tags/freezing-of-gait/</guid>
       <description></description>
     </item>
     
     <item>
       <title>P3</title>
       <link>https://johnsbutler.netlify.app/tags/p3/</link>
-      <pubDate>Mon, 01 Jul 2019 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
       
       <guid>https://johnsbutler.netlify.app/tags/p3/</guid>
       <description></description>
@@ -104,18 +149,18 @@
     <item>
       <title>Parkinson&#39;s Disease</title>
       <link>https://johnsbutler.netlify.app/tags/parkinsons-disease/</link>
-      <pubDate>Mon, 01 Jul 2019 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
       
       <guid>https://johnsbutler.netlify.app/tags/parkinsons-disease/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Visual</title>
-      <link>https://johnsbutler.netlify.app/tags/visual/</link>
+      <title>Current Source Density (CSD)</title>
+      <link>https://johnsbutler.netlify.app/tags/current-source-density-csd/</link>
       <pubDate>Mon, 01 Jul 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://johnsbutler.netlify.app/tags/visual/</guid>
+      <guid>https://johnsbutler.netlify.app/tags/current-source-density-csd/</guid>
       <description></description>
     </item>
     
@@ -165,15 +210,6 @@
     </item>
     
     <item>
-      <title>Multisensory</title>
-      <link>https://johnsbutler.netlify.app/tags/multisensory/</link>
-      <pubDate>Sat, 01 Sep 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://johnsbutler.netlify.app/tags/multisensory/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Self-motion</title>
       <link>https://johnsbutler.netlify.app/tags/self-motion/</link>
       <pubDate>Sat, 01 Sep 2018 00:00:00 +0000</pubDate>
@@ -215,15 +251,6 @@
       <pubDate>Fri, 01 Dec 2017 00:00:00 +0000</pubDate>
       
       <guid>https://johnsbutler.netlify.app/tags/temporal-discrimination-threshold/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Autism</title>
-      <link>https://johnsbutler.netlify.app/tags/autism/</link>
-      <pubDate>Thu, 01 Dec 2016 00:00:00 +0000</pubDate>
-      
-      <guid>https://johnsbutler.netlify.app/tags/autism/</guid>
       <description></description>
     </item>
     
@@ -291,15 +318,6 @@
     </item>
     
     <item>
-      <title>Computational Neuroscience</title>
-      <link>https://johnsbutler.netlify.app/tags/computational-neuroscience/</link>
-      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
-      
-      <guid>https://johnsbutler.netlify.app/tags/computational-neuroscience/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Development</title>
       <link>https://johnsbutler.netlify.app/tags/development/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
@@ -359,15 +377,6 @@
       <pubDate>Tue, 01 Sep 2015 00:00:00 +0000</pubDate>
       
       <guid>https://johnsbutler.netlify.app/tags/mulitsensory/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Auditory</title>
-      <link>https://johnsbutler.netlify.app/tags/auditory/</link>
-      <pubDate>Mon, 01 Jun 2015 00:00:00 +0000</pubDate>
-      
-      <guid>https://johnsbutler.netlify.app/tags/auditory/</guid>
       <description></description>
     </item>
     
