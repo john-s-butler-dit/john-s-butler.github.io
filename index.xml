@@ -27,9 +27,9 @@
       <pubDate>Tue, 06 Jun 2023 00:00:00 +0000</pubDate>
       
       <guid>https://johnsbutler.netlify.app/talk/</guid>
-      <description>&lt;p&gt;Science, Technology, Engineering and Maths are for everyone, and while it can take years to conduct research the concepts should be accessible to all. For that reason, I write articles and give  outreach talks about my ongoing research. &lt;br&gt;
+      <description>&lt;p&gt;Science, Technology, Engineering and Maths are for everyone, and while it can take years to conduct research the concepts should be accessible to all. For that reason, I write readable articles, give  talks in schools, organise outreach events, tell jokes, and founded &lt;a href=&#34;https://conference.neuromatch.io/instructions/nmc-kids-escape-room/&#34;&gt; Neuromatch for kids &lt;/a&gt;. &lt;br&gt;
 Also, pretty much if you offer me a complimentary mug I’ll happily give a Science  talk.
-&lt;img src=&#34;SciComCups.jpg&#34; width=&#34;200&#34; height=&#34;100&#34;&gt;&lt;/p&gt;
+&lt;img src=&#34;SciComCups.png&#34; width=&#34;200&#34;&gt;&lt;/p&gt;
 </description>
     </item>
     
@@ -131,9 +131,9 @@ Also, pretty much if you offer me a complimentary mug I’ll happily give a Scie
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://johnsbutler.netlify.app/courses/</guid>
-      <description>&lt;h2&gt; Current Modules &lt;/h2&gt;
+      <description>&lt;hr&gt;
+&lt;h2&gt; Current Modules  &lt;/h2&gt;
 &lt;hr&gt;
-&lt;h3&gt; Undergraduate Modules &lt;/h3&gt;
 &lt;h3&gt;Algorithms (TU874/1) &lt;/h3&gt;
 BSc Honours Mathematical Sciences&lt;br&gt;
 &lt;a href=&#34;https://sites.google.com/dit.ie/math1812/home&#34;&gt; Module Website&lt;/a&gt;  &lt;br&gt;
@@ -141,15 +141,18 @@ BSc Honours Mathematical Sciences&lt;br&gt;
 &lt;br&gt;
 &lt;p&gt;&lt;a href=&#34;https://www.youtube.com/playlist?list=PLtys-ajYdIGUgsYshLf_E51b43scPp-qv&#34;&gt; YouTube Course Videos &lt;/a&gt;
 &lt;br&gt;
+&lt;a href=&#34;../../files/Teaching/Algorithms_SummarySheet.pdf&#34;&gt; Module Summary Sheet &lt;/a&gt;
+&lt;br&gt;
 Years Taught: 2018-&lt;/p&gt;
 &lt;hr&gt;
 &lt;h3&gt;Final Year Case Study (TU874/4) &lt;/h3&gt;
 BSc Honours Mathematical Sciences&lt;br&gt;
-&lt;p&gt;Years Taught: 2016-&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/john-s-butler-dit/CaseStudy_PredatorPrey#readme&#34;&gt; Module Website&lt;/a&gt;  &lt;br&gt;
+Years Taught: 2016-&lt;/p&gt;
 &lt;hr&gt;
 &lt;h3&gt;Statistics 1 (TU078)&lt;/h3&gt;
 Part-time BSc (Ordinary) Honours Mathematical Sciences&lt;br&gt;
-&lt;a href=&#34;&#34;&gt; Module Summary Sheet &lt;/a&gt; 
+&lt;a href=&#34;../../files/Teaching/Statistics_1_Summary_Sheet.pdf&#34;&gt; Module Summary Sheet &lt;/a&gt; 
 &lt;br&gt;
 Years Taught: 2022-
 &lt;hr&gt;
@@ -161,7 +164,7 @@ Industrial &amp; Environmental Physics&lt;br&gt;
 Years Taught: 2015-
 &lt;hr&gt;
 &lt;hr&gt;
-&lt;h3&gt; Postgraduate Modules &lt;/h3&gt;
+&lt;h2&gt; Current Postgraduate Modules &lt;/h2&gt;
 &lt;h3&gt;Introduction to Probability and Statistical Inference&lt;/h3&gt;
 Postgraduate Certificate in Applied Statistics&lt;br&gt;
 CPD Diploma in Data Analysis for Professionals&lt;br&gt;
@@ -193,6 +196,8 @@ I helped out at the online summer school Neuromatch Academy.&lt;br&gt;
 &lt;a href=&#34;https://www.neuromatchacademy.org&#34;&gt; Neuromatch Academy website. &lt;/a&gt; &lt;br&gt;
 &lt;a href=&#34;https://github.com/NeuromatchAcademy/course-content&#34;&gt; Neuromatch Academy GITHUB repository. &lt;/a&gt; &lt;br&gt;
 &lt;a href=&#34;https://www.youtube.com/channel/UC4LoD4yNBuLKQwDOV6t-KPw&#34;&gt; Neuromatch Academy Youtube. &lt;/a&gt; &lt;br&gt;
+I was part of the team that wrote the  &lt;a href=&#34;https://compneuro.neuromatch.io/tutorials/W0D4_Calculus/student/W0D4_Tutorial2.html&#34;&gt;pre-requresite maths refresher. &lt;/a&gt;
+&lt;br&gt;
  t&#39;Hart et al., (2022). Neuromatch Academy: a 3-week, online summer school in computational neuroscience. Journal of Open Source Education, 5(49), 118, &lt;a href=&#34;https://jose.theoj.org/papers/10.21105/jose.00118&#34;&gt;https://doi.org/10.21105/jose.00118&lt;/a&gt;
 &lt;p&gt;Years Contributing: 2020-&lt;/p&gt;
 &lt;hr&gt;
