@@ -25,6 +25,41 @@ algorithms.&lt;/p&gt;
     </item>
     
     <item>
+      <title>Maths Workshop</title>
+      <link>https://johnsbutler.netlify.app/talk/2024access/</link>
+      <pubDate>Sun, 24 Nov 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://johnsbutler.netlify.app/talk/2024access/</guid>
+      <description>&lt;p&gt;
+In this workshop, I showed how maths can be used to model and explain things in the wild. The workshop was divided into two parts.
+&lt;/p&gt;
+&lt;h3&gt;Part 1: Modelling Predator-Prey Relationships&lt;/h3&gt;
+&lt;p&gt;
+In the first part, students learned how graphs and maths can be used to model predator-prey relationships, such as lynxes and hares (Figure 1) 
+or even people and social media. The maths not only recreated observations in the wild, but also modelled changes in the environment, 
+such as the reintroduction of wolves into Ireland.
+&lt;/p&gt;
+&lt;h3&gt;Part 2: How Maths and Neuroscience Inspire Machine Learning&lt;/h3&gt;
+&lt;p&gt;
+In the second part, I explained how machine learning algorithms are inspired by maths and neuroscience. 
+Students learned how to model decision-making, such as choosing to turn left or right. 
+These same models have since been adapted to create self-driving cars.
+&lt;/p&gt;
+&lt;h3&gt;References&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    Brady RM and Butler JS (2021). &lt;em&gt;The Circle of Life: The Mathematics of Predator-Prey Relationships.&lt;/em&gt; 
+    Front. Young Minds 9:651131. doi: &lt;a href=&#34;https://doi.org/10.3389/frym.2021.651131&#34; target=&#34;_blank&#34;&gt;10.3389/frym.2021.651131&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    Campos JL, Pandi M and Butler JS (2020). &lt;em&gt;“Feeling” Ourselves Move: A Team Effort by Our Senses.&lt;/em&gt; 
+    Front. Young Minds 8:9. doi: &lt;a href=&#34;https://doi.org/10.3389/frym.2020.00009&#34; target=&#34;_blank&#34;&gt;10.3389/frym.2020.00009&lt;/a&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
       <title>FENS Funny Brains</title>
       <link>https://johnsbutler.netlify.app/talk/2024fens/</link>
       <pubDate>Thu, 27 Jun 2024 00:00:00 +0000</pubDate>
