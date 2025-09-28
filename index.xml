@@ -6,10 +6,28 @@
     <description>Recent content on John S Butler</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 07 Jul 2023 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 18 May 2025 00:00:00 +0000</lastBuildDate>
     
 	    <atom:link href="https://johnsbutler.netlify.app/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Science Communication</title>
+      <link>https://johnsbutler.netlify.app/talk/</link>
+      <pubDate>Sun, 18 May 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://johnsbutler.netlify.app/talk/</guid>
+      <description>&lt;p&gt;Science, Technology, Engineering and Maths are for everyone,
+and while it can take years to conduct research the concepts
+should be accessible to all. For that reason, I write &lt;a href=&#34;https://kids.frontiersin.org/articles/?phrase=butler&#34;&gt;science articles for kids&lt;/a&gt;,
+&lt;a href=&#34;https://johnsbutler.netlify.app/talk/primaryschooltalk2019/&#34;&gt;give  talks in schools,
+&lt;a href=&#34;https://johnsbutler.netlify.app/talk/2023pos/&#34;&gt;organise outreach events&lt;/a&gt;,
+&lt;a href=&#34;https://medium.com/@jslbutler/mathematics-is-a-joke-650bd2f804fb&#34;&gt;tell jokes&lt;/a&gt;,
+and founded Neuromatch for kids. &lt;br&gt;
+Also, pretty much if you offer me a complimentary mug I’ll happily give a Science  talk.
+&lt;img src=&#34;SciComCups.png&#34; width=&#34;200&#34;&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Publications</title>
@@ -18,18 +36,6 @@
       
       <guid>https://johnsbutler.netlify.app/publication/</guid>
       <description>&lt;p&gt;Also check my &lt;a href=&#34;https://scholar.google.com/citations?hl=en&amp;user=XxHqFtcAAAAJ&amp;view_op=list_works&amp;sortby=pubdate&#34;&gt; Google Scholar profile &lt;/a&gt;, &lt;a href=&#34;https://orcid.org/0000-0001-5567-8634&#34;&gt;ORCID&lt;/a&gt; or &lt;a href=&#34;https://www.researchgate.net/profile/John_Butler5&#34;&gt; ResearchGate &lt;/a&gt; for my publications.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Science Communication</title>
-      <link>https://johnsbutler.netlify.app/talk/</link>
-      <pubDate>Tue, 06 Jun 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://johnsbutler.netlify.app/talk/</guid>
-      <description>&lt;p&gt;Science, Technology, Engineering and Maths are for everyone, and while it can take years to conduct research the concepts should be accessible to all. For that reason, I write &lt;a href=&#34;https://kids.frontiersin.org/articles/?phrase=butler&#34;&gt;science articles for kids&lt;/a&gt;, &lt;a href=&#34;https://johnsbutler.netlify.app/talk/primaryschooltalk2019/&#34;&gt;give  talks in schools, &lt;a href=&#34;https://johnsbutler.netlify.app/talk/2023pos/&#34;&gt;organise outreach events&lt;/a&gt;, &lt;a href=&#34;https://medium.com/@jslbutler/mathematics-is-a-joke-650bd2f804fb&#34;&gt;tell jokes&lt;/a&gt;, and founded &lt;a href=&#34;https://conference.neuromatch.io/instructions/nmc-kids-escape-room/&#34;&gt; Neuromatch for kids &lt;/a&gt;. &lt;br&gt;
-Also, pretty much if you offer me a complimentary mug I’ll happily give a Science  talk.
-&lt;img src=&#34;SciComCups.png&#34; width=&#34;200&#34;&gt;&lt;/p&gt;
 </description>
     </item>
     

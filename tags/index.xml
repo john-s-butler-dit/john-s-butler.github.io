@@ -6,10 +6,19 @@
     <description>Recent content in Tags on John S Butler</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 07 Jul 2023 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 18 May 2025 00:00:00 +0000</lastBuildDate>
     
 	    <atom:link href="https://johnsbutler.netlify.app/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Outreach</title>
+      <link>https://johnsbutler.netlify.app/tags/outreach/</link>
+      <pubDate>Sun, 18 May 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://johnsbutler.netlify.app/tags/outreach/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Mathematics</title>
@@ -17,15 +26,6 @@
       <pubDate>Fri, 07 Jul 2023 00:00:00 +0000</pubDate>
       
       <guid>https://johnsbutler.netlify.app/tags/mathematics/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Outreach</title>
-      <link>https://johnsbutler.netlify.app/tags/outreach/</link>
-      <pubDate>Fri, 07 Jul 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://johnsbutler.netlify.app/tags/outreach/</guid>
       <description></description>
     </item>
     

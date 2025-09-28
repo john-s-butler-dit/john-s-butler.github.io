@@ -6,10 +6,20 @@
     <description>Recent content in Outreach on John S Butler</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 07 Jul 2023 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 18 May 2025 00:00:00 +0000</lastBuildDate>
     
 	    <atom:link href="https://johnsbutler.netlify.app/tags/outreach/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Don&#39;t Get Eaten by the Tiger</title>
+      <link>https://johnsbutler.netlify.app/talk/2025pos/</link>
+      <pubDate>Sun, 18 May 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://johnsbutler.netlify.app/talk/2025pos/</guid>
+      <description>&lt;p&gt;The interactive talk will get the audience to act as neurons in a brain and nodes in an artificial neural network to experience how neuroscience experiments on detecting motion, like a Tiger, and maths have inspired machine learning algorithms.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>How maths can help you make a decision</title>
