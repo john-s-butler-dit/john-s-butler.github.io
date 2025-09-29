@@ -6,10 +6,146 @@
     <description>Recent content in Outreach on John S Butler</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 07 Jul 2023 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 27 Aug 2025 00:00:00 +0000</lastBuildDate>
     
 	    <atom:link href="https://johnsbutler.netlify.app/tags/outreach/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Maths Workshops in Secondary Schools</title>
+      <link>https://johnsbutler.netlify.app/talk/2025schoolsvisits/</link>
+      <pubDate>Wed, 27 Aug 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://johnsbutler.netlify.app/talk/2025schoolsvisits/</guid>
+      <description>&lt;p&gt;
+In 2025 I ran some more &lt;a href=&#34;https://john-s-butler-dit.github.io/Maths-in-the-Wild/&#34;&gt;Maths in the Wild &lt;/a&gt; workshops at secondary schools. On January 20th, I was invited by Sarah Murray, a maths teacher at 
+Mount Carmel Secondary School, to speak to higher-level Leaving Certificate maths students. I demonstrated how mathematics can be used 
+to model memory and forgetting processes. It was especially nice to visit since Sarah is a former student of the School of Mathematical 
+Sciences at DIT.
+&lt;/p&gt;
+&lt;p&gt;
+On March 4th, I returned to my alma mater, The High School, at the invitation of the maths and physics teachers Ian Wilkinson, Denise Thorp, 
+and Dr. Una Budd. There, I presented to two physics classes, showing how mathematics can be used to model decision-making processes and 
+how these same principles are now applied in artificial neural networks.
+&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Don&#39;t Get Eaten by the Tiger</title>
+      <link>https://johnsbutler.netlify.app/talk/2025pos/</link>
+      <pubDate>Sun, 18 May 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://johnsbutler.netlify.app/talk/2025pos/</guid>
+      <description>&lt;p&gt;The interactive talk got the audience to act as neurons in a brain and
+nodes in an artificial neural network to experience how neuroscience experiments
+on detecting motion, like a Tiger, and maths have inspired machine learning
+algorithms.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Maths Workshop</title>
+      <link>https://johnsbutler.netlify.app/talk/2024access/</link>
+      <pubDate>Sun, 24 Nov 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://johnsbutler.netlify.app/talk/2024access/</guid>
+      <description>&lt;p&gt;
+In this workshop, I showed how maths can be used to model and explain things in the wild. The workshop was divided into two parts.
+This was first &lt;a href=&#34;https://john-s-butler-dit.github.io/Maths-in-the-Wild/&#34; &gt;Maths in the Wild &lt;/a&gt; workshop.
+&lt;/p&gt;
+&lt;h3&gt;Part 1: Modelling Predator-Prey Relationships&lt;/h3&gt;
+&lt;p&gt;
+In the first part, students learned how graphs and maths can be used to model predator-prey relationships, such as lynxes and hares (Figure 1) 
+or even people and social media. The maths not only recreated observations in the wild, but also modelled changes in the environment, 
+such as the reintroduction of wolves into Ireland.
+&lt;/p&gt;
+&lt;h3&gt;Part 2: How Maths and Neuroscience Inspire Machine Learning&lt;/h3&gt;
+&lt;p&gt;
+In the second part, I explained how machine learning algorithms are inspired by maths and neuroscience. 
+Students learned how to model decision-making, such as choosing to turn left or right. 
+These same models have since been adapted to create self-driving cars.
+&lt;/p&gt;
+&lt;h3&gt;References&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    Brady RM and Butler JS (2021). &lt;em&gt;The Circle of Life: The Mathematics of Predator-Prey Relationships.&lt;/em&gt; 
+    Front. Young Minds 9:651131. doi: &lt;a href=&#34;https://doi.org/10.3389/frym.2021.651131&#34; target=&#34;_blank&#34;&gt;10.3389/frym.2021.651131&lt;/a&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    Campos JL, Pandi M and Butler JS (2020). &lt;em&gt;“Feeling” Ourselves Move: A Team Effort by Our Senses.&lt;/em&gt; 
+    Front. Young Minds 8:9. doi: &lt;a href=&#34;https://doi.org/10.3389/frym.2020.00009&#34; target=&#34;_blank&#34;&gt;10.3389/frym.2020.00009&lt;/a&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Digital Mirror</title>
+      <link>https://johnsbutler.netlify.app/talk/2024digitalmirror/</link>
+      <pubDate>Tue, 27 Aug 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://johnsbutler.netlify.app/talk/2024digitalmirror/</guid>
+      <description>&lt;p&gt;
+At the Dublin Makers stand, I teamed up with artist &lt;strong&gt;Cian McLoughlin&lt;/strong&gt; to explore what happens when art, maths, and 
+neuroscience meet. Together, we looked at how both artists and scientists try to capture the essence of a face.
+&lt;/p&gt;
+&lt;p&gt;
+Cian’s paintings, called &lt;em&gt;“Tronies”&lt;/em&gt;, layer multiple portraits of the same person to show just how varied and expressive 
+human faces can be. I linked this to how computers “learn” to recognize faces: by starting with an average face and then spotting 
+the unique details that make each of us different.
+&lt;/p&gt;
+&lt;p&gt;
+It turns out this isn’t far from what our own brains do. We constantly break down and process visual information so we can 
+recognize one another at a glance.
+&lt;/p&gt;
+&lt;p&gt;
+Visitors to the stand had their photos taken from different angles, and we ran them through a computer program that turned their 
+faces into striking, abstract “eigenfaces.” Everyone got to take home their very own digital portrait — a mix of maths, art, 
+and neuroscience, all rolled into one.
+&lt;/p&gt;
+&lt;p&gt;
+Cian is currently the &lt;strong&gt;SFI Discover-funded Artist in Residence&lt;/strong&gt; at the Trinity College Institute of Neuroscience.
+&lt;/p&gt;
+&lt;p&gt;
+🔗 &lt;a href=&#34;https://dublinmaker.ie/makers/the-digital-mirror-ai-and-the-evolution-of-portraiture/&#34; target=&#34;_blank&#34;&gt;
+The Digital Mirror: AI and the Evolution of Portraiture&lt;/a&gt;&lt;br&gt;
+🔗 &lt;a href=&#34;https://dublinmaker.ie/makers-2024/&#34; target=&#34;_blank&#34;&gt;Dublin Maker 2024&lt;/a&gt;
+&lt;/p&gt;
+&lt;img src=&#34;front.jpg&#34; alt=&#34;Front Page&#34;&gt;
+&lt;hr&gt;
+&lt;img src=&#34;back.jpg&#34; alt=&#34;Backpage&#34;&gt;</description>
+    </item>
+    
+    <item>
+      <title>FENS Funny Brains</title>
+      <link>https://johnsbutler.netlify.app/talk/2024fens/</link>
+      <pubDate>Thu, 27 Jun 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://johnsbutler.netlify.app/talk/2024fens/</guid>
+      <description>&lt;p&gt;
+I had the privilege of co-organizing a &lt;strong&gt;Science Communication training event&lt;/strong&gt; with Michele Marin and Rebecca Eilis at the 
+Federation for European Neuroscience Societies (FENS) Forum—the largest neuroscience conference in Europe, drawing 8,000 attendees. 
+Our focus? &lt;em&gt;Using comedy to communicate neuroscience.&lt;/em&gt;
+&lt;/p&gt;
+&lt;p&gt;
+On day one, we ran a packed workshop with 50 participants. We shared our experiences in comedy science communication, explored how humor 
+can bring science to life, and encouraged participants to turn their research into something funny or absurd. In small groups, they 
+sketched out routines, with us offering guidance and feedback. The energy was incredible, and many signed up to perform the next day.
+&lt;/p&gt;
+&lt;p&gt;
+Day two saw &lt;strong&gt;14 brave neuroscientists&lt;/strong&gt; debut 10 comedy acts—covering everything from child development to single-cell research, 
+mouse experiments, and even the absurdity of poster sessions. Performances ranged from classic stand-up to two-person acts and a comedy troupe. 
+Over 250 people filled the room, and every act earned big laughs and warm applause.
+&lt;/p&gt;
+&lt;p&gt;
+This was my first time teaching a comedy science communication workshop—and it couldn’t have gone better. Huge thanks to my co-organizers, 
+Rebecca and Michele, and the fantastic FENS communication team for making it possible.
+&lt;/p&gt;
+&lt;p&gt;
+🎧 Hear more in the &lt;a href=&#34;https://youtu.be/v3ARrI2jW8s?si=iP50nG8hFLg1UPtP&#34; target=&#34;_blank&#34;&gt;FENS Forum 2024 – Day 4 Highlights podcast&lt;/a&gt;.
+&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>How maths can help you make a decision</title>
@@ -671,6 +807,27 @@ Right&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;np&lt;span style=&#
       <description>&lt;p&gt;In 2018 I gave my firat Pint of Science talk on my work on Visual Vestibular Integration. It was great fun and a real pleasure meeting the other speakers and organisers.&lt;/p&gt;
 &lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;A massive thank you to all the speakers at &lt;a href=&#34;https://twitter.com/hashtag/PintOfScience?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#PintOfScience&lt;/a&gt; in JW Sweetman&amp;#39;s &lt;a href=&#34;https://twitter.com/thebotmechanic?ref_src=twsrc%5Etfw&#34;&gt;@thebotmechanic&lt;/a&gt;&lt;a href=&#34;https://twitter.com/SteveMeaney?ref_src=twsrc%5Etfw&#34;&gt;@stevemeaney&lt;/a&gt; &lt;a href=&#34;https://twitter.com/jslbutler?ref_src=twsrc%5Etfw&#34;&gt;@jslbutler&lt;/a&gt; &lt;a href=&#34;https://twitter.com/Fleur_Boot?ref_src=twsrc%5Etfw&#34;&gt;@Fleur_Boot&lt;/a&gt; &lt;a href=&#34;https://twitter.com/DrOliviaHurley?ref_src=twsrc%5Etfw&#34;&gt;@DrOliviaHurley&lt;/a&gt; and our fab MC for the night @ilainabananas &lt;a href=&#34;https://twitter.com/hashtag/pint18?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#pint18&lt;/a&gt; &lt;a href=&#34;https://twitter.com/hashtag/PintOfScience?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#PintOfScience&lt;/a&gt; &lt;a href=&#34;https://t.co/9sEpH3Wh2d&#34;&gt;pic.twitter.com/9sEpH3Wh2d&lt;/a&gt;&lt;/p&gt;&amp;mdash; Pint of Science IE (@pintofscienceIE) &lt;a href=&#34;https://twitter.com/pintofscienceIE/status/996132199257788416?ref_src=twsrc%5Etfw&#34;&gt;May 14, 2018&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
 </description>
+    </item>
+    
+    <item>
+      <title>Maths in the Wild</title>
+      <link>https://johnsbutler.netlify.app/project/maths_in_the_wild/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://johnsbutler.netlify.app/project/maths_in_the_wild/</guid>
+      <description>&lt;p&gt;
+&lt;strong&gt;&lt;a href=&#34;https://john-s-butler-dit.github.io/Maths-in-the-Wild/&#34;&gt;Maths in the Wild&lt;/a&gt;&lt;/strong&gt; is a series of workshops for primary and secondary school students. Through hands-on experiments 
+and calculations, participants discover how maths and science—especially neuroscience—help us explore and understand the world around us.
+&lt;/p&gt;
+&lt;p&gt;
+The workshops were developed by &lt;strong&gt;Dr. Nicole Beisiegel&lt;/strong&gt; and &lt;strong&gt;myself, Dr. John Butler&lt;/strong&gt;, both of us teaching 
+mathematics at Technological University Dublin. I combine my background in maths and neuroscience to design interactive experiments and 
+analysis techniques that help us explore the world, while Nicole brings together maths and ocean science to investigate the natural environment.
+&lt;/p&gt;
+&lt;p&gt;
+Originally created for the &lt;em&gt;TU Dublin Access and Outreach programme&lt;/em&gt;, these workshops continue to spark curiosity and 
+show how mathematics connects to real-life experiences. All the details are on the &lt;a href=&#34;https://john-s-butler-dit.github.io/Maths-in-the-Wild/&#34;&gt;Maths in the Wild&lt;/a&gt; website.
+&lt;/p&gt;</description>
     </item>
     
   </channel>
