@@ -6,10 +6,29 @@
     <description>Recent content in Outreach on John S Butler</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 18 May 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 27 Aug 2025 00:00:00 +0000</lastBuildDate>
     
 	    <atom:link href="https://johnsbutler.netlify.app/tags/outreach/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Maths Workshops in Secondary Schools</title>
+      <link>https://johnsbutler.netlify.app/talk/2025schoolsvisits/</link>
+      <pubDate>Wed, 27 Aug 2025 00:00:00 +0000</pubDate>
+      
+      <guid>https://johnsbutler.netlify.app/talk/2025schoolsvisits/</guid>
+      <description>&lt;p&gt;
+In 2025 I ran some more &lt;a href=&#34;https://john-s-butler-dit.github.io/Maths-in-the-Wild/&#34;&gt;Maths in the Wild &lt;/a&gt; workshops at secondary schools. On January 20th, I was invited by Sarah Murray, a maths teacher at 
+Mount Carmel Secondary School, to speak to higher-level Leaving Certificate maths students. I demonstrated how mathematics can be used 
+to model memory and forgetting processes. It was especially nice to visit since Sarah is a former student of the School of Mathematical 
+Sciences at DIT.
+&lt;/p&gt;
+&lt;p&gt;
+On March 4th, I returned to my alma mater, The High School, at the invitation of the maths and physics teachers Ian Wilkinson, Denise Thorp, 
+and Dr. Una Budd. There, I presented to two physics classes, showing how mathematics can be used to model decision-making processes and 
+how these same principles are now applied in artificial neural networks.
+&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Don&#39;t Get Eaten by the Tiger</title>
@@ -32,6 +51,7 @@ algorithms.&lt;/p&gt;
       <guid>https://johnsbutler.netlify.app/talk/2024access/</guid>
       <description>&lt;p&gt;
 In this workshop, I showed how maths can be used to model and explain things in the wild. The workshop was divided into two parts.
+This was first &lt;a href=&#34;https://john-s-butler-dit.github.io/Maths-in-the-Wild/&#34; &gt;Maths in the Wild &lt;/a&gt; workshop.
 &lt;/p&gt;
 &lt;h3&gt;Part 1: Modelling Predator-Prey Relationships&lt;/h3&gt;
 &lt;p&gt;
@@ -57,6 +77,43 @@ These same models have since been adapted to create self-driving cars.
   &lt;/li&gt;
 &lt;/ul&gt;
 </description>
+    </item>
+    
+    <item>
+      <title>Digital Mirror</title>
+      <link>https://johnsbutler.netlify.app/talk/2024digitalmirror/</link>
+      <pubDate>Tue, 27 Aug 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://johnsbutler.netlify.app/talk/2024digitalmirror/</guid>
+      <description>&lt;p&gt;
+At the Dublin Makers stand, I teamed up with artist &lt;strong&gt;Cian McLoughlin&lt;/strong&gt; to explore what happens when art, maths, and 
+neuroscience meet. Together, we looked at how both artists and scientists try to capture the essence of a face.
+&lt;/p&gt;
+&lt;p&gt;
+Cian’s paintings, called &lt;em&gt;“Tronies”&lt;/em&gt;, layer multiple portraits of the same person to show just how varied and expressive 
+human faces can be. I linked this to how computers “learn” to recognize faces: by starting with an average face and then spotting 
+the unique details that make each of us different.
+&lt;/p&gt;
+&lt;p&gt;
+It turns out this isn’t far from what our own brains do. We constantly break down and process visual information so we can 
+recognize one another at a glance.
+&lt;/p&gt;
+&lt;p&gt;
+Visitors to the stand had their photos taken from different angles, and we ran them through a computer program that turned their 
+faces into striking, abstract “eigenfaces.” Everyone got to take home their very own digital portrait — a mix of maths, art, 
+and neuroscience, all rolled into one.
+&lt;/p&gt;
+&lt;p&gt;
+Cian is currently the &lt;strong&gt;SFI Discover-funded Artist in Residence&lt;/strong&gt; at the Trinity College Institute of Neuroscience.
+&lt;/p&gt;
+&lt;p&gt;
+🔗 &lt;a href=&#34;https://dublinmaker.ie/makers/the-digital-mirror-ai-and-the-evolution-of-portraiture/&#34; target=&#34;_blank&#34;&gt;
+The Digital Mirror: AI and the Evolution of Portraiture&lt;/a&gt;&lt;br&gt;
+🔗 &lt;a href=&#34;https://dublinmaker.ie/makers-2024/&#34; target=&#34;_blank&#34;&gt;Dublin Maker 2024&lt;/a&gt;
+&lt;/p&gt;
+&lt;img src=&#34;front.jpg&#34; alt=&#34;Front Page&#34;&gt;
+&lt;hr&gt;
+&lt;img src=&#34;back.jpg&#34; alt=&#34;Backpage&#34;&gt;</description>
     </item>
     
     <item>
@@ -759,7 +816,7 @@ Right&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;np&lt;span style=&#
       
       <guid>https://johnsbutler.netlify.app/project/maths_in_the_wild/</guid>
       <description>&lt;p&gt;
-&lt;strong&gt;Maths in the Wild&lt;/strong&gt; is a series of workshops for primary and secondary school students. Through hands-on experiments 
+&lt;strong&gt;&lt;a href=&#34;https://john-s-butler-dit.github.io/Maths-in-the-Wild/&#34;&gt;Maths in the Wild&lt;/a&gt;&lt;/strong&gt; is a series of workshops for primary and secondary school students. Through hands-on experiments 
 and calculations, participants discover how maths and science—especially neuroscience—help us explore and understand the world around us.
 &lt;/p&gt;
 &lt;p&gt;
@@ -769,7 +826,7 @@ analysis techniques that help us explore the world, while Nicole brings together
 &lt;/p&gt;
 &lt;p&gt;
 Originally created for the &lt;em&gt;TU Dublin Access and Outreach programme&lt;/em&gt;, these workshops continue to spark curiosity and 
-show how mathematics connects to real-life experiences.
+show how mathematics connects to real-life experiences. All the details are on the &lt;a href=&#34;https://john-s-butler-dit.github.io/Maths-in-the-Wild/&#34;&gt;Maths in the Wild&lt;/a&gt; website.
 &lt;/p&gt;</description>
     </item>
     

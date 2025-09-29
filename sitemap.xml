@@ -2,23 +2,29 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://johnsbutler.netlify.app/talk/2025pos/</loc>
-    <lastmod>2025-05-18T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://johnsbutler.netlify.app/</loc>
-    <lastmod>2025-05-18T00:00:00+00:00</lastmod>
+    <lastmod>2025-08-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://johnsbutler.netlify.app/talk/2025schoolsvisits/</loc>
+    <lastmod>2025-08-27T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://johnsbutler.netlify.app/tags/outreach/</loc>
-    <lastmod>2025-05-18T00:00:00+00:00</lastmod>
+    <lastmod>2025-08-27T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://johnsbutler.netlify.app/talk/</loc>
-    <lastmod>2025-05-18T00:00:00+00:00</lastmod>
+    <lastmod>2025-08-27T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://johnsbutler.netlify.app/tags/</loc>
+    <lastmod>2025-08-27T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://johnsbutler.netlify.app/talk/2025pos/</loc>
     <lastmod>2025-05-18T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://johnsbutler.netlify.app/talk/2024access/</loc>
     <lastmod>2024-11-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://johnsbutler.netlify.app/talk/2024digitalmirror/</loc>
+    <lastmod>2024-08-27T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://johnsbutler.netlify.app/talk/2024fens/</loc>
     <lastmod>2024-06-27T00:00:00+00:00</lastmod>
